@@ -1,0 +1,13 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..a492df9 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -1129,7 +1129,7 @@ char* XMLNode::ParseDeep( char* p, StrPair* parentEndTag, int* curLineNumPtr )
+         }
+ 
+         const XMLDeclaration* const decl = node->ToDeclaration();
+-        if ( decl ) {
++        if ( /*PCI*/dynamic_cast<tinyxml2::XMLNode*>(decl) ) {
+             // Declarations are only allowed at document level
+             //
+             // Multiple declarations are allowed but all declarations

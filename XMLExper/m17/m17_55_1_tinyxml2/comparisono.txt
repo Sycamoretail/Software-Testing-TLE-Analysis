@@ -1,0 +1,29 @@
+tinyxml2.cpp: In destructor ‘virtual tinyxml2::XMLElement::~XMLElement()’:
+tinyxml2.cpp:1623:26: error: cannot convert ‘tinyxml2::XMLAttribute*’ to ‘const char*’
+ 1623 |         DeleteAttribute( _rootAttribute );
+      |                          ^~~~~~~~~~~~~~
+      |                          |
+      |                          tinyxml2::XMLAttribute*
+In file included from tinyxml2.cpp:24:
+tinyxml2.h:1517:39: note:   initializing argument 1 of ‘void tinyxml2::XMLElement::DeleteAttribute(const char*)’
+ 1517 |     void DeleteAttribute( const char* name );
+      |                           ~~~~~~~~~~~~^~~~
+tinyxml2.cpp: In member function ‘void tinyxml2::XMLElement::DeleteAttribute(const char*)’:
+tinyxml2.cpp:1964:30: error: cannot convert ‘tinyxml2::XMLAttribute*’ to ‘const char*’
+ 1964 |             DeleteAttribute( a );
+      |                              ^
+      |                              |
+      |                              tinyxml2::XMLAttribute*
+tinyxml2.cpp:1953:47: note:   initializing argument 1 of ‘void tinyxml2::XMLElement::DeleteAttribute(const char*)’
+ 1953 | void XMLElement::DeleteAttribute( const char* name )
+      |                                   ~~~~~~~~~~~~^~~~
+tinyxml2.cpp: In member function ‘char* tinyxml2::XMLElement::ParseAttributes(char*, int*)’:
+tinyxml2.cpp:1994:34: error: cannot convert ‘tinyxml2::XMLAttribute*’ to ‘const char*’
+ 1994 |                 DeleteAttribute( attrib );
+      |                                  ^~~~~~
+      |                                  |
+      |                                  tinyxml2::XMLAttribute*
+tinyxml2.cpp:1953:47: note:   initializing argument 1 of ‘void tinyxml2::XMLElement::DeleteAttribute(const char*)’
+ 1953 | void XMLElement::DeleteAttribute( const char* name )
+      |                                   ~~~~~~~~~~~~^~~~
+diff: tinyxml2.o: No such file or directory

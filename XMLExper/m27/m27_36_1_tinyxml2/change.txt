@@ -1,0 +1,15 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..e74e131 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -1610,8 +1610,8 @@ void XMLAttribute::SetAttribute( float v )
+ 
+ // --------- XMLElement ---------- //
+ XMLElement::XMLElement( XMLDocument* doc ) : XMLNode( doc ),
+-    _closingType( OPEN ),
+-    _rootAttribute( 0 )
++    _closingType( OPEN )
++    /*CID*/
+ {
+ }
+ 

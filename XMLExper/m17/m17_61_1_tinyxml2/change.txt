@@ -1,0 +1,14 @@
+diff --git a/tinyxml2.h b/tinyxml2.h
+index bab582c..e86eb21 100644
+--- a/tinyxml2.h
++++ b/tinyxml2.h
+@@ -2063,8 +2063,7 @@ public:
+     explicit XMLHandle( XMLNode* node ) : _node( node ) {
+     }
+     /// Create a handle from a node.
+-    explicit XMLHandle( XMLNode& node ) : _node( &node ) {
+-    }
++    /*OMD*/
+     /// Copy constructor
+     XMLHandle( const XMLHandle& ref ) : _node( ref._node ) {
+     }

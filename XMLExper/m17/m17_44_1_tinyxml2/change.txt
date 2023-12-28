@@ -1,0 +1,16 @@
+diff --git a/tinyxml2.h b/tinyxml2.h
+index bab582c..1e2faf3 100644
+--- a/tinyxml2.h
++++ b/tinyxml2.h
+@@ -1506,10 +1506,7 @@ public:
+         a->SetAttribute( value );
+     }
+     /// Sets the named attribute to value.
+-    void SetAttribute( const char* name, float value )		{
+-        XMLAttribute* a = FindOrCreateAttribute( name );
+-        a->SetAttribute( value );
+-    }
++    /*OMD*/
+ 
+     /**
+     	Delete an attribute.

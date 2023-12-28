@@ -1,0 +1,59 @@
+11046,11050c11046,11052
+< 	subq	$32, %rsp
+< 	movq	%rdi, -24(%rbp)
+< 	movq	%rsi, -32(%rbp)
+< 	movq	-32(%rbp), %rax
+< 	cmpq	-24(%rbp), %rax
+---
+> 	pushq	%rbx
+> 	subq	$40, %rsp
+> 	.cfi_offset 3, -24
+> 	movq	%rdi, -40(%rbp)
+> 	movq	%rsi, -48(%rbp)
+> 	movq	-48(%rbp), %rax
+> 	cmpq	-40(%rbp), %rax
+11052c11054
+< 	movq	-32(%rbp), %rax
+---
+> 	movq	-48(%rbp), %rax
+11055c11057
+< 	movq	-24(%rbp), %rax
+---
+> 	movq	-40(%rbp), %rax
+11058c11060
+< 	movq	%rax, -8(%rbp)
+---
+> 	movq	%rax, -24(%rbp)
+11060c11062
+< 	cmpq	$0, -8(%rbp)
+---
+> 	cmpq	$0, -24(%rbp)
+11062,11063c11064,11066
+< 	movq	-32(%rbp), %rdx
+< 	movq	-8(%rbp), %rax
+---
+> 	movq	-48(%rbp), %rbx
+> 	movq	-48(%rbp), %rdx
+> 	movq	-24(%rbp), %rax
+11067,11070c11070,11071
+< 	movq	%rax, %rdx
+< 	movq	-32(%rbp), %rax
+< 	movq	%rdx, %rsi
+< 	movq	%rax, %rdi
+---
+> 	movq	%rax, %rsi
+> 	movq	%rbx, %rdi
+11072c11073
+< 	movq	-8(%rbp), %rax
+---
+> 	movq	-24(%rbp), %rax
+11075c11076
+< 	movq	%rax, -8(%rbp)
+---
+> 	movq	%rax, -24(%rbp)
+11080c11081,11083
+< 	leave
+---
+> 	addq	$40, %rsp
+> 	popq	%rbx
+> 	popq	%rbp

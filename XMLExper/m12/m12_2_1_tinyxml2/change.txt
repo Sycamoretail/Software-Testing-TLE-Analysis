@@ -1,0 +1,13 @@
+diff --git a/tinyxml2.h b/tinyxml2.h
+index bab582c..6b154d3 100644
+--- a/tinyxml2.h
++++ b/tinyxml2.h
+@@ -1972,7 +1972,7 @@ private:
+ 	class DepthTracker {
+ 	public:
+ 		explicit DepthTracker(XMLDocument * document) {
+-			this->_document = document;
++			this->_document = /*PCI*/dynamic_cast<tinyxml2::XMLNode*>(document);
+ 			document->PushDepth();
+ 		}
+ 		~DepthTracker() {

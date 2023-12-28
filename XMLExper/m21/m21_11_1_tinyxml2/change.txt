@@ -1,0 +1,13 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..8f4636b 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -1455,7 +1455,7 @@ const char* XMLAttribute::Value() const
+ char* XMLAttribute::ParseDeep( char* p, bool processEntities, int* curLineNumPtr )
+ {
+     // Parse using the name rules: bug fix, was using ParseText before
+-    p = _name.ParseName( p );
++    p = /*MCO*/_value.ParseName( p );
+     if ( !p || !*p ) {
+         return 0;
+     }

@@ -1,0 +1,13 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..abb2071 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -1418,7 +1418,7 @@ char* XMLUnknown::ParseDeep( char* p, StrPair*, int* curLineNumPtr )
+ 
+ XMLNode* XMLUnknown::ShallowClone( XMLDocument* doc ) const
+ {
+-    if ( !doc ) {
++    if ( !/*PCI*/dynamic_cast<tinyxml2::XMLNode*>(doc) ) {
+         doc = _document;
+     }
+     XMLUnknown* text = doc->NewUnknown( Value() );	// fixme: this will always allocate memory. Intern?

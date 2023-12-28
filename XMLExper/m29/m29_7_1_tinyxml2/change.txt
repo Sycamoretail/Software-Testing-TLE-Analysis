@@ -1,0 +1,15 @@
+diff --git a/tinyxml2.h b/tinyxml2.h
+index bab582c..f519416 100644
+--- a/tinyxml2.h
++++ b/tinyxml2.h
+@@ -1975,9 +1975,7 @@ private:
+ 			this->_document = document;
+ 			document->PushDepth();
+ 		}
+-		~DepthTracker() {
+-			_document->PopDepth();
+-		}
++		/*CDD*/
+ 	private:
+ 		XMLDocument * _document;
+ 	};

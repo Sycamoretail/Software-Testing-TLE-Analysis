@@ -1,0 +1,13 @@
+diff --git a/tinyxml2.h b/tinyxml2.h
+index bab582c..9bdb49d 100644
+--- a/tinyxml2.h
++++ b/tinyxml2.h
+@@ -347,7 +347,7 @@ template< int ITEM_SIZE >
+ class MemPoolT : public MemPool
+ {
+ public:
+-    MemPoolT() : _blockPtrs(), _root(0), _currentAllocs(0), _nAllocs(0), _maxAllocs(0), _nUntracked(0)	{}
++    MemPoolT() : _blockPtrs(), _root(0), _currentAllocs(0), _nAllocs(0), /*CID*/ _nUntracked(0)	{}
+     ~MemPoolT() {
+         MemPoolT< ITEM_SIZE >::Clear();
+     }

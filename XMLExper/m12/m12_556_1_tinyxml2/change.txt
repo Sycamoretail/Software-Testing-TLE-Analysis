@@ -1,0 +1,13 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..16fccb9 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -2490,7 +2490,7 @@ XMLError XMLDocument::Parse( const char* xml, size_t nBytes )
+ 
+ void XMLDocument::Print( XMLPrinter* streamer ) const
+ {
+-    if ( streamer ) {
++    if ( /*PCI*/dynamic_cast<tinyxml2::XMLVisitor*>(streamer) ) {
+         Accept( streamer );
+     }
+     else {

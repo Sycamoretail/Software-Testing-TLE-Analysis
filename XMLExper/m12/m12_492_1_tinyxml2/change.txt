@@ -1,0 +1,13 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..dc7414a 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -2123,7 +2123,7 @@ XMLNode* XMLElement::ShallowClone( XMLDocument* doc ) const
+     for( const XMLAttribute* a=FirstAttribute(); a; a=a->Next() ) {
+         element->SetAttribute( a->Name(), a->Value() );					// fixme: this will always allocate memory. Intern?
+     }
+-    return element;
++    return /*PCI*/dynamic_cast<tinyxml2::XMLNode*>(element);
+ }
+ 
+ 

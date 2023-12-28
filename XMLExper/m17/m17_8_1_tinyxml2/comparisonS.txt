@@ -1,0 +1,42 @@
+tinyxml2.cpp: In member function ‘void tinyxml2::StrPair::CollapseWhitespace()’:
+tinyxml2.cpp:262:37: error: invalid conversion from ‘const char*’ to ‘char*’ [-fpermissive]
+  262 |     _start = XMLUtil::SkipWhiteSpace( _start, 0 );
+      |              ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+      |                                     |
+      |                                     const char*
+tinyxml2.cpp: In member function ‘char* tinyxml2::XMLDocument::Identify(char*, tinyxml2::XMLNode**, bool)’:
+tinyxml2.cpp:721:32: error: invalid conversion from ‘const char*’ to ‘char*’ [-fpermissive]
+  721 |     p = XMLUtil::SkipWhiteSpace( p, &_parseCurLineNum );
+      |         ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+      |                                |
+      |                                const char*
+tinyxml2.cpp: In member function ‘char* tinyxml2::XMLAttribute::ParseDeep(char*, bool, int*)’:
+tinyxml2.cpp:1464:32: error: invalid conversion from ‘const char*’ to ‘char*’ [-fpermissive]
+ 1464 |     p = XMLUtil::SkipWhiteSpace( p, curLineNumPtr );
+      |         ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+      |                                |
+      |                                const char*
+tinyxml2.cpp:1470:32: error: invalid conversion from ‘const char*’ to ‘char*’ [-fpermissive]
+ 1470 |     p = XMLUtil::SkipWhiteSpace( p, curLineNumPtr );
+      |         ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+      |                                |
+      |                                const char*
+tinyxml2.cpp: In member function ‘char* tinyxml2::XMLElement::ParseAttributes(char*, int*)’:
+tinyxml2.cpp:1978:36: error: invalid conversion from ‘const char*’ to ‘char*’ [-fpermissive]
+ 1978 |         p = XMLUtil::SkipWhiteSpace( p, curLineNumPtr );
+      |             ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+      |                                    |
+      |                                    const char*
+tinyxml2.cpp: In member function ‘virtual char* tinyxml2::XMLElement::ParseDeep(char*, tinyxml2::StrPair*, int*)’:
+tinyxml2.cpp:2091:32: error: invalid conversion from ‘const char*’ to ‘char*’ [-fpermissive]
+ 2091 |     p = XMLUtil::SkipWhiteSpace( p, curLineNumPtr );
+      |         ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+      |                                |
+      |                                const char*
+tinyxml2.cpp: In member function ‘void tinyxml2::XMLDocument::Parse()’:
+tinyxml2.cpp:2569:32: error: invalid conversion from ‘const char*’ to ‘char*’ [-fpermissive]
+ 2569 |     p = XMLUtil::SkipWhiteSpace( p, &_parseCurLineNum );
+      |         ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+      |                                |
+      |                                const char*
+diff: tinyxml2.S: No such file or directory

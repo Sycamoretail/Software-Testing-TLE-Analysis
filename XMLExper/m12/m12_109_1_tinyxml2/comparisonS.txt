@@ -1,0 +1,11 @@
+tinyxml2.cpp: In member function ‘tinyxml2::XMLNode* tinyxml2::XMLNode::DeepClone(tinyxml2::XMLDocument*) const’:
+tinyxml2.cpp:880:45: error: invalid conversion from ‘tinyxml2::XMLNode*’ to ‘tinyxml2::XMLDocument*’ [-fpermissive]
+  880 |  XMLNode* clone = this->ShallowClone(/*PCI*/dynamic_cast<tinyxml2::XMLNode*>(target));
+      |                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                             |
+      |                                             tinyxml2::XMLNode*
+In file included from tinyxml2.cpp:24:
+tinyxml2.h:891:49: note:   initializing argument 1 of ‘virtual tinyxml2::XMLNode* tinyxml2::XMLNode::ShallowClone(tinyxml2::XMLDocument*) const’
+  891 |     virtual XMLNode* ShallowClone( XMLDocument* document ) const = 0;
+      |                                    ~~~~~~~~~~~~~^~~~~~~~
+diff: tinyxml2.S: No such file or directory

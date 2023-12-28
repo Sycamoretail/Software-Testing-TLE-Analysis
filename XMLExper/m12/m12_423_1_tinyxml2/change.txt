@@ -1,0 +1,13 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..1e456a0 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -1222,7 +1222,7 @@ void XMLNode::InsertChildPreamble( XMLNode* insertThis ) const
+         insertThis->_parent->Unlink( insertThis );
+ 	}
+ 	else {
+-		insertThis->_document->MarkInUse(insertThis);
++		insertThis->_document->MarkInUse(/*PCI*/dynamic_cast<tinyxml2::XMLElement*>(insertThis));
+         insertThis->_memPool->SetTracked();
+ 	}
+ }

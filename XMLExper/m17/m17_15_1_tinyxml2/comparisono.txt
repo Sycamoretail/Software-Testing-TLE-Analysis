@@ -1,0 +1,89 @@
+tinyxml2.cpp: In member function ‘void tinyxml2::XMLAttribute::SetAttribute(uint64_t)’:
+tinyxml2.cpp:1580:36: error: call of overloaded ‘ToStr(uint64_t&, char [200], tinyxml2::XMLAttribute::<unnamed enum>)’ is ambiguous
+ 1580 |     XMLUtil::ToStr(v, buf, BUF_SIZE);
+      |                                    ^
+tinyxml2.cpp:571:6: note: candidate: ‘static void tinyxml2::XMLUtil::ToStr(int, char*, int)’
+  571 | void XMLUtil::ToStr( int v, char* buffer, int bufferSize )
+      |      ^~~~~~~
+tinyxml2.cpp:577:6: note: candidate: ‘static void tinyxml2::XMLUtil::ToStr(unsigned int, char*, int)’
+  577 | void XMLUtil::ToStr( unsigned v, char* buffer, int bufferSize )
+      |      ^~~~~~~
+tinyxml2.cpp:583:6: note: candidate: ‘static void tinyxml2::XMLUtil::ToStr(bool, char*, int)’
+  583 | void XMLUtil::ToStr( bool v, char* buffer, int bufferSize )
+      |      ^~~~~~~
+tinyxml2.cpp:592:6: note: candidate: ‘static void tinyxml2::XMLUtil::ToStr(float, char*, int)’
+  592 | void XMLUtil::ToStr( float v, char* buffer, int bufferSize )
+      |      ^~~~~~~
+tinyxml2.cpp:598:6: note: candidate: ‘static void tinyxml2::XMLUtil::ToStr(double, char*, int)’
+  598 | void XMLUtil::ToStr( double v, char* buffer, int bufferSize )
+      |      ^~~~~~~
+tinyxml2.cpp:604:6: note: candidate: ‘static void tinyxml2::XMLUtil::ToStr(int64_t, char*, int)’
+  604 | void XMLUtil::ToStr( int64_t v, char* buffer, int bufferSize )
+      |      ^~~~~~~
+tinyxml2.cpp: In member function ‘void tinyxml2::XMLElement::SetText(uint64_t)’:
+tinyxml2.cpp:1752:36: error: call of overloaded ‘ToStr(uint64_t&, char [200], tinyxml2::XMLElement::<unnamed enum>)’ is ambiguous
+ 1752 |     XMLUtil::ToStr(v, buf, BUF_SIZE);
+      |                                    ^
+tinyxml2.cpp:571:6: note: candidate: ‘static void tinyxml2::XMLUtil::ToStr(int, char*, int)’
+  571 | void XMLUtil::ToStr( int v, char* buffer, int bufferSize )
+      |      ^~~~~~~
+tinyxml2.cpp:577:6: note: candidate: ‘static void tinyxml2::XMLUtil::ToStr(unsigned int, char*, int)’
+  577 | void XMLUtil::ToStr( unsigned v, char* buffer, int bufferSize )
+      |      ^~~~~~~
+tinyxml2.cpp:583:6: note: candidate: ‘static void tinyxml2::XMLUtil::ToStr(bool, char*, int)’
+  583 | void XMLUtil::ToStr( bool v, char* buffer, int bufferSize )
+      |      ^~~~~~~
+tinyxml2.cpp:592:6: note: candidate: ‘static void tinyxml2::XMLUtil::ToStr(float, char*, int)’
+  592 | void XMLUtil::ToStr( float v, char* buffer, int bufferSize )
+      |      ^~~~~~~
+tinyxml2.cpp:598:6: note: candidate: ‘static void tinyxml2::XMLUtil::ToStr(double, char*, int)’
+  598 | void XMLUtil::ToStr( double v, char* buffer, int bufferSize )
+      |      ^~~~~~~
+tinyxml2.cpp:604:6: note: candidate: ‘static void tinyxml2::XMLUtil::ToStr(int64_t, char*, int)’
+  604 | void XMLUtil::ToStr( int64_t v, char* buffer, int bufferSize )
+      |      ^~~~~~~
+tinyxml2.cpp: In member function ‘void tinyxml2::XMLPrinter::PushAttribute(const char*, uint64_t)’:
+tinyxml2.cpp:2807:33: error: call of overloaded ‘ToStr(uint64_t&, char [200], tinyxml2::XMLPrinter::<unnamed enum>)’ is ambiguous
+ 2807 |  XMLUtil::ToStr(v, buf, BUF_SIZE);
+      |                                 ^
+tinyxml2.cpp:571:6: note: candidate: ‘static void tinyxml2::XMLUtil::ToStr(int, char*, int)’
+  571 | void XMLUtil::ToStr( int v, char* buffer, int bufferSize )
+      |      ^~~~~~~
+tinyxml2.cpp:577:6: note: candidate: ‘static void tinyxml2::XMLUtil::ToStr(unsigned int, char*, int)’
+  577 | void XMLUtil::ToStr( unsigned v, char* buffer, int bufferSize )
+      |      ^~~~~~~
+tinyxml2.cpp:583:6: note: candidate: ‘static void tinyxml2::XMLUtil::ToStr(bool, char*, int)’
+  583 | void XMLUtil::ToStr( bool v, char* buffer, int bufferSize )
+      |      ^~~~~~~
+tinyxml2.cpp:592:6: note: candidate: ‘static void tinyxml2::XMLUtil::ToStr(float, char*, int)’
+  592 | void XMLUtil::ToStr( float v, char* buffer, int bufferSize )
+      |      ^~~~~~~
+tinyxml2.cpp:598:6: note: candidate: ‘static void tinyxml2::XMLUtil::ToStr(double, char*, int)’
+  598 | void XMLUtil::ToStr( double v, char* buffer, int bufferSize )
+      |      ^~~~~~~
+tinyxml2.cpp:604:6: note: candidate: ‘static void tinyxml2::XMLUtil::ToStr(int64_t, char*, int)’
+  604 | void XMLUtil::ToStr( int64_t v, char* buffer, int bufferSize )
+      |      ^~~~~~~
+tinyxml2.cpp: In member function ‘void tinyxml2::XMLPrinter::PushText(uint64_t)’:
+tinyxml2.cpp:2893:37: error: call of overloaded ‘ToStr(uint64_t&, char [200], tinyxml2::XMLPrinter::<unnamed enum>)’ is ambiguous
+ 2893 |  XMLUtil::ToStr(value, buf, BUF_SIZE);
+      |                                     ^
+tinyxml2.cpp:571:6: note: candidate: ‘static void tinyxml2::XMLUtil::ToStr(int, char*, int)’
+  571 | void XMLUtil::ToStr( int v, char* buffer, int bufferSize )
+      |      ^~~~~~~
+tinyxml2.cpp:577:6: note: candidate: ‘static void tinyxml2::XMLUtil::ToStr(unsigned int, char*, int)’
+  577 | void XMLUtil::ToStr( unsigned v, char* buffer, int bufferSize )
+      |      ^~~~~~~
+tinyxml2.cpp:583:6: note: candidate: ‘static void tinyxml2::XMLUtil::ToStr(bool, char*, int)’
+  583 | void XMLUtil::ToStr( bool v, char* buffer, int bufferSize )
+      |      ^~~~~~~
+tinyxml2.cpp:592:6: note: candidate: ‘static void tinyxml2::XMLUtil::ToStr(float, char*, int)’
+  592 | void XMLUtil::ToStr( float v, char* buffer, int bufferSize )
+      |      ^~~~~~~
+tinyxml2.cpp:598:6: note: candidate: ‘static void tinyxml2::XMLUtil::ToStr(double, char*, int)’
+  598 | void XMLUtil::ToStr( double v, char* buffer, int bufferSize )
+      |      ^~~~~~~
+tinyxml2.cpp:604:6: note: candidate: ‘static void tinyxml2::XMLUtil::ToStr(int64_t, char*, int)’
+  604 | void XMLUtil::ToStr( int64_t v, char* buffer, int bufferSize )
+      |      ^~~~~~~
+diff: tinyxml2.o: No such file or directory

@@ -1,0 +1,13 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..7425d3c 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -1230,7 +1230,7 @@ void XMLNode::InsertChildPreamble( XMLNode* insertThis ) const
+ const XMLElement* XMLNode::ToElementWithName( const char* name ) const
+ {
+     const XMLElement* element = this->ToElement();
+-    if ( element == 0 ) {
++    if ( /*PCI*/dynamic_cast<tinyxml2::XMLNode*>(element) == 0 ) {
+         return 0;
+     }
+     if ( name == 0 ) {

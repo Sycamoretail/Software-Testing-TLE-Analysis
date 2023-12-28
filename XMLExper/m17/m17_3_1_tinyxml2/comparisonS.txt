@@ -1,0 +1,28 @@
+In file included from tinyxml2.cpp:24:
+tinyxml2.h:2304:18: error: ‘virtual bool tinyxml2::XMLPrinter::Visit(const tinyxml2::XMLDeclaration&)’ marked ‘override’, but does not override
+ 2304 |     virtual bool Visit( const XMLDeclaration& declaration ) override;
+      |                  ^~~~~
+tinyxml2.cpp: In member function ‘virtual bool tinyxml2::XMLDeclaration::Accept(tinyxml2::XMLVisitor*) const’:
+tinyxml2.cpp:1393:34: error: no matching function for call to ‘tinyxml2::XMLVisitor::Visit(const tinyxml2::XMLDeclaration&)’
+ 1393 |     return visitor->Visit( *this );
+      |                                  ^
+In file included from tinyxml2.cpp:24:
+tinyxml2.h:507:18: note: candidate: ‘virtual bool tinyxml2::XMLVisitor::Visit(const tinyxml2::XMLText&)’
+  507 |     virtual bool Visit( const XMLText& /*text*/ )     {
+      |                  ^~~~~
+tinyxml2.h:507:25: note:   no known conversion for argument 1 from ‘const tinyxml2::XMLDeclaration’ to ‘const tinyxml2::XMLText&’
+  507 |     virtual bool Visit( const XMLText& /*text*/ )     {
+      |                         ^~~~~~~~~~~~~~
+tinyxml2.h:511:18: note: candidate: ‘virtual bool tinyxml2::XMLVisitor::Visit(const tinyxml2::XMLComment&)’
+  511 |     virtual bool Visit( const XMLComment& /*comment*/ )    {
+      |                  ^~~~~
+tinyxml2.h:511:25: note:   no known conversion for argument 1 from ‘const tinyxml2::XMLDeclaration’ to ‘const tinyxml2::XMLComment&’
+  511 |     virtual bool Visit( const XMLComment& /*comment*/ )    {
+      |                         ^~~~~~~~~~~~~~~~~
+tinyxml2.h:515:18: note: candidate: ‘virtual bool tinyxml2::XMLVisitor::Visit(const tinyxml2::XMLUnknown&)’
+  515 |     virtual bool Visit( const XMLUnknown& /*unknown*/ )    {
+      |                  ^~~~~
+tinyxml2.h:515:25: note:   no known conversion for argument 1 from ‘const tinyxml2::XMLDeclaration’ to ‘const tinyxml2::XMLUnknown&’
+  515 |     virtual bool Visit( const XMLUnknown& /*unknown*/ )    {
+      |                         ^~~~~~~~~~~~~~~~~
+diff: tinyxml2.S: No such file or directory

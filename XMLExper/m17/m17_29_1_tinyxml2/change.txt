@@ -1,0 +1,15 @@
+diff --git a/tinyxml2.h b/tinyxml2.h
+index bab582c..94c17e3 100644
+--- a/tinyxml2.h
++++ b/tinyxml2.h
+@@ -1435,9 +1435,7 @@ public:
+     	QueryAttribute( "foo", &value );		// if "foo" isn't found, value will still be 10
+     	@endverbatim
+     */
+-	XMLError QueryAttribute( const char* name, int* value ) const {
+-		return QueryIntAttribute( name, value );
+-	}
++	/*OMD*/
+ 
+ 	XMLError QueryAttribute( const char* name, unsigned int* value ) const {
+ 		return QueryUnsignedAttribute( name, value );

@@ -1,0 +1,13 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..d726553 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -2316,7 +2316,7 @@ XMLDeclaration* XMLDocument::NewDeclaration( const char* str )
+ XMLUnknown* XMLDocument::NewUnknown( const char* str )
+ {
+     XMLUnknown* unk = CreateUnlinkedNode<XMLUnknown>( _commentPool );
+-    unk->SetValue( str );
++    /*PCI*/dynamic_cast<tinyxml2::XMLNode*>(unk)->SetValue( str );
+     return unk;
+ }
+ 

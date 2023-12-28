@@ -1,0 +1,130 @@
+In file included from tinyxml2.cpp:24:
+tinyxml2.h: In member function ‘tinyxml2::XMLHandle tinyxml2::XMLHandle::FirstChild()’:
+tinyxml2.h:2078:59: error: no matching function for call to ‘tinyxml2::XMLHandle::XMLHandle(tinyxml2::XMLNode*)’
+ 2078 |         return XMLHandle( _node ? _node->FirstChild() : 0 );
+      |                                                           ^
+tinyxml2.h:2068:5: note: candidate: ‘tinyxml2::XMLHandle::XMLHandle(const tinyxml2::XMLHandle&)’
+ 2068 |     XMLHandle( const XMLHandle& ref ) : _node( ref._node ) {
+      |     ^~~~~~~~~
+tinyxml2.h:2068:33: note:   no known conversion for argument 1 from ‘tinyxml2::XMLNode*’ to ‘const tinyxml2::XMLHandle&’
+ 2068 |     XMLHandle( const XMLHandle& ref ) : _node( ref._node ) {
+      |                ~~~~~~~~~~~~~~~~~^~~
+tinyxml2.h:2065:14: note: candidate: ‘tinyxml2::XMLHandle::XMLHandle(tinyxml2::XMLNode&)’
+ 2065 |     explicit XMLHandle( XMLNode& node ) : _node( &node ) {
+      |              ^~~~~~~~~
+tinyxml2.h:2065:34: note:   no known conversion for argument 1 from ‘tinyxml2::XMLNode*’ to ‘tinyxml2::XMLNode&’
+ 2065 |     explicit XMLHandle( XMLNode& node ) : _node( &node ) {
+      |                         ~~~~~~~~~^~~~
+tinyxml2.h: In member function ‘tinyxml2::XMLHandle tinyxml2::XMLHandle::FirstChildElement(const char*)’:
+tinyxml2.h:2082:72: error: no matching function for call to ‘tinyxml2::XMLHandle::XMLHandle(tinyxml2::XMLElement*)’
+ 2082 |         return XMLHandle( _node ? _node->FirstChildElement( name ) : 0 );
+      |                                                                        ^
+tinyxml2.h:2068:5: note: candidate: ‘tinyxml2::XMLHandle::XMLHandle(const tinyxml2::XMLHandle&)’
+ 2068 |     XMLHandle( const XMLHandle& ref ) : _node( ref._node ) {
+      |     ^~~~~~~~~
+tinyxml2.h:2068:33: note:   no known conversion for argument 1 from ‘tinyxml2::XMLElement*’ to ‘const tinyxml2::XMLHandle&’
+ 2068 |     XMLHandle( const XMLHandle& ref ) : _node( ref._node ) {
+      |                ~~~~~~~~~~~~~~~~~^~~
+tinyxml2.h:2065:14: note: candidate: ‘tinyxml2::XMLHandle::XMLHandle(tinyxml2::XMLNode&)’
+ 2065 |     explicit XMLHandle( XMLNode& node ) : _node( &node ) {
+      |              ^~~~~~~~~
+tinyxml2.h:2065:34: note:   no known conversion for argument 1 from ‘tinyxml2::XMLElement*’ to ‘tinyxml2::XMLNode&’
+ 2065 |     explicit XMLHandle( XMLNode& node ) : _node( &node ) {
+      |                         ~~~~~~~~~^~~~
+tinyxml2.h: In member function ‘tinyxml2::XMLHandle tinyxml2::XMLHandle::LastChild()’:
+tinyxml2.h:2086:58: error: no matching function for call to ‘tinyxml2::XMLHandle::XMLHandle(tinyxml2::XMLNode*)’
+ 2086 |         return XMLHandle( _node ? _node->LastChild() : 0 );
+      |                                                          ^
+tinyxml2.h:2068:5: note: candidate: ‘tinyxml2::XMLHandle::XMLHandle(const tinyxml2::XMLHandle&)’
+ 2068 |     XMLHandle( const XMLHandle& ref ) : _node( ref._node ) {
+      |     ^~~~~~~~~
+tinyxml2.h:2068:33: note:   no known conversion for argument 1 from ‘tinyxml2::XMLNode*’ to ‘const tinyxml2::XMLHandle&’
+ 2068 |     XMLHandle( const XMLHandle& ref ) : _node( ref._node ) {
+      |                ~~~~~~~~~~~~~~~~~^~~
+tinyxml2.h:2065:14: note: candidate: ‘tinyxml2::XMLHandle::XMLHandle(tinyxml2::XMLNode&)’
+ 2065 |     explicit XMLHandle( XMLNode& node ) : _node( &node ) {
+      |              ^~~~~~~~~
+tinyxml2.h:2065:34: note:   no known conversion for argument 1 from ‘tinyxml2::XMLNode*’ to ‘tinyxml2::XMLNode&’
+ 2065 |     explicit XMLHandle( XMLNode& node ) : _node( &node ) {
+      |                         ~~~~~~~~~^~~~
+tinyxml2.h: In member function ‘tinyxml2::XMLHandle tinyxml2::XMLHandle::LastChildElement(const char*)’:
+tinyxml2.h:2090:71: error: no matching function for call to ‘tinyxml2::XMLHandle::XMLHandle(tinyxml2::XMLElement*)’
+ 2090 |         return XMLHandle( _node ? _node->LastChildElement( name ) : 0 );
+      |                                                                       ^
+tinyxml2.h:2068:5: note: candidate: ‘tinyxml2::XMLHandle::XMLHandle(const tinyxml2::XMLHandle&)’
+ 2068 |     XMLHandle( const XMLHandle& ref ) : _node( ref._node ) {
+      |     ^~~~~~~~~
+tinyxml2.h:2068:33: note:   no known conversion for argument 1 from ‘tinyxml2::XMLElement*’ to ‘const tinyxml2::XMLHandle&’
+ 2068 |     XMLHandle( const XMLHandle& ref ) : _node( ref._node ) {
+      |                ~~~~~~~~~~~~~~~~~^~~
+tinyxml2.h:2065:14: note: candidate: ‘tinyxml2::XMLHandle::XMLHandle(tinyxml2::XMLNode&)’
+ 2065 |     explicit XMLHandle( XMLNode& node ) : _node( &node ) {
+      |              ^~~~~~~~~
+tinyxml2.h:2065:34: note:   no known conversion for argument 1 from ‘tinyxml2::XMLElement*’ to ‘tinyxml2::XMLNode&’
+ 2065 |     explicit XMLHandle( XMLNode& node ) : _node( &node ) {
+      |                         ~~~~~~~~~^~~~
+tinyxml2.h: In member function ‘tinyxml2::XMLHandle tinyxml2::XMLHandle::PreviousSibling()’:
+tinyxml2.h:2094:64: error: no matching function for call to ‘tinyxml2::XMLHandle::XMLHandle(tinyxml2::XMLNode*)’
+ 2094 |         return XMLHandle( _node ? _node->PreviousSibling() : 0 );
+      |                                                                ^
+tinyxml2.h:2068:5: note: candidate: ‘tinyxml2::XMLHandle::XMLHandle(const tinyxml2::XMLHandle&)’
+ 2068 |     XMLHandle( const XMLHandle& ref ) : _node( ref._node ) {
+      |     ^~~~~~~~~
+tinyxml2.h:2068:33: note:   no known conversion for argument 1 from ‘tinyxml2::XMLNode*’ to ‘const tinyxml2::XMLHandle&’
+ 2068 |     XMLHandle( const XMLHandle& ref ) : _node( ref._node ) {
+      |                ~~~~~~~~~~~~~~~~~^~~
+tinyxml2.h:2065:14: note: candidate: ‘tinyxml2::XMLHandle::XMLHandle(tinyxml2::XMLNode&)’
+ 2065 |     explicit XMLHandle( XMLNode& node ) : _node( &node ) {
+      |              ^~~~~~~~~
+tinyxml2.h:2065:34: note:   no known conversion for argument 1 from ‘tinyxml2::XMLNode*’ to ‘tinyxml2::XMLNode&’
+ 2065 |     explicit XMLHandle( XMLNode& node ) : _node( &node ) {
+      |                         ~~~~~~~~~^~~~
+tinyxml2.h: In member function ‘tinyxml2::XMLHandle tinyxml2::XMLHandle::PreviousSiblingElement(const char*)’:
+tinyxml2.h:2098:77: error: no matching function for call to ‘tinyxml2::XMLHandle::XMLHandle(tinyxml2::XMLElement*)’
+ 2098 |         return XMLHandle( _node ? _node->PreviousSiblingElement( name ) : 0 );
+      |                                                                             ^
+tinyxml2.h:2068:5: note: candidate: ‘tinyxml2::XMLHandle::XMLHandle(const tinyxml2::XMLHandle&)’
+ 2068 |     XMLHandle( const XMLHandle& ref ) : _node( ref._node ) {
+      |     ^~~~~~~~~
+tinyxml2.h:2068:33: note:   no known conversion for argument 1 from ‘tinyxml2::XMLElement*’ to ‘const tinyxml2::XMLHandle&’
+ 2068 |     XMLHandle( const XMLHandle& ref ) : _node( ref._node ) {
+      |                ~~~~~~~~~~~~~~~~~^~~
+tinyxml2.h:2065:14: note: candidate: ‘tinyxml2::XMLHandle::XMLHandle(tinyxml2::XMLNode&)’
+ 2065 |     explicit XMLHandle( XMLNode& node ) : _node( &node ) {
+      |              ^~~~~~~~~
+tinyxml2.h:2065:34: note:   no known conversion for argument 1 from ‘tinyxml2::XMLElement*’ to ‘tinyxml2::XMLNode&’
+ 2065 |     explicit XMLHandle( XMLNode& node ) : _node( &node ) {
+      |                         ~~~~~~~~~^~~~
+tinyxml2.h: In member function ‘tinyxml2::XMLHandle tinyxml2::XMLHandle::NextSibling()’:
+tinyxml2.h:2102:60: error: no matching function for call to ‘tinyxml2::XMLHandle::XMLHandle(tinyxml2::XMLNode*)’
+ 2102 |         return XMLHandle( _node ? _node->NextSibling() : 0 );
+      |                                                            ^
+tinyxml2.h:2068:5: note: candidate: ‘tinyxml2::XMLHandle::XMLHandle(const tinyxml2::XMLHandle&)’
+ 2068 |     XMLHandle( const XMLHandle& ref ) : _node( ref._node ) {
+      |     ^~~~~~~~~
+tinyxml2.h:2068:33: note:   no known conversion for argument 1 from ‘tinyxml2::XMLNode*’ to ‘const tinyxml2::XMLHandle&’
+ 2068 |     XMLHandle( const XMLHandle& ref ) : _node( ref._node ) {
+      |                ~~~~~~~~~~~~~~~~~^~~
+tinyxml2.h:2065:14: note: candidate: ‘tinyxml2::XMLHandle::XMLHandle(tinyxml2::XMLNode&)’
+ 2065 |     explicit XMLHandle( XMLNode& node ) : _node( &node ) {
+      |              ^~~~~~~~~
+tinyxml2.h:2065:34: note:   no known conversion for argument 1 from ‘tinyxml2::XMLNode*’ to ‘tinyxml2::XMLNode&’
+ 2065 |     explicit XMLHandle( XMLNode& node ) : _node( &node ) {
+      |                         ~~~~~~~~~^~~~
+tinyxml2.h: In member function ‘tinyxml2::XMLHandle tinyxml2::XMLHandle::NextSiblingElement(const char*)’:
+tinyxml2.h:2106:73: error: no matching function for call to ‘tinyxml2::XMLHandle::XMLHandle(tinyxml2::XMLElement*)’
+ 2106 |         return XMLHandle( _node ? _node->NextSiblingElement( name ) : 0 );
+      |                                                                         ^
+tinyxml2.h:2068:5: note: candidate: ‘tinyxml2::XMLHandle::XMLHandle(const tinyxml2::XMLHandle&)’
+ 2068 |     XMLHandle( const XMLHandle& ref ) : _node( ref._node ) {
+      |     ^~~~~~~~~
+tinyxml2.h:2068:33: note:   no known conversion for argument 1 from ‘tinyxml2::XMLElement*’ to ‘const tinyxml2::XMLHandle&’
+ 2068 |     XMLHandle( const XMLHandle& ref ) : _node( ref._node ) {
+      |                ~~~~~~~~~~~~~~~~~^~~
+tinyxml2.h:2065:14: note: candidate: ‘tinyxml2::XMLHandle::XMLHandle(tinyxml2::XMLNode&)’
+ 2065 |     explicit XMLHandle( XMLNode& node ) : _node( &node ) {
+      |              ^~~~~~~~~
+tinyxml2.h:2065:34: note:   no known conversion for argument 1 from ‘tinyxml2::XMLElement*’ to ‘tinyxml2::XMLNode&’
+ 2065 |     explicit XMLHandle( XMLNode& node ) : _node( &node ) {
+      |                         ~~~~~~~~~^~~~
+diff: tinyxml2.S: No such file or directory

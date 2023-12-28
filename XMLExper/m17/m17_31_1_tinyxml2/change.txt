@@ -1,0 +1,15 @@
+diff --git a/tinyxml2.h b/tinyxml2.h
+index bab582c..0939f07 100644
+--- a/tinyxml2.h
++++ b/tinyxml2.h
+@@ -1443,9 +1443,7 @@ public:
+ 		return QueryUnsignedAttribute( name, value );
+ 	}
+ 
+-	XMLError QueryAttribute(const char* name, int64_t* value) const {
+-		return QueryInt64Attribute(name, value);
+-	}
++	/*OMD*/
+ 
+     XMLError QueryAttribute(const char* name, uint64_t* value) const {
+         return QueryUnsigned64Attribute(name, value);

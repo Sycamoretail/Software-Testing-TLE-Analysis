@@ -1,0 +1,13 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..0f17b83 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -767,7 +767,7 @@ char* XMLDocument::Identify( char* p, XMLNode** node, bool first )
+ 
+         // Preserve whitespace pedantically before closing tag, when it's immediately after opening tag
+         if (WhitespaceMode() == PEDANTIC_WHITESPACE && first && p != start && *(p + elementHeaderLen) == '/') {
+-            returnNode = CreateUnlinkedNode<XMLText>(_textPool);
++            /*PCI*/dynamic_cast<tinyxml2::XMLUnknown*>(returnNode) = CreateUnlinkedNode<XMLText>(_textPool);
+             returnNode->_parseLineNum = startLine;
+             p = start;	// Back it up, all the text counts.
+             _parseCurLineNum = startLine;

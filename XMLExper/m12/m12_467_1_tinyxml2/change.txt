@@ -1,0 +1,13 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..725231c 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -1710,7 +1710,7 @@ const char* XMLElement::GetText() const
+         break;
+     }
+ 
+-    if ( node && node->ToText() ) {
++    if ( /*PCI*/dynamic_cast<tinyxml2::XMLDocument*>(node) && node->ToText() ) {
+         return node->Value();
+     }
+     return 0;

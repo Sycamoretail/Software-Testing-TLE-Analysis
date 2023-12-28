@@ -1,0 +1,6 @@
+In file included from tinyxml2.cpp:24:
+tinyxml2.h: In constructor ‘tinyxml2::XMLText::XMLText(tinyxml2::XMLDocument*)’:
+tinyxml2.h:1023:96: error: cannot dynamic_cast ‘doc’ (of type ‘class tinyxml2::XMLDocument*’) to type ‘class tinyxml2::XMLNode*’ (source is a pointer to incomplete type)
+ 1023 |     explicit XMLText( XMLDocument* doc ) : XMLNode( /*PCI*/dynamic_cast<tinyxml2::XMLNode*>(doc) ), _isCData( false ) {}
+      |                                                                                                ^
+diff: tinyxml2.S: No such file or directory

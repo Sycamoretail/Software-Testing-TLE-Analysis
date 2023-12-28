@@ -1,0 +1,42 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..2101d06 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -2427,23 +2427,7 @@ XMLError XMLDocument::LoadFile( FILE* fp )
+ }
+ 
+ 
+-XMLError XMLDocument::SaveFile( const char* filename, bool compact )
+-{
+-    if ( !filename ) {
+-        TIXMLASSERT( false );
+-        SetError( XML_ERROR_FILE_COULD_NOT_BE_OPENED, 0, "filename=<null>" );
+-        return _errorID;
+-    }
+-
+-    FILE* fp = callfopen( filename, "w" );
+-    if ( !fp ) {
+-        SetError( XML_ERROR_FILE_COULD_NOT_BE_OPENED, 0, "filename=%s", filename );
+-        return _errorID;
+-    }
+-    SaveFile(fp, compact);
+-    fclose( fp );
+-    return _errorID;
+-}
++/*OMD*/
+ 
+ 
+ XMLError XMLDocument::SaveFile( FILE* fp, bool compact )
+diff --git a/tinyxml2.h b/tinyxml2.h
+index bab582c..99971d6 100644
+--- a/tinyxml2.h
++++ b/tinyxml2.h
+@@ -1781,7 +1781,7 @@ public:
+     	Returns XML_SUCCESS (0) on success, or
+     	an errorID.
+     */
+-    XMLError SaveFile( const char* filename, bool compact = false );
++    /*OMD*/;
+ 
+     /**
+     	Save the XML file to disk. You are responsible

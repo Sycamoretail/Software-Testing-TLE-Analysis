@@ -1,0 +1,31 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..f41bdea 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -1593,12 +1593,7 @@ void XMLAttribute::SetAttribute( bool v )
+     _value.SetStr( buf );
+ }
+ 
+-void XMLAttribute::SetAttribute( double v )
+-{
+-    char buf[BUF_SIZE];
+-    XMLUtil::ToStr( v, buf, BUF_SIZE );
+-    _value.SetStr( buf );
+-}
++/*OMD*/
+ 
+ void XMLAttribute::SetAttribute( float v )
+ {
+diff --git a/tinyxml2.h b/tinyxml2.h
+index bab582c..ef801ce 100644
+--- a/tinyxml2.h
++++ b/tinyxml2.h
+@@ -1239,7 +1239,7 @@ public:
+     /// Set the attribute to value.
+     void SetAttribute( bool value );
+     /// Set the attribute to value.
+-    void SetAttribute( double value );
++    /*OMD*/;
+     /// Set the attribute to value.
+     void SetAttribute( float value );
+ 

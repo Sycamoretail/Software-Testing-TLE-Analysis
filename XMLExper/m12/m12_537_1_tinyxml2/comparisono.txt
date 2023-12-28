@@ -1,0 +1,7 @@
+tinyxml2.cpp: In member function ‘tinyxml2::XMLComment* tinyxml2::XMLDocument::NewComment(const char*)’:
+tinyxml2.cpp:2296:52: error: invalid conversion from ‘tinyxml2::XMLNode*’ to ‘tinyxml2::XMLComment*’ [-fpermissive]
+ 2296 |     return /*PCI*/dynamic_cast<tinyxml2::XMLNode*>(comment);
+      |                                                    ^~~~~~~
+      |                                                    |
+      |                                                    tinyxml2::XMLNode*
+diff: tinyxml2.o: No such file or directory

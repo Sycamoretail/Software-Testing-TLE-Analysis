@@ -1,0 +1,34 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..4a785cc 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -2446,15 +2446,7 @@ XMLError XMLDocument::SaveFile( const char* filename, bool compact )
+ }
+ 
+ 
+-XMLError XMLDocument::SaveFile( FILE* fp, bool compact )
+-{
+-    // Clear any error from the last save, otherwise it will get reported
+-    // for *this* call.
+-    ClearError();
+-    XMLPrinter stream( fp, compact );
+-    Print( &stream );
+-    return _errorID;
+-}
++/*OMD*/
+ 
+ 
+ XMLError XMLDocument::Parse( const char* xml, size_t nBytes )
+diff --git a/tinyxml2.h b/tinyxml2.h
+index bab582c..8d392ae 100644
+--- a/tinyxml2.h
++++ b/tinyxml2.h
+@@ -1790,7 +1790,7 @@ public:
+     	Returns XML_SUCCESS (0) on success, or
+     	an errorID.
+     */
+-    XMLError SaveFile( FILE* fp, bool compact = false );
++    /*OMD*/;
+ 
+     bool ProcessEntities() const		{
+         return _processEntities;

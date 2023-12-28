@@ -1,0 +1,5 @@
+tinyxml2.cpp: In member function ‘virtual bool tinyxml2::XMLPrinter::Visit(const tinyxml2::XMLDeclaration&)’:
+tinyxml2.cpp:3020:73: error: cannot dynamic_cast ‘declaration’ (of type ‘const class tinyxml2::XMLDeclaration’) to type ‘class tinyxml2::XMLNode&’ (conversion casts away constness)
+ 3020 |     PushDeclaration( /*PCI*/dynamic_cast<tinyxml2::XMLNode&>(declaration).Value() );
+      |                                                                         ^
+diff: tinyxml2.o: No such file or directory

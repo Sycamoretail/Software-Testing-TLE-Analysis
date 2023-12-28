@@ -1,0 +1,13 @@
+diff --git a/tinyxml2.h b/tinyxml2.h
+index bab582c..c7e9697 100644
+--- a/tinyxml2.h
++++ b/tinyxml2.h
+@@ -208,7 +208,7 @@ class DynArray
+ public:
+     DynArray() :
+         _mem( _pool ),
+-        _allocated( INITIAL_SIZE ),
++        /*CID*/
+         _size( 0 )
+     {
+     }

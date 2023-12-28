@@ -1,0 +1,4 @@
+10686a10687,10689
+> 	movzbl	-28(%rbp), %edx
+> 	movb	%dl, 105(%rax)
+> 	movq	-24(%rbp), %rax

@@ -1,0 +1,31 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..d094838 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -1774,12 +1774,7 @@ void XMLElement::SetText( float v )
+ }
+ 
+ 
+-void XMLElement::SetText( double v )
+-{
+-    char buf[BUF_SIZE];
+-    XMLUtil::ToStr( v, buf, BUF_SIZE );
+-    SetText( buf );
+-}
++/*OMD*/
+ 
+ 
+ XMLError XMLElement::QueryIntText( int* ival ) const
+diff --git a/tinyxml2.h b/tinyxml2.h
+index bab582c..bc30db6 100644
+--- a/tinyxml2.h
++++ b/tinyxml2.h
+@@ -1599,7 +1599,7 @@ public:
+ 	/// Convenience method for setting text inside an element. See SetText() for important limitations.
+     void SetText( bool value );
+     /// Convenience method for setting text inside an element. See SetText() for important limitations.
+-    void SetText( double value );
++    /*OMD*/;
+     /// Convenience method for setting text inside an element. See SetText() for important limitations.
+     void SetText( float value );
+ 

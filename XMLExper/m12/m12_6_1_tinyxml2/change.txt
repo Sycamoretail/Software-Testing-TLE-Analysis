@@ -1,0 +1,13 @@
+diff --git a/tinyxml2.h b/tinyxml2.h
+index bab582c..97a8262 100644
+--- a/tinyxml2.h
++++ b/tinyxml2.h
+@@ -1995,7 +1995,7 @@ inline NodeType* XMLDocument::CreateUnlinkedNode( MemPoolT<PoolElementSize>& poo
+     TIXMLASSERT( sizeof( NodeType ) == pool.ItemSize() );
+     NodeType* returnNode = new (pool.Alloc()) NodeType( this );
+     TIXMLASSERT( returnNode );
+-    returnNode->_memPool = &pool;
++    returnNode->_memPool = &/*PCI*/dynamic_cast<tinyxml2::MemPool&>(pool);
+ 
+ 	_unlinked.Push(returnNode);
+     return returnNode;

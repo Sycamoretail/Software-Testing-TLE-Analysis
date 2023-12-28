@@ -1,0 +1,33 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..9d124c8 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -1616,14 +1616,7 @@ XMLElement::XMLElement( XMLDocument* doc ) : XMLNode( doc ),
+ }
+ 
+ 
+-XMLElement::~XMLElement()
+-{
+-    while( _rootAttribute ) {
+-        XMLAttribute* next = _rootAttribute->_next;
+-        DeleteAttribute( _rootAttribute );
+-        _rootAttribute = next;
+-    }
+-}
++/*CDD*/
+ 
+ 
+ const XMLAttribute* XMLElement::FindAttribute( const char* name ) const
+diff --git a/tinyxml2.h b/tinyxml2.h
+index bab582c..df5e333 100644
+--- a/tinyxml2.h
++++ b/tinyxml2.h
+@@ -1690,7 +1690,7 @@ protected:
+ 
+ private:
+     XMLElement( XMLDocument* doc );
+-    virtual ~XMLElement();
++    /*CDD*/;
+     XMLElement( const XMLElement& );	// not supported
+     void operator=( const XMLElement& );	// not supported
+ 

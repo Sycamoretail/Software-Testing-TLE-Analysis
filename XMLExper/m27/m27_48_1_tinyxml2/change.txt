@@ -1,0 +1,13 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..8d98e4b 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -2206,7 +2206,7 @@ XMLDocument::XMLDocument( bool processEntities, Whitespace whitespaceMode ) :
+ 	_parsingDepth(0),
+     _unlinked(),
+     _elementPool(),
+-    _attributePool(),
++    /*CID*/
+     _textPool(),
+     _commentPool()
+ {

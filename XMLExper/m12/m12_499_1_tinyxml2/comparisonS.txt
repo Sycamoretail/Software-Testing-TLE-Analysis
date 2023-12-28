@@ -1,0 +1,5 @@
+tinyxml2.cpp: In member function ‘virtual bool tinyxml2::XMLElement::Accept(tinyxml2::XMLVisitor*) const’:
+tinyxml2.cpp:2160:96: error: cannot dynamic_cast ‘node’ (of type ‘const class tinyxml2::XMLNode*’) to type ‘class tinyxml2::XMLUnknown*’ (conversion casts away constness)
+ 2160 |         for ( const XMLNode* node=FirstChild(); /*PCI*/dynamic_cast<tinyxml2::XMLUnknown*>(node); node=node->NextSibling() ) {
+      |                                                                                                ^
+diff: tinyxml2.S: No such file or directory

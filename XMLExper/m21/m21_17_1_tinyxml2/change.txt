@@ -1,0 +1,13 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..2cf45e2 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -1575,7 +1575,7 @@ void XMLAttribute::SetAttribute(int64_t v)
+ {
+ 	char buf[BUF_SIZE];
+ 	XMLUtil::ToStr(v, buf, BUF_SIZE);
+-	_value.SetStr(buf);
++	/*MCO*/_name.SetStr(buf);
+ }
+ 
+ void XMLAttribute::SetAttribute(uint64_t v)

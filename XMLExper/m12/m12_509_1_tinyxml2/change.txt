@@ -1,0 +1,13 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..a3238b8 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -2227,7 +2227,7 @@ void XMLDocument::MarkInUse(const XMLNode* const node)
+ 	TIXMLASSERT(node->_parent == 0);
+ 
+ 	for (int i = 0; i < _unlinked.Size(); ++i) {
+-		if (node == _unlinked[i]) {
++		if (/*PCI*/dynamic_cast<tinyxml2::XMLComment*>(node) == _unlinked[i]) {
+ 			_unlinked.SwapRemove(i);
+ 			break;
+ 		}

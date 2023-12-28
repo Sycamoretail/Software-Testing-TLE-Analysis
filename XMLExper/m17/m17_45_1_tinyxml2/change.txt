@@ -1,0 +1,42 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..e89d691 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -1950,23 +1950,7 @@ XMLAttribute* XMLElement::FindOrCreateAttribute( const char* name )
+ }
+ 
+ 
+-void XMLElement::DeleteAttribute( const char* name )
+-{
+-    XMLAttribute* prev = 0;
+-    for( XMLAttribute* a=_rootAttribute; a; a=a->_next ) {
+-        if ( XMLUtil::StringEqual( name, a->Name() ) ) {
+-            if ( prev ) {
+-                prev->_next = a->_next;
+-            }
+-            else {
+-                _rootAttribute = a->_next;
+-            }
+-            DeleteAttribute( a );
+-            break;
+-        }
+-        prev = a;
+-    }
+-}
++/*OMD*/
+ 
+ 
+ char* XMLElement::ParseAttributes( char* p, int* curLineNumPtr )
+diff --git a/tinyxml2.h b/tinyxml2.h
+index bab582c..74794eb 100644
+--- a/tinyxml2.h
++++ b/tinyxml2.h
+@@ -1514,7 +1514,7 @@ public:
+     /**
+     	Delete an attribute.
+     */
+-    void DeleteAttribute( const char* name );
++    /*OMD*/;
+ 
+     /// Return the first attribute in the list.
+     const XMLAttribute* FirstAttribute() const {

@@ -1,0 +1,13 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..35e4ca3 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -1010,7 +1010,7 @@ XMLNode* XMLNode::InsertAfterChild( XMLNode* afterThis, XMLNode* addThis )
+         TIXMLASSERT( false );
+         return 0;
+     }
+-    if ( afterThis == addThis ) {
++    if ( /*PCI*/dynamic_cast<tinyxml2::XMLComment*>(afterThis) == addThis ) {
+         // Current state: BeforeThis -> AddThis -> OneAfterAddThis
+         // Now AddThis must disappear from it's location and then
+         // reappear between BeforeThis and OneAfterAddThis.

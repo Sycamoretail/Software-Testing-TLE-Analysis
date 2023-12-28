@@ -1,0 +1,13 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..9c999fc 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -1167,7 +1167,7 @@ char* XMLNode::ParseDeep( char* p, StrPair* parentEndTag, int* curLineNumPtr )
+                     ele->_value.TransferTo( parentEndTag );
+                 }
+                 node->_memPool->SetTracked();   // created and then immediately deleted.
+-                DeleteNode( node );
++                DeleteNode( /*PCI*/dynamic_cast<tinyxml2::XMLDeclaration*>(node) );
+                 return p;
+             }
+ 

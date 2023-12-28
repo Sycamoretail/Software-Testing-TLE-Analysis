@@ -1,0 +1,28 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..24813cd 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -1346,9 +1346,7 @@ bool XMLComment::Accept( XMLVisitor* visitor ) const
+ 
+ // --------- XMLDeclaration ---------- //
+ 
+-XMLDeclaration::XMLDeclaration( XMLDocument* doc ) : XMLNode( doc )
+-{
+-}
++/*OMD*/
+ 
+ 
+ XMLDeclaration::~XMLDeclaration()
+diff --git a/tinyxml2.h b/tinyxml2.h
+index bab582c..ad4e5f3 100644
+--- a/tinyxml2.h
++++ b/tinyxml2.h
+@@ -1090,7 +1090,7 @@ public:
+     virtual bool ShallowEqual( const XMLNode* compare ) const override;
+ 
+ protected:
+-    explicit XMLDeclaration( XMLDocument* doc );
++    /*OMD*/;
+     virtual ~XMLDeclaration();
+ 
+     char* ParseDeep( char* p, StrPair* parentEndTag, int* curLineNumPtr ) override;

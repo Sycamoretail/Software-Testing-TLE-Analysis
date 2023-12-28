@@ -1,0 +1,13 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..c41bb09 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -1160,7 +1160,7 @@ char* XMLNode::ParseDeep( char* p, StrPair* parentEndTag, int* curLineNumPtr )
+         }
+ 
+         XMLElement* ele = node->ToElement();
+-        if ( ele ) {
++        if ( /*PCI*/dynamic_cast<tinyxml2::XMLNode*>(ele) ) {
+             // We read the end tag. Return it to the parent.
+             if ( ele->ClosingType() == XMLElement::CLOSING ) {
+                 if ( parentEndTag ) {

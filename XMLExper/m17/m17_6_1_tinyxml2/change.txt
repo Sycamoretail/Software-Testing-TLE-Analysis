@@ -1,0 +1,15 @@
+diff --git a/tinyxml2.h b/tinyxml2.h
+index bab582c..9384b4f 100644
+--- a/tinyxml2.h
++++ b/tinyxml2.h
+@@ -514,9 +514,7 @@ public:
+         return true;
+     }
+     /// Visit an unknown node.
+-    virtual bool Visit( const XMLUnknown& /*unknown*/ )				{
+-        return true;
+-    }
++    /*OMD*/
+ };
+ 
+ // WARNING: must match XMLDocument::_errorNames[]

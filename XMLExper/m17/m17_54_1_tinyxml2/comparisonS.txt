@@ -1,0 +1,10 @@
+In file included from tinyxml2.cpp:24:
+tinyxml2.h: In instantiation of ‘NodeType* tinyxml2::XMLDocument::CreateUnlinkedNode(tinyxml2::MemPoolT<PoolElementSize>&) [with NodeType = tinyxml2::XMLElement; int PoolElementSize = 120]’:
+tinyxml2.cpp:776:69:   required from here
+tinyxml2.h:1996:28: error: cannot convert ‘tinyxml2::XMLDocument*’ to ‘const tinyxml2::XMLElement&’
+ 1996 |     NodeType* returnNode = new (pool.Alloc()) NodeType( this );
+      |                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+tinyxml2.h:1694:17: note:   initializing argument 1 of ‘tinyxml2::XMLElement::XMLElement(const tinyxml2::XMLElement&)’
+ 1694 |     XMLElement( const XMLElement& ); // not supported
+      |                 ^~~~~~~~~~~~~~~~~
+diff: tinyxml2.S: No such file or directory

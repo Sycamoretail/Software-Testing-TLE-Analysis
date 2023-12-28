@@ -1,0 +1,13 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..df341a6 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -747,7 +747,7 @@ char* XMLDocument::Identify( char* p, XMLNode** node, bool first )
+         p += xmlHeaderLen;
+     }
+     else if ( XMLUtil::StringEqual( p, commentHeader, commentHeaderLen ) ) {
+-        returnNode = CreateUnlinkedNode<XMLComment>( _commentPool );
++        /*PCI*/dynamic_cast<tinyxml2::XMLDeclaration*>(returnNode) = CreateUnlinkedNode<XMLComment>( _commentPool );
+         returnNode->_parseLineNum = _parseCurLineNum;
+         p += commentHeaderLen;
+     }

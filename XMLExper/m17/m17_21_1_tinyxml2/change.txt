@@ -1,0 +1,29 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..0980605 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -1549,10 +1549,7 @@ XMLError XMLAttribute::QueryDoubleValue( double* value ) const
+ }
+ 
+ 
+-void XMLAttribute::SetAttribute( const char* v )
+-{
+-    _value.SetStr( v );
+-}
++/*OMD*/
+ 
+ 
+ void XMLAttribute::SetAttribute( int v )
+diff --git a/tinyxml2.h b/tinyxml2.h
+index bab582c..993e43b 100644
+--- a/tinyxml2.h
++++ b/tinyxml2.h
+@@ -1227,7 +1227,7 @@ public:
+     XMLError QueryFloatValue( float* value ) const;
+ 
+     /// Set the attribute to a string value.
+-    void SetAttribute( const char* value );
++    /*OMD*/;
+     /// Set the attribute to value.
+     void SetAttribute( int value );
+     /// Set the attribute to value.

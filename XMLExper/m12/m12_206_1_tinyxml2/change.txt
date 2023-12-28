@@ -1,0 +1,13 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..486ce5c 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -972,7 +972,7 @@ XMLNode* XMLNode::InsertFirstChild( XMLNode* addThis )
+         TIXMLASSERT( false );
+         return 0;
+     }
+-    InsertChildPreamble( addThis );
++    InsertChildPreamble( /*PCI*/dynamic_cast<tinyxml2::XMLUnknown*>(addThis) );
+ 
+     if ( _firstChild ) {
+         TIXMLASSERT( _lastChild );

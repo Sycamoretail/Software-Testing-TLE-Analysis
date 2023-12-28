@@ -1,0 +1,13 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..1fdfc1f 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -3004,7 +3004,7 @@ bool XMLPrinter::VisitExit( const XMLElement& element )
+ 
+ bool XMLPrinter::Visit( const XMLText& text )
+ {
+-    PushText( text.Value(), text.CData() );
++    PushText( /*PCI*/dynamic_cast<tinyxml2::XMLNode&>(text).Value(), text.CData() );
+     return true;
+ }
+ 

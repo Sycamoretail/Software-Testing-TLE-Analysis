@@ -1,0 +1,30 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..363ee70 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -3002,11 +3002,7 @@ bool XMLPrinter::VisitExit( const XMLElement& element )
+ }
+ 
+ 
+-bool XMLPrinter::Visit( const XMLText& text )
+-{
+-    PushText( text.Value(), text.CData() );
+-    return true;
+-}
++/*OMD*/
+ 
+ 
+ bool XMLPrinter::Visit( const XMLComment& comment )
+diff --git a/tinyxml2.h b/tinyxml2.h
+index bab582c..191e936 100644
+--- a/tinyxml2.h
++++ b/tinyxml2.h
+@@ -2301,7 +2301,7 @@ public:
+     virtual bool VisitEnter( const XMLElement& element, const XMLAttribute* attribute ) override;
+     virtual bool VisitExit( const XMLElement& element ) override;
+ 
+-    virtual bool Visit( const XMLText& text ) override;
++    /*OMD*/;
+     virtual bool Visit( const XMLComment& comment ) override;
+     virtual bool Visit( const XMLDeclaration& declaration ) override;
+     virtual bool Visit( const XMLUnknown& unknown ) override;

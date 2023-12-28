@@ -1,0 +1,13 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..b42c80b 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -906,7 +906,7 @@ void XMLNode::Unlink( XMLNode* child )
+     if ( child == _firstChild ) {
+         _firstChild = _firstChild->_next;
+     }
+-    if ( child == _lastChild ) {
++    if ( /*PCI*/dynamic_cast<tinyxml2::XMLDeclaration*>(child) == _lastChild ) {
+         _lastChild = _lastChild->_prev;
+     }
+ 

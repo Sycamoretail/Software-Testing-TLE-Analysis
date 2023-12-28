@@ -1,0 +1,21 @@
+In file included from tinyxml2.cpp:24:
+tinyxml2.h: In instantiation of ‘NodeType* tinyxml2::XMLDocument::CreateUnlinkedNode(tinyxml2::MemPoolT<PoolElementSize>&) [with NodeType = tinyxml2::XMLDeclaration; int PoolElementSize = 104]’:
+tinyxml2.cpp:745:71:   required from here
+tinyxml2.h:2001:52: error: invalid conversion from ‘tinyxml2::XMLNode*’ to ‘tinyxml2::XMLDeclaration*’ [-fpermissive]
+ 2001 |     return /*PCI*/dynamic_cast<tinyxml2::XMLNode*>(returnNode);
+      |                                                    ^~~~~~~~~~
+      |                                                    |
+      |                                                    tinyxml2::XMLNode*
+tinyxml2.h: In instantiation of ‘NodeType* tinyxml2::XMLDocument::CreateUnlinkedNode(tinyxml2::MemPoolT<PoolElementSize>&) [with NodeType = tinyxml2::XMLComment; int PoolElementSize = 104]’:
+tinyxml2.cpp:750:67:   required from here
+tinyxml2.h:2001:52: error: invalid conversion from ‘tinyxml2::XMLNode*’ to ‘tinyxml2::XMLComment*’ [-fpermissive]
+tinyxml2.h: In instantiation of ‘NodeType* tinyxml2::XMLDocument::CreateUnlinkedNode(tinyxml2::MemPoolT<PoolElementSize>&) [with NodeType = tinyxml2::XMLText; int PoolElementSize = 112]’:
+tinyxml2.cpp:755:64:   required from here
+tinyxml2.h:2001:52: error: invalid conversion from ‘tinyxml2::XMLNode*’ to ‘tinyxml2::XMLText*’ [-fpermissive]
+tinyxml2.h: In instantiation of ‘NodeType* tinyxml2::XMLDocument::CreateUnlinkedNode(tinyxml2::MemPoolT<PoolElementSize>&) [with NodeType = tinyxml2::XMLUnknown; int PoolElementSize = 104]’:
+tinyxml2.cpp:762:67:   required from here
+tinyxml2.h:2001:52: error: invalid conversion from ‘tinyxml2::XMLNode*’ to ‘tinyxml2::XMLUnknown*’ [-fpermissive]
+tinyxml2.h: In instantiation of ‘NodeType* tinyxml2::XMLDocument::CreateUnlinkedNode(tinyxml2::MemPoolT<PoolElementSize>&) [with NodeType = tinyxml2::XMLElement; int PoolElementSize = 120]’:
+tinyxml2.cpp:776:69:   required from here
+tinyxml2.h:2001:52: error: invalid conversion from ‘tinyxml2::XMLNode*’ to ‘tinyxml2::XMLElement*’ [-fpermissive]
+diff: tinyxml2.S: No such file or directory

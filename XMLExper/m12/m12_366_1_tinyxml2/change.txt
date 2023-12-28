@@ -1,0 +1,13 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..b871ea2 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -1153,7 +1153,7 @@ char* XMLNode::ParseDeep( char* p, StrPair* parentEndTag, int* curLineNumPtr )
+                 }
+             }
+             if ( !wellLocated ) {
+-                _document->SetError( XML_ERROR_PARSING_DECLARATION, initialLineNum, "XMLDeclaration value=%s", decl->Value());
++                _document->SetError( XML_ERROR_PARSING_DECLARATION, initialLineNum, "XMLDeclaration value=%s", /*PCI*/dynamic_cast<tinyxml2::XMLNode*>(decl)->Value());
+                 _document->DeleteNode( node );
+                 break;
+             }

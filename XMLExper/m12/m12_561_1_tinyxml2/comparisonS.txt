@@ -1,0 +1,5 @@
+tinyxml2.cpp: In member function ‘virtual bool tinyxml2::XMLPrinter::VisitExit(const tinyxml2::XMLElement&)’:
+tinyxml2.cpp:3000:78: error: cannot dynamic_cast ‘element’ (of type ‘const class tinyxml2::XMLElement’) to type ‘class tinyxml2::XMLNode&’ (conversion casts away constness)
+ 3000 |     CloseElement( CompactMode(/*PCI*/dynamic_cast<tinyxml2::XMLNode&>(element)) );
+      |                                                                              ^
+diff: tinyxml2.S: No such file or directory

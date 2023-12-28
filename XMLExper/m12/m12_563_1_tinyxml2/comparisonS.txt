@@ -1,0 +1,5 @@
+tinyxml2.cpp: In member function ‘virtual bool tinyxml2::XMLPrinter::Visit(const tinyxml2::XMLComment&)’:
+tinyxml2.cpp:3014:65: error: cannot dynamic_cast ‘comment’ (of type ‘const class tinyxml2::XMLComment’) to type ‘class tinyxml2::XMLNode&’ (conversion casts away constness)
+ 3014 |     PushComment( /*PCI*/dynamic_cast<tinyxml2::XMLNode&>(comment).Value() );
+      |                                                                 ^
+diff: tinyxml2.S: No such file or directory

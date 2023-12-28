@@ -1,0 +1,5 @@
+tinyxml2.cpp: In member function ‘const char* tinyxml2::XMLElement::GetText() const’:
+tinyxml2.cpp:1705:59: error: cannot dynamic_cast ‘node’ (of type ‘const class tinyxml2::XMLNode*’) to type ‘class tinyxml2::XMLElement*’ (conversion casts away constness)
+ 1705 |     while (/*PCI*/dynamic_cast<tinyxml2::XMLElement*>(node)) {
+      |                                                           ^
+diff: tinyxml2.S: No such file or directory

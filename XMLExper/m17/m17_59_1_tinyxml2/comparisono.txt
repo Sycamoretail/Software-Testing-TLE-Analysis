@@ -1,0 +1,10 @@
+tinyxml2.cpp: In member function ‘tinyxml2::XMLError tinyxml2::XMLDocument::SaveFile(const char*, bool)’:
+tinyxml2.cpp:2443:14: error: cannot convert ‘FILE*’ {aka ‘_IO_FILE*’} to ‘const char*’
+ 2443 |     SaveFile(fp, compact);
+      |              ^~
+      |              |
+      |              FILE* {aka _IO_FILE*}
+tinyxml2.cpp:2430:45: note:   initializing argument 1 of ‘tinyxml2::XMLError tinyxml2::XMLDocument::SaveFile(const char*, bool)’
+ 2430 | XMLError XMLDocument::SaveFile( const char* filename, bool compact )
+      |                                 ~~~~~~~~~~~~^~~~~~~~
+diff: tinyxml2.o: No such file or directory

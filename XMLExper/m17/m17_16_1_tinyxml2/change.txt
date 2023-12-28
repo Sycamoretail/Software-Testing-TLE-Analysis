@@ -1,0 +1,36 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..c6a42c9 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -808,17 +808,7 @@ bool XMLDocument::Accept( XMLVisitor* visitor ) const
+ 
+ // --------- XMLNode ----------- //
+ 
+-XMLNode::XMLNode( XMLDocument* doc ) :
+-    _document( doc ),
+-    _parent( 0 ),
+-    _value(),
+-    _parseLineNum( 0 ),
+-    _firstChild( 0 ), _lastChild( 0 ),
+-    _prev( 0 ), _next( 0 ),
+-	_userData( 0 ),
+-    _memPool( 0 )
+-{
+-}
++/*OMD*/
+ 
+ 
+ XMLNode::~XMLNode()
+diff --git a/tinyxml2.h b/tinyxml2.h
+index bab582c..29233c2 100644
+--- a/tinyxml2.h
++++ b/tinyxml2.h
+@@ -952,7 +952,7 @@ public:
+ 	void* GetUserData() const			{ return _userData; }
+ 
+ protected:
+-    explicit XMLNode( XMLDocument* );
++    /*OMD*/;
+     virtual ~XMLNode();
+ 
+     virtual char* ParseDeep( char* p, StrPair* parentEndTag, int* curLineNumPtr);

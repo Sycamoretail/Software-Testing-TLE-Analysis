@@ -1,0 +1,16 @@
+diff --git a/tinyxml2.h b/tinyxml2.h
+index bab582c..2727c10 100644
+--- a/tinyxml2.h
++++ b/tinyxml2.h
+@@ -2069,10 +2069,7 @@ public:
+     XMLHandle( const XMLHandle& ref ) : _node( ref._node ) {
+     }
+     /// Assignment
+-    XMLHandle& operator=( const XMLHandle& ref )							{
+-        _node = ref._node;
+-        return *this;
+-    }
++    /*CCA*/
+ 
+     /// Get the first child of this handle.
+     XMLHandle FirstChild() 													{

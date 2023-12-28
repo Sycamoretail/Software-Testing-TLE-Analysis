@@ -1,0 +1,13 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..4b1067d 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -2277,7 +2277,7 @@ void XMLDocument::DeepCopy(XMLDocument* target) const
+ 
+ 	target->Clear();
+ 	for (const XMLNode* node = this->FirstChild(); node; node = node->NextSibling()) {
+-		target->InsertEndChild(node->DeepClone(target));
++		target->InsertEndChild(/*PCI*/dynamic_cast<tinyxml2::XMLComment*>(node)->DeepClone(target));
+ 	}
+ }
+ 

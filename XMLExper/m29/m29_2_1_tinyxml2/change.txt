@@ -1,0 +1,17 @@
+diff --git a/tinyxml2.h b/tinyxml2.h
+index bab582c..b637f22 100644
+--- a/tinyxml2.h
++++ b/tinyxml2.h
+@@ -213,11 +213,7 @@ public:
+     {
+     }
+ 
+-    ~DynArray() {
+-        if ( _mem != _pool ) {
+-            delete [] _mem;
+-        }
+-    }
++    /*CDD*/
+ 
+     void Clear() {
+         _size = 0;

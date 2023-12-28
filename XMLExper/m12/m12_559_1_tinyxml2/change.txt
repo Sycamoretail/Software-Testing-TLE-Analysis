@@ -1,0 +1,13 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..4e22be7 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -2985,7 +2985,7 @@ bool XMLPrinter::VisitEnter( const XMLElement& element, const XMLAttribute* attr
+     if ( element.Parent() ) {
+         parentElem = element.Parent()->ToElement();
+     }
+-    const bool compactMode = parentElem ? CompactMode( *parentElem ) : _compactMode;
++    const bool compactMode = /*PCI*/dynamic_cast<tinyxml2::XMLNode*>(parentElem) ? CompactMode( *parentElem ) : _compactMode;
+     OpenElement( element.Name(), compactMode );
+     while ( attribute ) {
+         PushAttribute( attribute->Name(), attribute->Value() );

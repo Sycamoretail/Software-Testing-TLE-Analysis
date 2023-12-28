@@ -1,0 +1,30 @@
+In file included from tinyxml2.cpp:24:
+tinyxml2.h: In static member function ‘static char* tinyxml2::XMLUtil::SkipWhiteSpace(char*, int*)’:
+tinyxml2.h:556:51: error: invalid conversion from ‘const char*’ to ‘char*’ [-fpermissive]
+  556 |         return const_cast<char*>( SkipWhiteSpace( const_cast<const char*>(p), curLineNumPtr ) );
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                   |
+      |                                                   const char*
+tinyxml2.h:555:46: note:   initializing argument 1 of ‘static char* tinyxml2::XMLUtil::SkipWhiteSpace(char*, int*)’
+  555 |     static char* SkipWhiteSpace( char* const p, int* curLineNumPtr ) {
+      |                                  ~~~~~~~~~~~~^
+tinyxml2.h: In static member function ‘static bool tinyxml2::XMLUtil::IsPrefixHex(const char*)’:
+tinyxml2.h:584:28: error: invalid conversion from ‘const char*’ to ‘char*’ [-fpermissive]
+  584 |         p = SkipWhiteSpace(p, 0);
+      |                            ^
+      |                            |
+      |                            const char*
+tinyxml2.h:555:46: note:   initializing argument 1 of ‘static char* tinyxml2::XMLUtil::SkipWhiteSpace(char*, int*)’
+  555 |     static char* SkipWhiteSpace( char* const p, int* curLineNumPtr ) {
+      |                                  ~~~~~~~~~~~~^
+tinyxml2.cpp: In member function ‘void tinyxml2::StrPair::CollapseWhitespace()’:
+tinyxml2.cpp:270:46: error: invalid conversion from ‘const char*’ to ‘char*’ [-fpermissive]
+  270 |                 p = XMLUtil::SkipWhiteSpace( p, 0 );
+      |                                              ^
+      |                                              |
+      |                                              const char*
+In file included from tinyxml2.cpp:24:
+tinyxml2.h:555:46: note:   initializing argument 1 of ‘static char* tinyxml2::XMLUtil::SkipWhiteSpace(char*, int*)’
+  555 |     static char* SkipWhiteSpace( char* const p, int* curLineNumPtr ) {
+      |                                  ~~~~~~~~~~~~^
+diff: tinyxml2.o: No such file or directory

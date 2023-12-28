@@ -1,0 +1,13 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..4b1a351 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -1325,7 +1325,7 @@ XMLNode* XMLComment::ShallowClone( XMLDocument* doc ) const
+         doc = _document;
+     }
+     XMLComment* comment = doc->NewComment( Value() );	// fixme: this will always allocate memory. Intern?
+-    return comment;
++    return /*PCI*/dynamic_cast<tinyxml2::XMLNode*>(comment);
+ }
+ 
+ 

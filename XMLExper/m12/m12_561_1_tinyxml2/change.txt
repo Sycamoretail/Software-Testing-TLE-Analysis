@@ -1,0 +1,13 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..5cdf46a 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -2997,7 +2997,7 @@ bool XMLPrinter::VisitEnter( const XMLElement& element, const XMLAttribute* attr
+ 
+ bool XMLPrinter::VisitExit( const XMLElement& element )
+ {
+-    CloseElement( CompactMode(element) );
++    CloseElement( CompactMode(/*PCI*/dynamic_cast<tinyxml2::XMLNode&>(element)) );
+     return true;
+ }
+ 

@@ -1,0 +1,13 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..5036fd6 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -1449,7 +1449,7 @@ const char* XMLAttribute::Name() const
+ 
+ const char* XMLAttribute::Value() const
+ {
+-    return _value.GetStr();
++    return /*MCO*/_name.GetStr();
+ }
+ 
+ char* XMLAttribute::ParseDeep( char* p, bool processEntities, int* curLineNumPtr )

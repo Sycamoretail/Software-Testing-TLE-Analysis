@@ -1,0 +1,35 @@
+14909a14910,14913
+> 	leaq	8(%rax), %rdx
+> 	movq	-8(%rbp), %rax
+> 	movq	%rdx, (%rax)
+> 	movq	-8(%rbp), %rax
+15759a15764,15767
+> 	leaq	8(%rax), %rdx
+> 	movq	-8(%rbp), %rax
+> 	movq	%rdx, (%rax)
+> 	movq	-8(%rbp), %rax
+15786a15795,15798
+> 	leaq	8(%rax), %rdx
+> 	movq	-8(%rbp), %rax
+> 	movq	%rdx, (%rax)
+> 	movq	-8(%rbp), %rax
+16407a16420,16423
+> 	leaq	8(%rax), %rdx
+> 	movq	-8(%rbp), %rax
+> 	movq	%rdx, (%rax)
+> 	movq	-8(%rbp), %rax
+16473a16490,16493
+> 	leaq	8(%rax), %rdx
+> 	movq	-8(%rbp), %rax
+> 	movq	%rdx, (%rax)
+> 	movq	-8(%rbp), %rax
+16539a16560,16563
+> 	leaq	8(%rax), %rdx
+> 	movq	-8(%rbp), %rax
+> 	movq	%rdx, (%rax)
+> 	movq	-8(%rbp), %rax
+16604a16629,16632
+> 	movq	-8(%rbp), %rax
+> 	leaq	8(%rax), %rdx
+> 	movq	-8(%rbp), %rax
+> 	movq	%rdx, (%rax)

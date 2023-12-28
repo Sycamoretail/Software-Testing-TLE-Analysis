@@ -1,0 +1,31 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..a4c03a5 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -2797,12 +2797,7 @@ void XMLPrinter::PushAttribute( const char* name, unsigned v )
+ }
+ 
+ 
+-void XMLPrinter::PushAttribute(const char* name, int64_t v)
+-{
+-	char buf[BUF_SIZE];
+-	XMLUtil::ToStr(v, buf, BUF_SIZE);
+-	PushAttribute(name, buf);
+-}
++/*OMD*/
+ 
+ 
+ void XMLPrinter::PushAttribute(const char* name, uint64_t v)
+diff --git a/tinyxml2.h b/tinyxml2.h
+index bab582c..789fe2f 100644
+--- a/tinyxml2.h
++++ b/tinyxml2.h
+@@ -2263,7 +2263,7 @@ public:
+     void PushAttribute( const char* name, const char* value );
+     void PushAttribute( const char* name, int value );
+     void PushAttribute( const char* name, unsigned value );
+-	void PushAttribute( const char* name, int64_t value );
++	/*OMD*/;
+ 	void PushAttribute( const char* name, uint64_t value );
+ 	void PushAttribute( const char* name, bool value );
+     void PushAttribute( const char* name, double value );

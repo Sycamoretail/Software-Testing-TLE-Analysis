@@ -1,0 +1,12 @@
+14996a14997,14998
+> 	movl	$0, 120(%rax)
+> 	movq	-8(%rbp), %rax
+15114a15117,15118
+> 	movl	$0, 120(%rax)
+> 	movq	-8(%rbp), %rax
+15232a15237,15238
+> 	movl	$0, 120(%rax)
+> 	movq	-8(%rbp), %rax
+15349a15356,15357
+> 	movq	-8(%rbp), %rax
+> 	movl	$0, 120(%rax)

@@ -1,0 +1,13 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..78e9828 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -2131,7 +2131,7 @@ bool XMLElement::ShallowEqual( const XMLNode* compare ) const
+ {
+     TIXMLASSERT( compare );
+     const XMLElement* other = compare->ToElement();
+-    if ( other && XMLUtil::StringEqual( other->Name(), Name() )) {
++    if ( /*PCI*/dynamic_cast<tinyxml2::XMLNode*>(other) && XMLUtil::StringEqual( other->Name(), Name() )) {
+ 
+         const XMLAttribute* a=FirstAttribute();
+         const XMLAttribute* b=other->FirstAttribute();

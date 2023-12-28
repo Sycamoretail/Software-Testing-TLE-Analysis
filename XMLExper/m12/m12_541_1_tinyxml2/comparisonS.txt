@@ -1,0 +1,7 @@
+tinyxml2.cpp: In member function ‘tinyxml2::XMLDeclaration* tinyxml2::XMLDocument::NewDeclaration(const char*)’:
+tinyxml2.cpp:2312:52: error: invalid conversion from ‘tinyxml2::XMLNode*’ to ‘tinyxml2::XMLDeclaration*’ [-fpermissive]
+ 2312 |     return /*PCI*/dynamic_cast<tinyxml2::XMLNode*>(dec);
+      |                                                    ^~~
+      |                                                    |
+      |                                                    tinyxml2::XMLNode*
+diff: tinyxml2.S: No such file or directory

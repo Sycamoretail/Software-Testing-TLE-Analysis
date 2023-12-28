@@ -1,0 +1,31 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..5af54f0 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -2883,12 +2883,7 @@ void XMLPrinter::PushText( const char* text, bool cdata )
+ }
+ 
+ 
+-void XMLPrinter::PushText( int64_t value )
+-{
+-    char buf[BUF_SIZE];
+-    XMLUtil::ToStr( value, buf, BUF_SIZE );
+-    PushText( buf, false );
+-}
++/*OMD*/
+ 
+ 
+ void XMLPrinter::PushText( uint64_t value )
+diff --git a/tinyxml2.h b/tinyxml2.h
+index bab582c..e7ef041 100644
+--- a/tinyxml2.h
++++ b/tinyxml2.h
+@@ -2277,7 +2277,7 @@ public:
+     /// Add a text node from an unsigned.
+     void PushText( unsigned value );
+ 	/// Add a text node from a signed 64bit integer.
+-	void PushText( int64_t value );
++	/*OMD*/;
+ 	/// Add a text node from an unsigned 64bit integer.
+ 	void PushText( uint64_t value );
+ 	/// Add a text node from a bool.

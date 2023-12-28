@@ -1,0 +1,13 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..589eabb 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -2293,7 +2293,7 @@ XMLComment* XMLDocument::NewComment( const char* str )
+ {
+     XMLComment* comment = CreateUnlinkedNode<XMLComment>( _commentPool );
+     comment->SetValue( str );
+-    return comment;
++    return /*PCI*/dynamic_cast<tinyxml2::XMLNode*>(comment);
+ }
+ 
+ 

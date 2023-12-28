@@ -1,0 +1,29 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..6fb2452 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -2215,10 +2215,7 @@ XMLDocument::XMLDocument( bool processEntities, Whitespace whitespaceMode ) :
+ }
+ 
+ 
+-XMLDocument::~XMLDocument()
+-{
+-    Clear();
+-}
++/*CDD*/
+ 
+ 
+ void XMLDocument::MarkInUse(const XMLNode* const node)
+diff --git a/tinyxml2.h b/tinyxml2.h
+index bab582c..bdb10ce 100644
+--- a/tinyxml2.h
++++ b/tinyxml2.h
+@@ -1733,7 +1733,7 @@ class TINYXML2_LIB XMLDocument : public XMLNode
+ public:
+     /// constructor
+     XMLDocument( bool processEntities = true, Whitespace whitespaceMode = PRESERVE_WHITESPACE );
+-    ~XMLDocument();
++    /*CDD*/;
+ 
+     virtual XMLDocument* ToDocument() override		{
+         TIXMLASSERT( this == _document );

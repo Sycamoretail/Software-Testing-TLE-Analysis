@@ -1,0 +1,21 @@
+14913a14914,14915
+> 	movl	$10, 88(%rax)
+> 	movq	-8(%rbp), %rax
+15765a15768,15769
+> 	movl	$10, 88(%rax)
+> 	movq	-8(%rbp), %rax
+15794a15799,15800
+> 	movl	$20, 28(%rax)
+> 	movq	-8(%rbp), %rax
+16417a16424,16425
+> 	movl	$10, 88(%rax)
+> 	movq	-8(%rbp), %rax
+16485a16494,16495
+> 	movl	$10, 88(%rax)
+> 	movq	-8(%rbp), %rax
+16553a16564,16565
+> 	movl	$10, 88(%rax)
+> 	movq	-8(%rbp), %rax
+16620a16633,16634
+> 	movq	-8(%rbp), %rax
+> 	movl	$10, 88(%rax)

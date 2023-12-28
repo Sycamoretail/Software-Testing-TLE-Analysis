@@ -1,0 +1,4 @@
+12443a12444,12446
+> 	movzbl	-52(%rbp), %edx
+> 	movb	%dl, 137(%rax)
+> 	movq	-40(%rbp), %rax

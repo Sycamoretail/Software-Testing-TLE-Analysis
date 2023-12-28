@@ -1,0 +1,13 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..e37b0d4 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -2058,7 +2058,7 @@ XMLElement* XMLElement::InsertNewChildElement(const char* name)
+ XMLComment* XMLElement::InsertNewComment(const char* comment)
+ {
+     XMLComment* node = _document->NewComment(comment);
+-    return InsertEndChild(node) ? node : 0;
++    return InsertEndChild(/*PCI*/dynamic_cast<tinyxml2::XMLNode*>(node)) ? node : 0;
+ }
+ 
+ XMLText* XMLElement::InsertNewText(const char* text)

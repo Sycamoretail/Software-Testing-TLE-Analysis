@@ -1,0 +1,15 @@
+diff --git a/tinyxml2.h b/tinyxml2.h
+index bab582c..78a72b2 100644
+--- a/tinyxml2.h
++++ b/tinyxml2.h
+@@ -563,9 +563,7 @@ public:
+         TIXMLASSERT( p );
+         return p;
+     }
+-    static char* SkipWhiteSpace( char* const p, int* curLineNumPtr ) {
+-        return const_cast<char*>( SkipWhiteSpace( const_cast<const char*>(p), curLineNumPtr ) );
+-    }
++    /*OMD*/
+ 
+     // Anything in the high order range of UTF-8 is assumed to not be whitespace. This isn't
+     // correct, but simple, and usually works.

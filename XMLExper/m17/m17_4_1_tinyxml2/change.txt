@@ -1,0 +1,15 @@
+diff --git a/tinyxml2.h b/tinyxml2.h
+index bab582c..d137232 100644
+--- a/tinyxml2.h
++++ b/tinyxml2.h
+@@ -506,9 +506,7 @@ public:
+         return true;
+     }
+     /// Visit a text node.
+-    virtual bool Visit( const XMLText& /*text*/ )					{
+-        return true;
+-    }
++    /*OMD*/
+     /// Visit a comment node.
+     virtual bool Visit( const XMLComment& /*comment*/ )				{
+         return true;

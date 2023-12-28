@@ -1,0 +1,16 @@
+diff --git a/tinyxml2.h b/tinyxml2.h
+index bab582c..be77307 100644
+--- a/tinyxml2.h
++++ b/tinyxml2.h
+@@ -2147,10 +2147,7 @@ public:
+     XMLConstHandle( const XMLConstHandle& ref ) : _node( ref._node ) {
+     }
+ 
+-    XMLConstHandle& operator=( const XMLConstHandle& ref )							{
+-        _node = ref._node;
+-        return *this;
+-    }
++    /*CCA*/
+ 
+     const XMLConstHandle FirstChild() const											{
+         return XMLConstHandle( _node ? _node->FirstChild() : 0 );

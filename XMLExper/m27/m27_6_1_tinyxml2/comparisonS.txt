@@ -1,0 +1,21 @@
+14914a14915,14916
+> 	movq	-8(%rbp), %rax
+> 	movl	$0, 92(%rax)
+15766a15769,15770
+> 	movq	-8(%rbp), %rax
+> 	movl	$0, 92(%rax)
+15795a15800,15801
+> 	movq	-8(%rbp), %rax
+> 	movl	$0, 32(%rax)
+16418a16425,16426
+> 	movq	-8(%rbp), %rax
+> 	movl	$0, 92(%rax)
+16486a16495,16496
+> 	movq	-8(%rbp), %rax
+> 	movl	$0, 92(%rax)
+16554a16565,16566
+> 	movq	-8(%rbp), %rax
+> 	movl	$0, 92(%rax)
+16622a16635,16636
+> 	movq	-8(%rbp), %rax
+> 	movl	$0, 92(%rax)

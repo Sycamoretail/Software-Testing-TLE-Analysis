@@ -1,0 +1,13 @@
+diff --git a/tinyxml2.h b/tinyxml2.h
+index bab582c..e79d6e9 100644
+--- a/tinyxml2.h
++++ b/tinyxml2.h
+@@ -2066,7 +2066,7 @@ public:
+     explicit XMLHandle( XMLNode& node ) : _node( &node ) {
+     }
+     /// Copy constructor
+-    XMLHandle( const XMLHandle& ref ) : _node( ref._node ) {
++    XMLHandle( const XMLHandle& ref )  /*CID*/ {
+     }
+     /// Assignment
+     XMLHandle& operator=( const XMLHandle& ref )							{

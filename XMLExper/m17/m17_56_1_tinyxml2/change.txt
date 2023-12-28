@@ -1,0 +1,43 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..6f687a0 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -2354,24 +2354,7 @@ void XMLDocument::DeleteNode( XMLNode* node )	{
+ }
+ 
+ 
+-XMLError XMLDocument::LoadFile( const char* filename )
+-{
+-    if ( !filename ) {
+-        TIXMLASSERT( false );
+-        SetError( XML_ERROR_FILE_COULD_NOT_BE_OPENED, 0, "filename=<null>" );
+-        return _errorID;
+-    }
+-
+-    Clear();
+-    FILE* fp = callfopen( filename, "rb" );
+-    if ( !fp ) {
+-        SetError( XML_ERROR_FILE_NOT_FOUND, 0, "filename=%s", filename );
+-        return _errorID;
+-    }
+-    LoadFile( fp );
+-    fclose( fp );
+-    return _errorID;
+-}
++/*OMD*/
+ 
+ XMLError XMLDocument::LoadFile( FILE* fp )
+ {
+diff --git a/tinyxml2.h b/tinyxml2.h
+index bab582c..862ea79 100644
+--- a/tinyxml2.h
++++ b/tinyxml2.h
+@@ -1761,7 +1761,7 @@ public:
+     	Returns XML_SUCCESS (0) on success, or
+     	an errorID.
+     */
+-    XMLError LoadFile( const char* filename );
++    /*OMD*/;
+ 
+     /**
+     	Load an XML file from disk. You are responsible

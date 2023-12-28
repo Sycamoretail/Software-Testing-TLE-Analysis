@@ -1,0 +1,13 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..7221b3c 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -1475,7 +1475,7 @@ char* XMLAttribute::ParseDeep( char* p, bool processEntities, int* curLineNumPtr
+     const char endTag[2] = { *p, 0 };
+     ++p;	// move past opening quote
+ 
+-    p = _value.ParseText( p, endTag, processEntities ? StrPair::ATTRIBUTE_VALUE : StrPair::ATTRIBUTE_VALUE_LEAVE_ENTITIES, curLineNumPtr );
++    p = /*MCO*/_name.ParseText( p, endTag, processEntities ? StrPair::ATTRIBUTE_VALUE : StrPair::ATTRIBUTE_VALUE_LEAVE_ENTITIES, curLineNumPtr );
+     return p;
+ }
+ 

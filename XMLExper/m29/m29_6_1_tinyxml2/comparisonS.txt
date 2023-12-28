@@ -1,0 +1,2699 @@
+10824a10825,10918
+> 	.globl	_ZN8tinyxml211XMLDocumentD2Ev
+> 	.type	_ZN8tinyxml211XMLDocumentD2Ev, @function
+> _ZN8tinyxml211XMLDocumentD2Ev:
+> .LFB488:
+> 	.cfi_startproc
+> 	.cfi_personality 0x9b,DW.ref.__gxx_personality_v0
+> 	.cfi_lsda 0x1b,.LLSDA488
+> 	endbr64
+> 	pushq	%rbp
+> 	.cfi_def_cfa_offset 16
+> 	.cfi_offset 6, -16
+> 	movq	%rsp, %rbp
+> 	.cfi_def_cfa_register 6
+> 	subq	$16, %rsp
+> 	movq	%rdi, -8(%rbp)
+> 	leaq	16+_ZTVN8tinyxml211XMLDocumentE(%rip), %rdx
+> 	movq	-8(%rbp), %rax
+> 	movq	%rdx, (%rax)
+> 	movq	-8(%rbp), %rax
+> 	movq	%rax, %rdi
+> 	call	_ZN8tinyxml211XMLDocument5ClearEv
+> 	movq	-8(%rbp), %rax
+> 	addq	$648, %rax
+> 	movq	%rax, %rdi
+> 	call	_ZN8tinyxml28MemPoolTILi104EED1Ev
+> 	movq	-8(%rbp), %rax
+> 	addq	$520, %rax
+> 	movq	%rax, %rdi
+> 	call	_ZN8tinyxml28MemPoolTILi112EED1Ev
+> 	movq	-8(%rbp), %rax
+> 	addq	$392, %rax
+> 	movq	%rax, %rdi
+> 	call	_ZN8tinyxml28MemPoolTILi80EED1Ev
+> 	movq	-8(%rbp), %rax
+> 	addq	$264, %rax
+> 	movq	%rax, %rdi
+> 	call	_ZN8tinyxml28MemPoolTILi120EED1Ev
+> 	movq	-8(%rbp), %rax
+> 	addq	$168, %rax
+> 	movq	%rax, %rdi
+> 	call	_ZN8tinyxml28DynArrayIPNS_7XMLNodeELi10EED1Ev
+> 	movq	-8(%rbp), %rax
+> 	addq	$120, %rax
+> 	movq	%rax, %rdi
+> 	call	_ZN8tinyxml27StrPairD1Ev
+> 	movq	-8(%rbp), %rax
+> 	movq	%rax, %rdi
+> 	call	_ZN8tinyxml27XMLNodeD2Ev
+> 	nop
+> 	leave
+> 	.cfi_def_cfa 7, 8
+> 	ret
+> 	.cfi_endproc
+> .LFE488:
+> 	.section	.gcc_except_table
+> .LLSDA488:
+> 	.byte	0xff
+> 	.byte	0xff
+> 	.byte	0x1
+> 	.uleb128 .LLSDACSE488-.LLSDACSB488
+> .LLSDACSB488:
+> .LLSDACSE488:
+> 	.text
+> 	.size	_ZN8tinyxml211XMLDocumentD2Ev, .-_ZN8tinyxml211XMLDocumentD2Ev
+> 	.globl	_ZN8tinyxml211XMLDocumentD1Ev
+> 	.set	_ZN8tinyxml211XMLDocumentD1Ev,_ZN8tinyxml211XMLDocumentD2Ev
+> 	.align 2
+> 	.globl	_ZN8tinyxml211XMLDocumentD0Ev
+> 	.type	_ZN8tinyxml211XMLDocumentD0Ev, @function
+> _ZN8tinyxml211XMLDocumentD0Ev:
+> .LFB490:
+> 	.cfi_startproc
+> 	endbr64
+> 	pushq	%rbp
+> 	.cfi_def_cfa_offset 16
+> 	.cfi_offset 6, -16
+> 	movq	%rsp, %rbp
+> 	.cfi_def_cfa_register 6
+> 	subq	$16, %rsp
+> 	movq	%rdi, -8(%rbp)
+> 	movq	-8(%rbp), %rax
+> 	movq	%rax, %rdi
+> 	call	_ZN8tinyxml211XMLDocumentD1Ev
+> 	movq	-8(%rbp), %rax
+> 	movl	$776, %esi
+> 	movq	%rax, %rdi
+> 	call	_ZdlPvm@PLT
+> 	leave
+> 	.cfi_def_cfa 7, 8
+> 	ret
+> 	.cfi_endproc
+> .LFE490:
+> 	.size	_ZN8tinyxml211XMLDocumentD0Ev, .-_ZN8tinyxml211XMLDocumentD0Ev
+> 	.align 2
+10828c10922
+< .LFB487:
+---
+> .LFB491:
+10840c10934
+< .L808:
+---
+> .L810:
+10848c10942
+< 	je	.L809
+---
+> 	je	.L811
+10859c10953
+< 	je	.L807
+---
+> 	je	.L809
+10867,10870c10961
+< 	jmp	.L809
+< .L807:
+< 	addl	$1, -4(%rbp)
+< 	jmp	.L808
+---
+> 	jmp	.L811
+10871a10963,10965
+> 	addl	$1, -4(%rbp)
+> 	jmp	.L810
+> .L811:
+10877c10971
+< .LFE487:
+---
+> .LFE491:
+10883c10977
+< .LFB488:
+---
+> .LFB492:
+10896c10990
+< .L812:
+---
+> .L814:
+10904c10998
+< 	je	.L811
+---
+> 	je	.L813
+10915,10916c11009,11010
+< 	jmp	.L812
+< .L811:
+---
+> 	jmp	.L814
+> .L813:
+10923c11017
+< 	je	.L813
+---
+> 	je	.L815
+10928c11022
+< .L813:
+---
+> .L815:
+10938c11032
+< .LFE488:
+---
+> .LFE492:
+10944c11038
+< .LFB489:
+---
+> .LFB493:
+10959c11053
+< 	je	.L818
+---
+> 	je	.L820
+10967c11061
+< .L817:
+---
+> .L819:
+10969c11063
+< 	je	.L814
+---
+> 	je	.L816
+10983,10984c11077,11078
+< 	jmp	.L817
+< .L818:
+---
+> 	jmp	.L819
+> .L820:
+10986c11080
+< .L814:
+---
+> .L816:
+10993c11087
+< .LFE489:
+---
+> .LFE493:
+10999c11093
+< .LFB490:
+---
+> .LFB494:
+11028c11122
+< .LFE490:
+---
+> .LFE494:
+11034c11128
+< .LFB491:
+---
+> .LFB495:
+11063c11157
+< .LFE491:
+---
+> .LFE495:
+11069c11163
+< .LFB492:
+---
+> .LFB496:
+11098c11192
+< .LFE492:
+---
+> .LFE496:
+11109c11203
+< .LFB493:
+---
+> .LFB497:
+11129c11223
+< 	je	.L826
+---
+> 	je	.L828
+11131,11132c11225,11226
+< 	jmp	.L827
+< .L826:
+---
+> 	jmp	.L829
+> .L828:
+11134c11228
+< .L827:
+---
+> .L829:
+11144c11238
+< .LFE493:
+---
+> .LFE497:
+11150c11244
+< .LFB494:
+---
+> .LFB498:
+11179c11273
+< .LFE494:
+---
+> .LFE498:
+11183c11277
+< .LFB495:
+---
+> .LFB499:
+11205c11299
+< .LFE495:
+---
+> .LFE499:
+11211c11305
+< .LFB496:
+---
+> .LFB500:
+11225c11319
+< 	je	.L834
+---
+> 	je	.L836
+11232,11233c11326,11327
+< 	jmp	.L836
+< .L834:
+---
+> 	jmp	.L838
+> .L836:
+11246c11340
+< .L836:
+---
+> .L838:
+11252c11346
+< .LFE496:
+---
+> .LFE500:
+11266c11360
+< .LFB497:
+---
+> .LFB501:
+11278c11372
+< 	jne	.L838
+---
+> 	jne	.L840
+11288,11289c11382,11383
+< 	jmp	.L839
+< .L838:
+---
+> 	jmp	.L841
+> .L840:
+11299c11393
+< 	jne	.L840
+---
+> 	jne	.L842
+11311,11312c11405,11406
+< 	jmp	.L839
+< .L840:
+---
+> 	jmp	.L841
+> .L842:
+11323c11417
+< .L839:
+---
+> .L841:
+11328c11422
+< .LFE497:
+---
+> .LFE501:
+11334c11428
+< .LFB498:
+---
+> .LFB502:
+11357c11451
+< 	jne	.L842
+---
+> 	jne	.L844
+11362c11456
+< 	je	.L842
+---
+> 	je	.L844
+11364,11365c11458,11459
+< 	jmp	.L843
+< .L842:
+---
+> 	jmp	.L845
+> .L844:
+11367c11461
+< .L843:
+---
+> .L845:
+11369c11463
+< 	je	.L844
+---
+> 	je	.L846
+11379,11380c11473,11474
+< 	jmp	.L845
+< .L844:
+---
+> 	jmp	.L847
+> .L846:
+11396c11490
+< 	jne	.L846
+---
+> 	jne	.L848
+11406,11407c11500,11501
+< 	jmp	.L845
+< .L846:
+---
+> 	jmp	.L847
+> .L848:
+11412c11506
+< 	jne	.L847
+---
+> 	jne	.L849
+11422,11423c11516,11517
+< 	jmp	.L845
+< .L847:
+---
+> 	jmp	.L847
+> .L849:
+11425c11519
+< 	jne	.L848
+---
+> 	jne	.L850
+11435,11436c11529,11530
+< 	jmp	.L845
+< .L848:
+---
+> 	jmp	.L847
+> .L850:
+11456c11550
+< 	je	.L849
+---
+> 	je	.L851
+11466,11467c11560,11561
+< 	jmp	.L845
+< .L849:
+---
+> 	jmp	.L847
+> .L851:
+11478c11572
+< .L845:
+---
+> .L847:
+11483c11577
+< .LFE498:
+---
+> .LFE502:
+11493c11587
+< .LFB499:
+---
+> .LFB503:
+11507c11601
+< 	jne	.L851
+---
+> 	jne	.L853
+11517,11518c11611,11612
+< 	jmp	.L852
+< .L851:
+---
+> 	jmp	.L854
+> .L853:
+11525c11619
+< 	jne	.L853
+---
+> 	jne	.L855
+11537,11538c11631,11632
+< 	jmp	.L852
+< .L853:
+---
+> 	jmp	.L854
+> .L855:
+11550c11644
+< .L852:
+---
+> .L854:
+11555c11649
+< .LFE499:
+---
+> .LFE503:
+11561c11655
+< .LFB500:
+---
+> .LFB504:
+11564c11658
+< 	.cfi_lsda 0x1b,.LLSDA500
+---
+> 	.cfi_lsda 0x1b,.LLSDA504
+11607,11609c11701,11703
+< 	je	.L857
+< 	jmp	.L859
+< .L858:
+---
+> 	je	.L859
+> 	jmp	.L861
+> .L860:
+11620c11714
+< .L859:
+---
+> .L861:
+11622c11716
+< .L857:
+---
+> .L859:
+11629c11723
+< .LFE500:
+---
+> .LFE504:
+11631c11725
+< .LLSDA500:
+---
+> .LLSDA504:
+11635,11637c11729,11731
+< 	.uleb128 .LLSDACSE500-.LLSDACSB500
+< .LLSDACSB500:
+< 	.uleb128 .LEHB9-.LFB500
+---
+> 	.uleb128 .LLSDACSE504-.LLSDACSB504
+> .LLSDACSB504:
+> 	.uleb128 .LEHB9-.LFB504
+11641c11735
+< 	.uleb128 .LEHB10-.LFB500
+---
+> 	.uleb128 .LEHB10-.LFB504
+11643c11737
+< 	.uleb128 .L858-.LFB500
+---
+> 	.uleb128 .L860-.LFB504
+11645c11739
+< 	.uleb128 .LEHB11-.LFB500
+---
+> 	.uleb128 .LEHB11-.LFB504
+11649c11743
+< .LLSDACSE500:
+---
+> .LLSDACSE504:
+11656c11750
+< .LFB501:
+---
+> .LFB505:
+11672c11766
+< 	je	.L861
+---
+> 	je	.L863
+11674c11768
+< 	je	.L861
+---
+> 	je	.L863
+11678,11679c11772,11773
+< 	jne	.L862
+< .L861:
+---
+> 	jne	.L864
+> .L863:
+11689,11690c11783,11784
+< 	jmp	.L863
+< .L862:
+---
+> 	jmp	.L865
+> .L864:
+11692c11786
+< 	jne	.L864
+---
+> 	jne	.L866
+11697c11791
+< .L864:
+---
+> .L866:
+11724c11818
+< 	je	.L865
+---
+> 	je	.L867
+11744c11838
+< .L865:
+---
+> .L867:
+11747c11841
+< .L863:
+---
+> .L865:
+11752c11846
+< .LFE501:
+---
+> .LFE505:
+11758c11852
+< .LFB502:
+---
+> .LFB506:
+11761c11855
+< 	.cfi_lsda 0x1b,.LLSDA502
+---
+> 	.cfi_lsda 0x1b,.LLSDA506
+11777c11871
+< 	je	.L867
+---
+> 	je	.L869
+11788,11789c11882,11883
+< 	jmp	.L866
+< .L867:
+---
+> 	jmp	.L868
+> .L869:
+11811,11812c11905,11906
+< 	jmp	.L866
+< .L871:
+---
+> 	jmp	.L868
+> .L873:
+11823c11917
+< .L866:
+---
+> .L868:
+11826c11920
+< 	je	.L870
+---
+> 	je	.L872
+11828c11922
+< .L870:
+---
+> .L872:
+11835c11929
+< .LFE502:
+---
+> .LFE506:
+11837c11931
+< .LLSDA502:
+---
+> .LLSDA506:
+11841,11843c11935,11937
+< 	.uleb128 .LLSDACSE502-.LLSDACSB502
+< .LLSDACSB502:
+< 	.uleb128 .LEHB12-.LFB502
+---
+> 	.uleb128 .LLSDACSE506-.LLSDACSB506
+> .LLSDACSB506:
+> 	.uleb128 .LEHB12-.LFB506
+11847c11941
+< 	.uleb128 .LEHB13-.LFB502
+---
+> 	.uleb128 .LEHB13-.LFB506
+11849c11943
+< 	.uleb128 .L871-.LFB502
+---
+> 	.uleb128 .L873-.LFB506
+11851c11945
+< 	.uleb128 .LEHB14-.LFB502
+---
+> 	.uleb128 .LEHB14-.LFB506
+11855c11949
+< .LLSDACSE502:
+---
+> .LLSDACSE506:
+11862c11956
+< .LFB503:
+---
+> .LFB507:
+11885c11979
+< .LFE503:
+---
+> .LFE507:
+11898c11992
+< .LFB504:
+---
+> .LFB508:
+11918c12012
+< 	je	.L874
+---
+> 	je	.L876
+11927c12021
+< .L874:
+---
+> .L876:
+11964c12058
+< 	je	.L875
+---
+> 	je	.L877
+11998c12092
+< .L875:
+---
+> .L877:
+12007c12101
+< 	je	.L878
+---
+> 	je	.L880
+12011c12105
+< .L878:
+---
+> .L880:
+12015c12109
+< 	je	.L877
+---
+> 	je	.L879
+12017c12111
+< .L877:
+---
+> .L879:
+12025c12119
+< .LFE504:
+---
+> .LFE508:
+12031c12125
+< .LFB505:
+---
+> .LFB509:
+12051c12145
+< .LFE505:
+---
+> .LFE509:
+12061c12155
+< .LFB506:
+---
+> .LFB510:
+12076c12170
+< 	je	.L882
+---
+> 	je	.L884
+12078,12079c12172,12173
+< 	jmp	.L884
+< .L882:
+---
+> 	jmp	.L886
+> .L884:
+12084c12178
+< .L884:
+---
+> .L886:
+12089c12183
+< .LFE506:
+---
+> .LFE510:
+12095c12189
+< .LFB507:
+---
+> .LFB511:
+12115c12209
+< .LFE507:
+---
+> .LFE511:
+12121c12215
+< .LFB508:
+---
+> .LFB512:
+12139c12233
+< .LFE508:
+---
+> .LFE512:
+12145c12239
+< .LFB509:
+---
+> .LFB513:
+12179c12273
+< 	jne	.L889
+---
+> 	jne	.L891
+12187,12188c12281,12282
+< 	jmp	.L888
+< .L889:
+---
+> 	jmp	.L890
+> .L891:
+12201c12295
+< .L888:
+---
+> .L890:
+12206c12300
+< .LFE509:
+---
+> .LFE513:
+12216c12310
+< .LFB510:
+---
+> .LFB514:
+12234c12328
+< 	jne	.L893
+---
+> 	jne	.L895
+12243c12337
+< .L893:
+---
+> .L895:
+12249c12343
+< .LFE510:
+---
+> .LFE514:
+12255c12349
+< .LFB511:
+---
+> .LFB515:
+12274c12368
+< .LFE511:
+---
+> .LFE515:
+12281c12375
+< .LFB514:
+---
+> .LFB518:
+12298c12392
+< .LFE514:
+---
+> .LFE518:
+12307c12401
+< .LFB516:
+---
+> .LFB520:
+12310c12404
+< 	.cfi_lsda 0x1b,.LLSDA516
+---
+> 	.cfi_lsda 0x1b,.LLSDA520
+12357c12451
+< .L898:
+---
+> .L900:
+12359c12453
+< 	jg	.L897
+---
+> 	jg	.L899
+12369,12370c12463,12464
+< 	jmp	.L898
+< .L897:
+---
+> 	jmp	.L900
+> .L899:
+12372c12466
+< .L900:
+---
+> .L902:
+12374c12468
+< 	jg	.L899
+---
+> 	jg	.L901
+12389,12390c12483,12484
+< 	jmp	.L900
+< .L899:
+---
+> 	jmp	.L902
+> .L901:
+12404,12405c12498,12499
+< 	jmp	.L903
+< .L902:
+---
+> 	jmp	.L905
+> .L904:
+12424c12518
+< .L903:
+---
+> .L905:
+12431c12525
+< .LFE516:
+---
+> .LFE520:
+12433c12527
+< .LLSDA516:
+---
+> .LLSDA520:
+12437,12439c12531,12533
+< 	.uleb128 .LLSDACSE516-.LLSDACSB516
+< .LLSDACSB516:
+< 	.uleb128 .LEHB15-.LFB516
+---
+> 	.uleb128 .LLSDACSE520-.LLSDACSB520
+> .LLSDACSB520:
+> 	.uleb128 .LEHB15-.LFB520
+12441c12535
+< 	.uleb128 .L902-.LFB516
+---
+> 	.uleb128 .L904-.LFB520
+12443c12537
+< 	.uleb128 .LEHB16-.LFB516
+---
+> 	.uleb128 .LEHB16-.LFB520
+12447c12541
+< .LLSDACSE516:
+---
+> .LLSDACSE520:
+12456c12550
+< .LFB518:
+---
+> .LFB522:
+12472c12566
+< 	je	.L905
+---
+> 	je	.L907
+12481c12575
+< .L905:
+---
+> .L907:
+12494c12588
+< 	je	.L906
+---
+> 	je	.L908
+12502,12503c12596,12597
+< 	jmp	.L909
+< .L906:
+---
+> 	jmp	.L911
+> .L908:
+12532c12626
+< .L909:
+---
+> .L911:
+12536c12630
+< 	je	.L908
+---
+> 	je	.L910
+12538c12632
+< .L908:
+---
+> .L910:
+12543c12637
+< .LFE518:
+---
+> .LFE522:
+12549c12643
+< .LFB519:
+---
+> .LFB523:
+12564c12658
+< 	je	.L911
+---
+> 	je	.L913
+12572,12573c12666,12667
+< 	jmp	.L913
+< .L911:
+---
+> 	jmp	.L915
+> .L913:
+12592c12686
+< .L913:
+---
+> .L915:
+12598c12692
+< .LFE519:
+---
+> .LFE523:
+12604c12698
+< .LFB520:
+---
+> .LFB524:
+12619c12713
+< 	je	.L915
+---
+> 	je	.L917
+12626,12627c12720,12721
+< 	jmp	.L917
+< .L915:
+---
+> 	jmp	.L919
+> .L917:
+12641c12735
+< .L917:
+---
+> .L919:
+12647c12741
+< .LFE520:
+---
+> .LFE524:
+12657c12751
+< .LFB521:
+---
+> .LFB525:
+12669c12763
+< .L920:
+---
+> .L922:
+12672c12766
+< 	jge	.L921
+---
+> 	jge	.L923
+12678,12679c12772,12773
+< 	jmp	.L920
+< .L921:
+---
+> 	jmp	.L922
+> .L923:
+12685c12779
+< .LFE521:
+---
+> .LFE525:
+12691c12785
+< .LFB522:
+---
+> .LFB526:
+12709c12803
+< 	je	.L923
+---
+> 	je	.L925
+12711c12805
+< 	je	.L924
+---
+> 	je	.L926
+12714,12715c12808,12809
+< 	jmp	.L925
+< .L924:
+---
+> 	jmp	.L927
+> .L926:
+12718c12812
+< .L925:
+---
+> .L927:
+12720c12814
+< .L935:
+---
+> .L937:
+12724c12818
+< 	je	.L926
+---
+> 	je	.L928
+12728c12822
+< 	jle	.L927
+---
+> 	jle	.L929
+12732c12826
+< 	jg	.L927
+---
+> 	jg	.L929
+12740,12741c12834,12835
+< 	je	.L927
+< .L931:
+---
+> 	je	.L929
+> .L933:
+12744c12838
+< 	jnb	.L928
+---
+> 	jnb	.L930
+12750c12844
+< 	jnb	.L929
+---
+> 	jnb	.L931
+12752,12753c12846,12847
+< 	jmp	.L930
+< .L929:
+---
+> 	jmp	.L932
+> .L931:
+12755c12849
+< .L930:
+---
+> .L932:
+12771,12772c12865,12866
+< 	jmp	.L931
+< .L928:
+---
+> 	jmp	.L933
+> .L930:
+12775c12869
+< .L934:
+---
+> .L936:
+12777c12871
+< 	jg	.L932
+---
+> 	jg	.L934
+12787c12881
+< 	jne	.L933
+---
+> 	jne	.L935
+12826,12828d12919
+< 	jmp	.L932
+< .L933:
+< 	addl	$1, -44(%rbp)
+12830c12921,12924
+< .L932:
+---
+> .L935:
+> 	addl	$1, -44(%rbp)
+> 	jmp	.L936
+> .L934:
+12832c12926
+< .L927:
+---
+> .L929:
+12834,12835c12928,12929
+< 	jmp	.L935
+< .L926:
+---
+> 	jmp	.L937
+> .L928:
+12838c12932
+< 	jnb	.L939
+---
+> 	jnb	.L941
+12844c12938
+< 	jnb	.L937
+---
+> 	jnb	.L939
+12846,12847c12940,12941
+< 	jmp	.L938
+< .L937:
+---
+> 	jmp	.L940
+> .L939:
+12849c12943
+< .L938:
+---
+> .L940:
+12862,12863c12956,12957
+< 	jmp	.L939
+< .L923:
+---
+> 	jmp	.L941
+> .L925:
+12869c12963
+< .L939:
+---
+> .L941:
+12875c12969
+< .LFE522:
+---
+> .LFE526:
+12889c12983
+< .LFB523:
+---
+> .LFB527:
+12905c12999
+< 	je	.L941
+---
+> 	je	.L943
+12910c13004
+< .L941:
+---
+> .L943:
+12912c13006
+< 	je	.L943
+---
+> 	je	.L945
+12917c13011
+< .L943:
+---
+> .L945:
+12923c13017
+< .LFE523:
+---
+> .LFE527:
+12929c13023
+< .LFB524:
+---
+> .LFB528:
+12945c13039
+< 	jne	.L949
+---
+> 	jne	.L951
+12949c13043
+< 	je	.L947
+---
+> 	je	.L949
+12960,12961c13054,13055
+< 	jmp	.L948
+< .L947:
+---
+> 	jmp	.L950
+> .L949:
+12965c13059
+< 	jns	.L948
+---
+> 	jns	.L950
+12984c13078
+< .L948:
+---
+> .L950:
+12987,12988c13081,13082
+< 	jmp	.L944
+< .L949:
+---
+> 	jmp	.L946
+> .L951:
+12990c13084
+< .L944:
+---
+> .L946:
+12995c13089
+< .LFE524:
+---
+> .LFE528:
+13001c13095
+< .LFB525:
+---
+> .LFB529:
+13046c13140
+< .LFE525:
+---
+> .LFE529:
+13056c13150
+< .LFB526:
+---
+> .LFB530:
+13104c13198
+< .LFE526:
+---
+> .LFE530:
+13110c13204
+< .LFB527:
+---
+> .LFB531:
+13140c13234
+< 	je	.L953
+---
+> 	je	.L955
+13142c13236
+< .L953:
+---
+> .L955:
+13147c13241
+< .LFE527:
+---
+> .LFE531:
+13153c13247
+< .LFB528:
+---
+> .LFB532:
+13183c13277
+< 	je	.L955
+---
+> 	je	.L957
+13185c13279
+< .L955:
+---
+> .L957:
+13190c13284
+< .LFE528:
+---
+> .LFE532:
+13196c13290
+< .LFB529:
+---
+> .LFB533:
+13226c13320
+< 	je	.L957
+---
+> 	je	.L959
+13228c13322
+< .L957:
+---
+> .L959:
+13233c13327
+< .LFE529:
+---
+> .LFE533:
+13239c13333
+< .LFB530:
+---
+> .LFB534:
+13269c13363
+< 	je	.L959
+---
+> 	je	.L961
+13271c13365
+< .L959:
+---
+> .L961:
+13276c13370
+< .LFE530:
+---
+> .LFE534:
+13282c13376
+< .LFB531:
+---
+> .LFB535:
+13313c13407
+< 	je	.L961
+---
+> 	je	.L963
+13315c13409
+< .L961:
+---
+> .L963:
+13320c13414
+< .LFE531:
+---
+> .LFE535:
+13326c13420
+< .LFB532:
+---
+> .LFB536:
+13356c13450
+< 	je	.L963
+---
+> 	je	.L965
+13358c13452
+< .L963:
+---
+> .L965:
+13363c13457
+< .LFE532:
+---
+> .LFE536:
+13375c13469
+< .LFB533:
+---
+> .LFB537:
+13400c13494
+< 	je	.L965
+---
+> 	je	.L967
+13405,13406c13499,13500
+< 	jmp	.L966
+< .L965:
+---
+> 	jmp	.L968
+> .L967:
+13410c13504
+< 	jns	.L967
+---
+> 	jns	.L969
+13414c13508
+< 	je	.L967
+---
+> 	je	.L969
+13433c13527
+< .L967:
+---
+> .L969:
+13447c13541
+< .L966:
+---
+> .L968:
+13453c13547
+< 	jne	.L968
+---
+> 	jne	.L970
+13456c13550
+< .L968:
+---
+> .L970:
+13460c13554
+< 	jne	.L969
+---
+> 	jne	.L971
+13464c13558
+< 	je	.L969
+---
+> 	je	.L971
+13473c13567
+< .L969:
+---
+> .L971:
+13481c13575
+< .LFE533:
+---
+> .LFE537:
+13487c13581
+< .LFB534:
+---
+> .LFB538:
+13501c13595
+< 	jne	.L973
+---
+> 	jne	.L975
+13512,13513c13606,13607
+< 	jmp	.L970
+< .L973:
+---
+> 	jmp	.L972
+> .L975:
+13515c13609
+< .L970:
+---
+> .L972:
+13520c13614
+< .LFE534:
+---
+> .LFE538:
+13526c13620
+< .LFB535:
+---
+> .LFB539:
+13548c13642
+< 	je	.L975
+---
+> 	je	.L977
+13562,13563c13656,13657
+< 	jmp	.L977
+< .L975:
+---
+> 	jmp	.L979
+> .L977:
+13570c13664
+< .L977:
+---
+> .L979:
+13576c13670
+< .LFE535:
+---
+> .LFE539:
+13582c13676
+< .LFB536:
+---
+> .LFB540:
+13611c13705
+< 	je	.L979
+---
+> 	je	.L981
+13613c13707
+< .L979:
+---
+> .L981:
+13618c13712
+< .LFE536:
+---
+> .LFE540:
+13624c13718
+< .LFB537:
+---
+> .LFB541:
+13653c13747
+< 	je	.L981
+---
+> 	je	.L983
+13655c13749
+< .L981:
+---
+> .L983:
+13660c13754
+< .LFE537:
+---
+> .LFE541:
+13666c13760
+< .LFB538:
+---
+> .LFB542:
+13695c13789
+< 	je	.L983
+---
+> 	je	.L985
+13697c13791
+< .L983:
+---
+> .L985:
+13702c13796
+< .LFE538:
+---
+> .LFE542:
+13708c13802
+< .LFB539:
+---
+> .LFB543:
+13737c13831
+< 	je	.L985
+---
+> 	je	.L987
+13739c13833
+< .L985:
+---
+> .L987:
+13744c13838
+< .LFE539:
+---
+> .LFE543:
+13750c13844
+< .LFB540:
+---
+> .LFB544:
+13780c13874
+< 	je	.L987
+---
+> 	je	.L989
+13782c13876
+< .L987:
+---
+> .L989:
+13787c13881
+< .LFE540:
+---
+> .LFE544:
+13793c13887
+< .LFB541:
+---
+> .LFB545:
+13822c13916
+< 	je	.L989
+---
+> 	je	.L991
+13824c13918
+< .L989:
+---
+> .L991:
+13829c13923
+< .LFE541:
+---
+> .LFE545:
+13835c13929
+< .LFB542:
+---
+> .LFB546:
+13864c13958
+< 	je	.L991
+---
+> 	je	.L993
+13866c13960
+< .L991:
+---
+> .L993:
+13871c13965
+< .LFE542:
+---
+> .LFE546:
+13877c13971
+< .LFB543:
+---
+> .LFB547:
+13913c14007
+< .LFE543:
+---
+> .LFE547:
+13919c14013
+< .LFB544:
+---
+> .LFB548:
+13955c14049
+< .LFE544:
+---
+> .LFE548:
+13961c14055
+< .LFB545:
+---
+> .LFB549:
+14001c14095
+< .LFE545:
+---
+> .LFE549:
+14007c14101
+< .LFB546:
+---
+> .LFB550:
+14027c14121
+< 	je	.L996
+---
+> 	je	.L998
+14033c14127
+< .L996:
+---
+> .L998:
+14039c14133
+< .LFE546:
+---
+> .LFE550:
+14045c14139
+< .LFB547:
+---
+> .LFB551:
+14066c14160
+< 	je	.L999
+---
+> 	je	.L1001
+14076c14170
+< .L999:
+---
+> .L1001:
+14078c14172
+< 	je	.L1000
+---
+> 	je	.L1002
+14091,14092c14185,14186
+< 	jmp	.L1001
+< .L1000:
+---
+> 	jmp	.L1003
+> .L1002:
+14098c14192
+< .L1001:
+---
+> .L1003:
+14110c14204
+< .L1003:
+---
+> .L1005:
+14112c14206
+< 	je	.L1002
+---
+> 	je	.L1004
+14130,14131c14224,14225
+< 	jmp	.L1003
+< .L1002:
+---
+> 	jmp	.L1005
+> .L1004:
+14139c14233
+< .LFE547:
+---
+> .LFE551:
+14145c14239
+< .LFB548:
+---
+> .LFB552:
+14183c14277
+< .LFE548:
+---
+> .LFE552:
+14189c14283
+< .LFB549:
+---
+> .LFB553:
+14222c14316
+< .LFE549:
+---
+> .LFE553:
+14228c14322
+< .LFB550:
+---
+> .LFB554:
+14252c14346
+< .LFE550:
+---
+> .LFE554:
+14258c14352
+< .LFB551:
+---
+> .LFB555:
+14282c14376
+< .LFE551:
+---
+> .LFE555:
+14288c14382
+< .LFB552:
+---
+> .LFB556:
+14312c14406
+< .LFE552:
+---
+> .LFE556:
+14319c14413
+< .LFB554:
+---
+> .LFB558:
+14334c14428
+< 	je	.L1017
+---
+> 	je	.L1019
+14338c14432
+< 	je	.L1017
+---
+> 	je	.L1019
+14343c14437
+< .L1017:
+---
+> .L1019:
+14349c14443
+< .LFE554:
+---
+> .LFE558:
+14358c14452
+< .LFB557:
+---
+> .LFB561:
+14373c14467
+< 	je	.L1020
+---
+> 	je	.L1022
+14377c14471
+< 	je	.L1020
+---
+> 	je	.L1022
+14382c14476
+< .L1020:
+---
+> .L1022:
+14388c14482
+< .LFE557:
+---
+> .LFE561:
+14397c14491
+< .LFB562:
+---
+> .LFB566:
+14434c14528
+< .LFE562:
+---
+> .LFE566:
+14441c14535
+< .LFB563:
+---
+> .LFB567:
+14486c14580
+< .LFE563:
+---
+> .LFE567:
+14493c14587
+< .LFB564:
+---
+> .LFB568:
+14538c14632
+< .LFE564:
+---
+> .LFE568:
+14545c14639
+< .LFB565:
+---
+> .LFB569:
+14590c14684
+< .LFE565:
+---
+> .LFE569:
+14597c14691
+< .LFB566:
+---
+> .LFB570:
+14642c14736
+< .LFE566:
+---
+> .LFE570:
+14649c14743
+< .LFB567:
+---
+> .LFB571:
+14694c14788
+< .LFE567:
+---
+> .LFE571:
+14701c14795
+< .LFB568:
+---
+> .LFB572:
+14714c14808
+< 	jne	.L1033
+---
+> 	jne	.L1035
+14727c14821
+< .L1035:
+---
+> .L1037:
+14729c14823
+< 	jg	.L1034
+---
+> 	jg	.L1036
+14751,14752c14845,14846
+< 	jmp	.L1035
+< .L1034:
+---
+> 	jmp	.L1037
+> .L1036:
+14759c14853
+< .L1033:
+---
+> .L1035:
+14778c14872
+< 	jle	.L1036
+---
+> 	jle	.L1038
+14783c14877
+< .L1036:
+---
+> .L1038:
+14799c14893
+< .LFE568:
+---
+> .LFE572:
+14806c14900
+< .LFB570:
+---
+> .LFB574:
+14828c14922
+< .LFE570:
+---
+> .LFE574:
+14837c14931
+< .LFB573:
+---
+> .LFB577:
+14852c14946
+< 	je	.L1041
+---
+> 	je	.L1043
+14856c14950
+< 	je	.L1041
+---
+> 	je	.L1043
+14861c14955
+< .L1041:
+---
+> .L1043:
+14867c14961
+< .LFE573:
+---
+> .LFE577:
+14876c14970
+< .LFB576:
+---
+> .LFB580:
+14911c15005
+< .LFE576:
+---
+> .LFE580:
+14920c15014
+< .LFB579:
+---
+> .LFB583:
+14923c15017
+< 	.cfi_lsda 0x1b,.LLSDA579
+---
+> 	.cfi_lsda 0x1b,.LLSDA583
+14950c15044
+< .LFE579:
+---
+> .LFE583:
+14952c15046
+< .LLSDA579:
+---
+> .LLSDA583:
+14956,14958c15050,15052
+< 	.uleb128 .LLSDACSE579-.LLSDACSB579
+< .LLSDACSB579:
+< .LLSDACSE579:
+---
+> 	.uleb128 .LLSDACSE583-.LLSDACSB583
+> .LLSDACSB583:
+> .LLSDACSE583:
+14968c15062
+< .LFB581:
+---
+> .LFB585:
+14989c15083
+< .LFE581:
+---
+> .LFE585:
+14996c15090
+< .LFB583:
+---
+> .LFB587:
+15031c15125
+< .LFE583:
+---
+> .LFE587:
+15040c15134
+< .LFB586:
+---
+> .LFB590:
+15043c15137
+< 	.cfi_lsda 0x1b,.LLSDA586
+---
+> 	.cfi_lsda 0x1b,.LLSDA590
+15070c15164
+< .LFE586:
+---
+> .LFE590:
+15072c15166
+< .LLSDA586:
+---
+> .LLSDA590:
+15076,15078c15170,15172
+< 	.uleb128 .LLSDACSE586-.LLSDACSB586
+< .LLSDACSB586:
+< .LLSDACSE586:
+---
+> 	.uleb128 .LLSDACSE590-.LLSDACSB590
+> .LLSDACSB590:
+> .LLSDACSE590:
+15088c15182
+< .LFB588:
+---
+> .LFB592:
+15109c15203
+< .LFE588:
+---
+> .LFE592:
+15116c15210
+< .LFB590:
+---
+> .LFB594:
+15151c15245
+< .LFE590:
+---
+> .LFE594:
+15160c15254
+< .LFB593:
+---
+> .LFB597:
+15163c15257
+< 	.cfi_lsda 0x1b,.LLSDA593
+---
+> 	.cfi_lsda 0x1b,.LLSDA597
+15190c15284
+< .LFE593:
+---
+> .LFE597:
+15192c15286
+< .LLSDA593:
+---
+> .LLSDA597:
+15196,15198c15290,15292
+< 	.uleb128 .LLSDACSE593-.LLSDACSB593
+< .LLSDACSB593:
+< .LLSDACSE593:
+---
+> 	.uleb128 .LLSDACSE597-.LLSDACSB597
+> .LLSDACSB597:
+> .LLSDACSE597:
+15208c15302
+< .LFB595:
+---
+> .LFB599:
+15229c15323
+< .LFE595:
+---
+> .LFE599:
+15236c15330
+< .LFB597:
+---
+> .LFB601:
+15271c15365
+< .LFE597:
+---
+> .LFE601:
+15280c15374
+< .LFB600:
+---
+> .LFB604:
+15283c15377
+< 	.cfi_lsda 0x1b,.LLSDA600
+---
+> 	.cfi_lsda 0x1b,.LLSDA604
+15310c15404
+< .LFE600:
+---
+> .LFE604:
+15312c15406
+< .LLSDA600:
+---
+> .LLSDA604:
+15316,15318c15410,15412
+< 	.uleb128 .LLSDACSE600-.LLSDACSB600
+< .LLSDACSB600:
+< .LLSDACSE600:
+---
+> 	.uleb128 .LLSDACSE604-.LLSDACSB604
+> .LLSDACSB604:
+> .LLSDACSE604:
+15328c15422
+< .LFB602:
+---
+> .LFB606:
+15349c15443
+< .LFE602:
+---
+> .LFE606:
+15356c15450
+< .LFB603:
+---
+> .LFB607:
+15371c15465
+< .LFE603:
+---
+> .LFE607:
+15378c15472
+< .LFB604:
+---
+> .LFB608:
+15398c15492
+< .LFE604:
+---
+> .LFE608:
+15405c15499
+< .LFB605:
+---
+> .LFB609:
+15441c15535
+< .LFE605:
+---
+> .LFE609:
+15448c15542
+< .LFB606:
+---
+> .LFB610:
+15458c15552
+< .L1062:
+---
+> .L1064:
+15465c15559
+< 	je	.L1060
+---
+> 	je	.L1062
+15473c15567
+< 	je	.L1062
+---
+> 	je	.L1064
+15477,15478c15571,15572
+< 	jmp	.L1062
+< .L1060:
+---
+> 	jmp	.L1064
+> .L1062:
+15494c15588
+< .LFE606:
+---
+> .LFE610:
+15501c15595
+< .LFB607:
+---
+> .LFB611:
+15511c15605
+< .L1066:
+---
+> .L1068:
+15518c15612
+< 	je	.L1064
+---
+> 	je	.L1066
+15526c15620
+< 	je	.L1066
+---
+> 	je	.L1068
+15530,15531c15624,15625
+< 	jmp	.L1066
+< .L1064:
+---
+> 	jmp	.L1068
+> .L1066:
+15547c15641
+< .LFE607:
+---
+> .LFE611:
+15554c15648
+< .LFB608:
+---
+> .LFB612:
+15564c15658
+< .L1070:
+---
+> .L1072:
+15571c15665
+< 	je	.L1068
+---
+> 	je	.L1070
+15579c15673
+< 	je	.L1070
+---
+> 	je	.L1072
+15583,15584c15677,15678
+< 	jmp	.L1070
+< .L1068:
+---
+> 	jmp	.L1072
+> .L1070:
+15600c15694
+< .LFE608:
+---
+> .LFE612:
+15607c15701
+< .LFB609:
+---
+> .LFB613:
+15617c15711
+< .L1074:
+---
+> .L1076:
+15624c15718
+< 	je	.L1072
+---
+> 	je	.L1074
+15632c15726
+< 	je	.L1074
+---
+> 	je	.L1076
+15636,15637c15730,15731
+< 	jmp	.L1074
+< .L1072:
+---
+> 	jmp	.L1076
+> .L1074:
+15653c15747
+< .LFE609:
+---
+> .LFE613:
+15660c15754
+< .LFB611:
+---
+> .LFB615:
+15682c15776
+< .LFE611:
+---
+> .LFE615:
+15691c15785
+< .LFB614:
+---
+> .LFB618:
+15713c15807
+< .LFE614:
+---
+> .LFE618:
+15722c15816
+< .LFB616:
+---
+> .LFB620:
+15759c15853
+< .LFE616:
+---
+> .LFE620:
+15766c15860
+< .LFB617:
+---
+> .LFB621:
+15803c15897
+< .LFE617:
+---
+> .LFE621:
+15810c15904
+< .LFB618:
+---
+> .LFB622:
+15836c15930
+< .LFE618:
+---
+> .LFE622:
+15843c15937
+< .LFB619:
+---
+> .LFB623:
+15857c15951
+< 	jle	.L1085
+---
+> 	jle	.L1087
+15880c15974
+< 	je	.L1084
+---
+> 	je	.L1086
+15884c15978
+< 	je	.L1084
+---
+> 	je	.L1086
+15889c15983
+< .L1084:
+---
+> .L1086:
+15896c15990
+< .L1085:
+---
+> .L1087:
+15902c15996
+< .LFE619:
+---
+> .LFE623:
+15909c16003
+< .LFB620:
+---
+> .LFB624:
+15922c16016
+< 	jne	.L1087
+---
+> 	jne	.L1089
+15935c16029
+< .L1089:
+---
+> .L1091:
+15937c16031
+< 	jg	.L1088
+---
+> 	jg	.L1090
+15963,15964c16057,16058
+< 	jmp	.L1089
+< .L1088:
+---
+> 	jmp	.L1091
+> .L1090:
+15971c16065
+< .L1087:
+---
+> .L1089:
+15990c16084
+< 	jle	.L1090
+---
+> 	jle	.L1092
+15995c16089
+< .L1090:
+---
+> .L1092:
+16011c16105
+< .LFE620:
+---
+> .LFE624:
+16018c16112
+< .LFB621:
+---
+> .LFB625:
+16055c16149
+< .LFE621:
+---
+> .LFE625:
+16062c16156
+< .LFB622:
+---
+> .LFB626:
+16075c16169
+< 	jne	.L1094
+---
+> 	jne	.L1096
+16088c16182
+< .L1096:
+---
+> .L1098:
+16090c16184
+< 	jg	.L1095
+---
+> 	jg	.L1097
+16112,16113c16206,16207
+< 	jmp	.L1096
+< .L1095:
+---
+> 	jmp	.L1098
+> .L1097:
+16120c16214
+< .L1094:
+---
+> .L1096:
+16139c16233
+< 	jle	.L1097
+---
+> 	jle	.L1099
+16144c16238
+< .L1097:
+---
+> .L1099:
+16160c16254
+< .LFE622:
+---
+> .LFE626:
+16167c16261
+< .LFB623:
+---
+> .LFB627:
+16180c16274
+< 	jne	.L1100
+---
+> 	jne	.L1102
+16193c16287
+< .L1102:
+---
+> .L1104:
+16195c16289
+< 	jg	.L1101
+---
+> 	jg	.L1103
+16217,16218c16311,16312
+< 	jmp	.L1102
+< .L1101:
+---
+> 	jmp	.L1104
+> .L1103:
+16225c16319
+< .L1100:
+---
+> .L1102:
+16244c16338
+< 	jle	.L1103
+---
+> 	jle	.L1105
+16249c16343
+< .L1103:
+---
+> .L1105:
+16265c16359
+< .LFE623:
+---
+> .LFE627:
+16272c16366
+< .LFB624:
+---
+> .LFB628:
+16309c16403
+< .LFE624:
+---
+> .LFE628:
+16316c16410
+< .LFB626:
+---
+> .LFB630:
+16338c16432
+< .LFE626:
+---
+> .LFE630:
+16347c16441
+< .LFB629:
+---
+> .LFB633:
+16362c16456
+< 	je	.L1109
+---
+> 	je	.L1111
+16366c16460
+< 	je	.L1109
+---
+> 	je	.L1111
+16371c16465
+< .L1109:
+---
+> .L1111:
+16377c16471
+< .LFE629:
+---
+> .LFE633:
+16386c16480
+< .LFB632:
+---
+> .LFB636:
+16408c16502
+< .LFE632:
+---
+> .LFE636:
+16417c16511
+< .LFB635:
+---
+> .LFB639:
+16432c16526
+< 	je	.L1113
+---
+> 	je	.L1115
+16436c16530
+< 	je	.L1113
+---
+> 	je	.L1115
+16441c16535
+< .L1113:
+---
+> .L1115:
+16447c16541
+< .LFE635:
+---
+> .LFE639:
+16456c16550
+< .LFB638:
+---
+> .LFB642:
+16478c16572
+< .LFE638:
+---
+> .LFE642:
+16487c16581
+< .LFB641:
+---
+> .LFB645:
+16502c16596
+< 	je	.L1117
+---
+> 	je	.L1119
+16506c16600
+< 	je	.L1117
+---
+> 	je	.L1119
+16511c16605
+< .L1117:
+---
+> .L1119:
+16517c16611
+< .LFE641:
+---
+> .LFE645:
+16526c16620
+< .LFB644:
+---
+> .LFB648:
+16548c16642
+< .LFE644:
+---
+> .LFE648:
+16557c16651
+< .LFB647:
+---
+> .LFB651:
+16572c16666
+< 	je	.L1121
+---
+> 	je	.L1123
+16576c16670
+< 	je	.L1121
+---
+> 	je	.L1123
+16581c16675
+< .L1121:
+---
+> .L1123:
+16587c16681
+< .LFE647:
+---
+> .LFE651:
+16596c16690
+< .LFB649:
+---
+> .LFB653:
+16613c16707
+< .LFE649:
+---
+> .LFE653:
+16620c16714
+< .LFB650:
+---
+> .LFB654:
+16646c16740
+< .LFE650:
+---
+> .LFE654:
+16653c16747
+< .LFB651:
+---
+> .LFB655:
+16670c16764
+< .LFE651:
+---
+> .LFE655:
+16677c16771
+< .LFB652:
+---
+> .LFB656:
+16703c16797
+< .LFE652:
+---
+> .LFE656:
+16710c16804
+< .LFB653:
+---
+> .LFB657:
+16727c16821
+< .LFE653:
+---
+> .LFE657:
+16734c16828
+< .LFB654:
+---
+> .LFB658:
+16760c16854
+< .LFE654:
+---
+> .LFE658:
+16767c16861
+< .LFB655:
+---
+> .LFB659:
+16784c16878
+< .LFE655:
+---
+> .LFE659:
+16791c16885
+< .LFB656:
+---
+> .LFB660:
+16817c16911
+< .LFE656:
+---
+> .LFE660:
+16824c16918
+< .LFB657:
+---
+> .LFB661:
+16838c16932
+< 	jle	.L1141
+---
+> 	jle	.L1143
+16863c16957
+< 	je	.L1140
+---
+> 	je	.L1142
+16867c16961
+< 	je	.L1140
+---
+> 	je	.L1142
+16872c16966
+< .L1140:
+---
+> .L1142:
+16879c16973
+< .L1141:
+---
+> .L1143:
+16885c16979
+< .LFE657:
+---
+> .LFE661:
+16892c16986
+< .LFB658:
+---
+> .LFB662:
+16929c17023
+< .LFE658:
+---
+> .LFE662:
+16936c17030
+< .LFB659:
+---
+> .LFB663:
+16950c17044
+< 	jle	.L1146
+---
+> 	jle	.L1148
+16975c17069
+< 	je	.L1145
+---
+> 	je	.L1147
+16979c17073
+< 	je	.L1145
+---
+> 	je	.L1147
+16984c17078
+< .L1145:
+---
+> .L1147:
+16991c17085
+< .L1146:
+---
+> .L1148:
+16997c17091
+< .LFE659:
+---
+> .LFE663:
+17004c17098
+< .LFB660:
+---
+> .LFB664:
+17041c17135
+< .LFE660:
+---
+> .LFE664:
+17048c17142
+< .LFB661:
+---
+> .LFB665:
+17085c17179
+< .LFE661:
+---
+> .LFE665:
+17092c17186
+< .LFB662:
+---
+> .LFB666:
+17106c17200
+< 	jle	.L1152
+---
+> 	jle	.L1154
+17131c17225
+< 	je	.L1151
+---
+> 	je	.L1153
+17135c17229
+< 	je	.L1151
+---
+> 	je	.L1153
+17140c17234
+< .L1151:
+---
+> .L1153:
+17147c17241
+< .L1152:
+---
+> .L1154:
+17153c17247
+< .LFE662:
+---
+> .LFE666:
+17160c17254
+< .LFB663:
+---
+> .LFB667:
+17174c17268
+< 	jle	.L1156
+---
+> 	jle	.L1158
+17199c17293
+< 	je	.L1155
+---
+> 	je	.L1157
+17203c17297
+< 	je	.L1155
+---
+> 	je	.L1157
+17208c17302
+< .L1155:
+---
+> .L1157:
+17215c17309
+< .L1156:
+---
+> .L1158:
+17221c17315
+< .LFE663:
+---
+> .LFE667:
+17228c17322
+< .LFB664:
+---
+> .LFB668:
+17242c17336
+< 	jle	.L1160
+---
+> 	jle	.L1162
+17267c17361
+< 	je	.L1159
+---
+> 	je	.L1161
+17271c17365
+< 	je	.L1159
+---
+> 	je	.L1161
+17276c17370
+< .L1159:
+---
+> .L1161:
+17283c17377
+< .L1160:
+---
+> .L1162:
+17289c17383
+< .LFE664:
+---
+> .LFE668:
+17296c17390
+< .LFB665:
+---
+> .LFB669:
+17310c17404
+< 	jle	.L1164
+---
+> 	jle	.L1166
+17335c17429
+< 	je	.L1163
+---
+> 	je	.L1165
+17339c17433
+< 	je	.L1163
+---
+> 	je	.L1165
+17344c17438
+< .L1163:
+---
+> .L1165:
+17351c17445
+< .L1164:
+---
+> .L1166:
+17357c17451
+< .LFE665:
+---
+> .LFE669:
+17382a17477,17502
+> 	.weak	_ZTVN8tinyxml211XMLDocumentE
+> 	.section	.data.rel.ro.local._ZTVN8tinyxml211XMLDocumentE,"awG",@progbits,_ZTVN8tinyxml211XMLDocumentE,comdat
+> 	.align 8
+> 	.type	_ZTVN8tinyxml211XMLDocumentE, @object
+> 	.size	_ZTVN8tinyxml211XMLDocumentE, 160
+> _ZTVN8tinyxml211XMLDocumentE:
+> 	.quad	0
+> 	.quad	_ZTIN8tinyxml211XMLDocumentE
+> 	.quad	_ZN8tinyxml27XMLNode9ToElementEv
+> 	.quad	_ZN8tinyxml27XMLNode6ToTextEv
+> 	.quad	_ZN8tinyxml27XMLNode9ToCommentEv
+> 	.quad	_ZN8tinyxml211XMLDocument10ToDocumentEv
+> 	.quad	_ZN8tinyxml27XMLNode13ToDeclarationEv
+> 	.quad	_ZN8tinyxml27XMLNode9ToUnknownEv
+> 	.quad	_ZNK8tinyxml27XMLNode9ToElementEv
+> 	.quad	_ZNK8tinyxml27XMLNode6ToTextEv
+> 	.quad	_ZNK8tinyxml27XMLNode9ToCommentEv
+> 	.quad	_ZNK8tinyxml211XMLDocument10ToDocumentEv
+> 	.quad	_ZNK8tinyxml27XMLNode13ToDeclarationEv
+> 	.quad	_ZNK8tinyxml27XMLNode9ToUnknownEv
+> 	.quad	_ZNK8tinyxml211XMLDocument12ShallowCloneEPS0_
+> 	.quad	_ZNK8tinyxml211XMLDocument12ShallowEqualEPKNS_7XMLNodeE
+> 	.quad	_ZNK8tinyxml211XMLDocument6AcceptEPNS_10XMLVisitorE
+> 	.quad	_ZN8tinyxml211XMLDocumentD1Ev
+> 	.quad	_ZN8tinyxml211XMLDocumentD0Ev
+> 	.quad	_ZN8tinyxml27XMLNode9ParseDeepEPcPNS_7StrPairEPi
+17539,17646d17658
+< 	.weak	_ZTVN8tinyxml211XMLDocumentE
+< 	.section	.data.rel.ro.local._ZTVN8tinyxml211XMLDocumentE,"awG",@progbits,_ZTVN8tinyxml211XMLDocumentE,comdat
+< 	.align 8
+< 	.type	_ZTVN8tinyxml211XMLDocumentE, @object
+< 	.size	_ZTVN8tinyxml211XMLDocumentE, 160
+< _ZTVN8tinyxml211XMLDocumentE:
+< 	.quad	0
+< 	.quad	_ZTIN8tinyxml211XMLDocumentE
+< 	.quad	_ZN8tinyxml27XMLNode9ToElementEv
+< 	.quad	_ZN8tinyxml27XMLNode6ToTextEv
+< 	.quad	_ZN8tinyxml27XMLNode9ToCommentEv
+< 	.quad	_ZN8tinyxml211XMLDocument10ToDocumentEv
+< 	.quad	_ZN8tinyxml27XMLNode13ToDeclarationEv
+< 	.quad	_ZN8tinyxml27XMLNode9ToUnknownEv
+< 	.quad	_ZNK8tinyxml27XMLNode9ToElementEv
+< 	.quad	_ZNK8tinyxml27XMLNode6ToTextEv
+< 	.quad	_ZNK8tinyxml27XMLNode9ToCommentEv
+< 	.quad	_ZNK8tinyxml211XMLDocument10ToDocumentEv
+< 	.quad	_ZNK8tinyxml27XMLNode13ToDeclarationEv
+< 	.quad	_ZNK8tinyxml27XMLNode9ToUnknownEv
+< 	.quad	_ZNK8tinyxml211XMLDocument12ShallowCloneEPS0_
+< 	.quad	_ZNK8tinyxml211XMLDocument12ShallowEqualEPKNS_7XMLNodeE
+< 	.quad	_ZNK8tinyxml211XMLDocument6AcceptEPNS_10XMLVisitorE
+< 	.quad	_ZN8tinyxml211XMLDocumentD1Ev
+< 	.quad	_ZN8tinyxml211XMLDocumentD0Ev
+< 	.quad	_ZN8tinyxml27XMLNode9ParseDeepEPcPNS_7StrPairEPi
+< 	.section	.text._ZN8tinyxml211XMLDocumentD2Ev,"axG",@progbits,_ZN8tinyxml211XMLDocumentD5Ev,comdat
+< 	.align 2
+< 	.weak	_ZN8tinyxml211XMLDocumentD2Ev
+< 	.type	_ZN8tinyxml211XMLDocumentD2Ev, @function
+< _ZN8tinyxml211XMLDocumentD2Ev:
+< .LFB667:
+< 	.cfi_startproc
+< 	endbr64
+< 	pushq	%rbp
+< 	.cfi_def_cfa_offset 16
+< 	.cfi_offset 6, -16
+< 	movq	%rsp, %rbp
+< 	.cfi_def_cfa_register 6
+< 	subq	$16, %rsp
+< 	movq	%rdi, -8(%rbp)
+< 	leaq	16+_ZTVN8tinyxml211XMLDocumentE(%rip), %rdx
+< 	movq	-8(%rbp), %rax
+< 	movq	%rdx, (%rax)
+< 	movq	-8(%rbp), %rax
+< 	addq	$648, %rax
+< 	movq	%rax, %rdi
+< 	call	_ZN8tinyxml28MemPoolTILi104EED1Ev
+< 	movq	-8(%rbp), %rax
+< 	addq	$520, %rax
+< 	movq	%rax, %rdi
+< 	call	_ZN8tinyxml28MemPoolTILi112EED1Ev
+< 	movq	-8(%rbp), %rax
+< 	addq	$392, %rax
+< 	movq	%rax, %rdi
+< 	call	_ZN8tinyxml28MemPoolTILi80EED1Ev
+< 	movq	-8(%rbp), %rax
+< 	addq	$264, %rax
+< 	movq	%rax, %rdi
+< 	call	_ZN8tinyxml28MemPoolTILi120EED1Ev
+< 	movq	-8(%rbp), %rax
+< 	addq	$168, %rax
+< 	movq	%rax, %rdi
+< 	call	_ZN8tinyxml28DynArrayIPNS_7XMLNodeELi10EED1Ev
+< 	movq	-8(%rbp), %rax
+< 	addq	$120, %rax
+< 	movq	%rax, %rdi
+< 	call	_ZN8tinyxml27StrPairD1Ev
+< 	movq	-8(%rbp), %rax
+< 	movq	%rax, %rdi
+< 	call	_ZN8tinyxml27XMLNodeD2Ev
+< 	nop
+< 	leave
+< 	.cfi_def_cfa 7, 8
+< 	ret
+< 	.cfi_endproc
+< .LFE667:
+< 	.size	_ZN8tinyxml211XMLDocumentD2Ev, .-_ZN8tinyxml211XMLDocumentD2Ev
+< 	.weak	_ZN8tinyxml211XMLDocumentD1Ev
+< 	.set	_ZN8tinyxml211XMLDocumentD1Ev,_ZN8tinyxml211XMLDocumentD2Ev
+< 	.section	.text._ZN8tinyxml211XMLDocumentD0Ev,"axG",@progbits,_ZN8tinyxml211XMLDocumentD5Ev,comdat
+< 	.align 2
+< 	.weak	_ZN8tinyxml211XMLDocumentD0Ev
+< 	.type	_ZN8tinyxml211XMLDocumentD0Ev, @function
+< _ZN8tinyxml211XMLDocumentD0Ev:
+< .LFB669:
+< 	.cfi_startproc
+< 	endbr64
+< 	pushq	%rbp
+< 	.cfi_def_cfa_offset 16
+< 	.cfi_offset 6, -16
+< 	movq	%rsp, %rbp
+< 	.cfi_def_cfa_register 6
+< 	subq	$16, %rsp
+< 	movq	%rdi, -8(%rbp)
+< 	movq	-8(%rbp), %rax
+< 	movq	%rax, %rdi
+< 	call	_ZN8tinyxml211XMLDocumentD1Ev
+< 	movq	-8(%rbp), %rax
+< 	movl	$776, %esi
+< 	movq	%rax, %rdi
+< 	call	_ZdlPvm@PLT
+< 	leave
+< 	.cfi_def_cfa 7, 8
+< 	ret
+< 	.cfi_endproc
+< .LFE669:
+< 	.size	_ZN8tinyxml211XMLDocumentD0Ev, .-_ZN8tinyxml211XMLDocumentD0Ev

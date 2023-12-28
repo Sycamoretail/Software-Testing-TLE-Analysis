@@ -1,0 +1,13 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..e089c86 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -779,7 +779,7 @@ char* XMLDocument::Identify( char* p, XMLNode** node, bool first )
+         }
+     }
+     else {
+-        returnNode = CreateUnlinkedNode<XMLText>( _textPool );
++        /*PCI*/dynamic_cast<tinyxml2::XMLElement*>(returnNode) = CreateUnlinkedNode<XMLText>( _textPool );
+         returnNode->_parseLineNum = _parseCurLineNum; // Report line of first non-whitespace character
+         p = start;	// Back it up, all the text counts.
+         _parseCurLineNum = startLine;

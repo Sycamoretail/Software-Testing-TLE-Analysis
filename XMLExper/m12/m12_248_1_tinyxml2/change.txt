@@ -1,0 +1,13 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..df82347 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -1015,7 +1015,7 @@ XMLNode* XMLNode::InsertAfterChild( XMLNode* afterThis, XMLNode* addThis )
+         // Now AddThis must disappear from it's location and then
+         // reappear between BeforeThis and OneAfterAddThis.
+         // So just leave it where it is.
+-        return addThis;
++        return /*PCI*/dynamic_cast<tinyxml2::XMLUnknown*>(addThis);
+     }
+ 
+     if ( afterThis->_next == 0 ) {

@@ -1,0 +1,34 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..0eab80f 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -2028,15 +2028,7 @@ char* XMLElement::ParseAttributes( char* p, int* curLineNumPtr )
+     return p;
+ }
+ 
+-void XMLElement::DeleteAttribute( XMLAttribute* attribute )
+-{
+-    if ( attribute == 0 ) {
+-        return;
+-    }
+-    MemPool* pool = attribute->_memPool;
+-    attribute->~XMLAttribute();
+-    pool->Free( attribute );
+-}
++/*OMD*/
+ 
+ XMLAttribute* XMLElement::CreateAttribute()
+ {
+diff --git a/tinyxml2.h b/tinyxml2.h
+index bab582c..6390e6b 100644
+--- a/tinyxml2.h
++++ b/tinyxml2.h
+@@ -1696,7 +1696,7 @@ private:
+ 
+     XMLAttribute* FindOrCreateAttribute( const char* name );
+     char* ParseAttributes( char* p, int* curLineNumPtr );
+-    static void DeleteAttribute( XMLAttribute* attribute );
++    /*OMD*/;
+     XMLAttribute* CreateAttribute();
+ 
+     enum { BUF_SIZE = 200 };

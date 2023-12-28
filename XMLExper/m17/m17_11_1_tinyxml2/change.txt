@@ -1,0 +1,29 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..8fabc7a 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -580,10 +580,7 @@ void XMLUtil::ToStr( unsigned v, char* buffer, int bufferSize )
+ }
+ 
+ 
+-void XMLUtil::ToStr( bool v, char* buffer, int bufferSize )
+-{
+-    TIXML_SNPRINTF( buffer, bufferSize, "%s", v ? writeBoolTrue : writeBoolFalse);
+-}
++/*OMD*/
+ 
+ /*
+ 	ToStr() of a number is a very tricky topic.
+diff --git a/tinyxml2.h b/tinyxml2.h
+index bab582c..276c05f 100644
+--- a/tinyxml2.h
++++ b/tinyxml2.h
+@@ -619,7 +619,7 @@ public:
+     // converts primitive types to strings
+     static void ToStr( int v, char* buffer, int bufferSize );
+     static void ToStr( unsigned v, char* buffer, int bufferSize );
+-    static void ToStr( bool v, char* buffer, int bufferSize );
++    /*OMD*/;
+     static void ToStr( float v, char* buffer, int bufferSize );
+     static void ToStr( double v, char* buffer, int bufferSize );
+ 	static void ToStr(int64_t v, char* buffer, int bufferSize);

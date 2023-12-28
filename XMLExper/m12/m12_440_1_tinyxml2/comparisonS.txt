@@ -1,0 +1,5 @@
+tinyxml2.cpp: In member function ‘virtual bool tinyxml2::XMLComment::ShallowEqual(const tinyxml2::XMLNode*) const’:
+tinyxml2.cpp:1336:61: error: cannot dynamic_cast ‘comment’ (of type ‘const class tinyxml2::XMLComment*’) to type ‘class tinyxml2::XMLNode*’ (conversion casts away constness)
+ 1336 |     return ( /*PCI*/dynamic_cast<tinyxml2::XMLNode*>(comment) && XMLUtil::StringEqual( comment->Value(), Value() ));
+      |                                                             ^
+diff: tinyxml2.S: No such file or directory

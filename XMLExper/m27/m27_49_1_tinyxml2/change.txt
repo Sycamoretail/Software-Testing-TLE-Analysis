@@ -1,0 +1,13 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..1ada62f 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -2207,7 +2207,7 @@ XMLDocument::XMLDocument( bool processEntities, Whitespace whitespaceMode ) :
+     _unlinked(),
+     _elementPool(),
+     _attributePool(),
+-    _textPool(),
++    /*CID*/
+     _commentPool()
+ {
+     // avoid VC++ C4355 warning about 'this' in initializer list (C4355 is off by default in VS2012+)

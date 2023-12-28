@@ -1,0 +1,13 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..3904ebd 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -2340,7 +2340,7 @@ void XMLDocument::DeleteNode( XMLNode* node )	{
+     TIXMLASSERT( node );
+     TIXMLASSERT(node->_document == this );
+     if (node->_parent) {
+-        node->_parent->DeleteChild( node );
++        node->/*MCO*/_prev->DeleteChild( node );
+     }
+     else {
+         // Isn't in the tree.

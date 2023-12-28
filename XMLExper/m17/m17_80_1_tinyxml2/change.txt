@@ -1,0 +1,15 @@
+diff --git a/tinyxml2.h b/tinyxml2.h
+index bab582c..bf5b339 100644
+--- a/tinyxml2.h
++++ b/tinyxml2.h
+@@ -2294,9 +2294,7 @@ public:
+     void PushUnknown( const char* value );
+ 
+     virtual bool VisitEnter( const XMLDocument& /*doc*/ ) override;
+-    virtual bool VisitExit( const XMLDocument& /*doc*/ ) override	{
+-        return true;
+-    }
++    /*OMD*/
+ 
+     virtual bool VisitEnter( const XMLElement& element, const XMLAttribute* attribute ) override;
+     virtual bool VisitExit( const XMLElement& element ) override;

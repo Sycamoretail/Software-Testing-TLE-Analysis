@@ -1,0 +1,13 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..3748a96 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -2349,7 +2349,7 @@ void XMLDocument::DeleteNode( XMLNode* node )	{
+         // it was never used.
+         node->_memPool->SetTracked();
+         // Call the static XMLNode version:
+-        XMLNode::DeleteNode(node);
++        XMLNode::DeleteNode(/*PCI*/dynamic_cast<tinyxml2::XMLDocument*>(node));
+     }
+ }
+ 

@@ -1,0 +1,4 @@
+12436a12437,12439
+> 	movl	-56(%rbp), %edx
+> 	movl	%edx, 128(%rax)
+> 	movq	-40(%rbp), %rax

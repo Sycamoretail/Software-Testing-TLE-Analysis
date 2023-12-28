@@ -1,0 +1,29 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..c65d5cc 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -3022,10 +3022,6 @@ bool XMLPrinter::Visit( const XMLDeclaration& declaration )
+ }
+ 
+ 
+-bool XMLPrinter::Visit( const XMLUnknown& unknown )
+-{
+-    PushUnknown( unknown.Value() );
+-    return true;
+-}
++/*OMD*/
+ 
+ }   // namespace tinyxml2
+diff --git a/tinyxml2.h b/tinyxml2.h
+index bab582c..175d687 100644
+--- a/tinyxml2.h
++++ b/tinyxml2.h
+@@ -2304,7 +2304,7 @@ public:
+     virtual bool Visit( const XMLText& text ) override;
+     virtual bool Visit( const XMLComment& comment ) override;
+     virtual bool Visit( const XMLDeclaration& declaration ) override;
+-    virtual bool Visit( const XMLUnknown& unknown ) override;
++    /*OMD*/;
+ 
+     /**
+     	If in print to memory mode, return a pointer to

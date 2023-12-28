@@ -1,0 +1,29 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..8a709ff 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -568,10 +568,7 @@ const char* XMLUtil::GetCharacterRef( const char* p, char* value, int* length )
+ }
+ 
+ 
+-void XMLUtil::ToStr( int v, char* buffer, int bufferSize )
+-{
+-    TIXML_SNPRINTF( buffer, bufferSize, "%d", v );
+-}
++/*OMD*/
+ 
+ 
+ void XMLUtil::ToStr( unsigned v, char* buffer, int bufferSize )
+diff --git a/tinyxml2.h b/tinyxml2.h
+index bab582c..0541b27 100644
+--- a/tinyxml2.h
++++ b/tinyxml2.h
+@@ -617,7 +617,7 @@ public:
+     static void ConvertUTF32ToUTF8( unsigned long input, char* output, int* length );
+ 
+     // converts primitive types to strings
+-    static void ToStr( int v, char* buffer, int bufferSize );
++    /*OMD*/;
+     static void ToStr( unsigned v, char* buffer, int bufferSize );
+     static void ToStr( bool v, char* buffer, int bufferSize );
+     static void ToStr( float v, char* buffer, int bufferSize );

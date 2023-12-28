@@ -1,0 +1,5 @@
+tinyxml2.cpp: In member function ‘virtual tinyxml2::XMLNode* tinyxml2::XMLUnknown::ShallowClone(tinyxml2::XMLDocument*) const’:
+tinyxml2.cpp:1422:56: error: lvalue required as left operand of assignment
+ 1422 |         /*PCI*/dynamic_cast<tinyxml2::XMLNode*>(doc) = _document;
+      |                                                        ^~~~~~~~~
+diff: tinyxml2.S: No such file or directory

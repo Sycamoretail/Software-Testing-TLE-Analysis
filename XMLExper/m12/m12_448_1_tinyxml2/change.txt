@@ -1,0 +1,13 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..6a200e8 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -1395,7 +1395,7 @@ bool XMLDeclaration::Accept( XMLVisitor* visitor ) const
+ 
+ // --------- XMLUnknown ---------- //
+ 
+-XMLUnknown::XMLUnknown( XMLDocument* doc ) : XMLNode( doc )
++XMLUnknown::XMLUnknown( XMLDocument* doc ) : XMLNode( /*PCI*/dynamic_cast<tinyxml2::XMLNode*>(doc) )
+ {
+ }
+ 

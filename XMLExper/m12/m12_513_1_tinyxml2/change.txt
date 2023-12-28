@@ -1,0 +1,13 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..3f36e4c 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -2271,7 +2271,7 @@ void XMLDocument::Clear()
+ void XMLDocument::DeepCopy(XMLDocument* target) const
+ {
+ 	TIXMLASSERT(target);
+-    if (target == this) {
++    if (/*PCI*/dynamic_cast<tinyxml2::XMLNode*>(target) == this) {
+         return; // technically success - a no-op.
+     }
+ 

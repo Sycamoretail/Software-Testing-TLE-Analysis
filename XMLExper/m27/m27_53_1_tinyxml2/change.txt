@@ -1,0 +1,13 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..ad70603 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -2592,7 +2592,7 @@ void XMLDocument::PopDepth()
+ XMLPrinter::XMLPrinter( FILE* file, bool compact, int depth ) :
+     _elementJustOpened( false ),
+     _stack(),
+-    _firstElement( true ),
++    /*CID*/
+     _fp( file ),
+     _depth( depth ),
+     _textDepth( -1 ),

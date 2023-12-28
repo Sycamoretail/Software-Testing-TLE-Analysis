@@ -1,0 +1,15 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..b71ba0a 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -815,8 +815,8 @@ XMLNode::XMLNode( XMLDocument* doc ) :
+     _parseLineNum( 0 ),
+     _firstChild( 0 ), _lastChild( 0 ),
+     _prev( 0 ), _next( 0 ),
+-	_userData( 0 ),
+-    _memPool( 0 )
++	_userData( 0 )
++    /*CID*/
+ {
+ }
+ 

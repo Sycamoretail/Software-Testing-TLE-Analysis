@@ -1,0 +1,24 @@
+diff --git a/tinyxml2.h b/tinyxml2.h
+index bab582c..8606b05 100644
+--- a/tinyxml2.h
++++ b/tinyxml2.h
+@@ -551,18 +551,7 @@ enum XMLError {
+ class TINYXML2_LIB XMLUtil
+ {
+ public:
+-    static const char* SkipWhiteSpace( const char* p, int* curLineNumPtr )	{
+-        TIXMLASSERT( p );
+-
+-        while( IsWhiteSpace(*p) ) {
+-            if (curLineNumPtr && *p == '\n') {
+-                ++(*curLineNumPtr);
+-            }
+-            ++p;
+-        }
+-        TIXMLASSERT( p );
+-        return p;
+-    }
++    /*OMD*/
+     static char* SkipWhiteSpace( char* const p, int* curLineNumPtr ) {
+         return const_cast<char*>( SkipWhiteSpace( const_cast<const char*>(p), curLineNumPtr ) );
+     }

@@ -1,0 +1,7 @@
+tinyxml2.cpp: In member function ‘tinyxml2::XMLText* tinyxml2::XMLDocument::NewText(const char*)’:
+tinyxml2.cpp:2304:52: error: invalid conversion from ‘tinyxml2::XMLNode*’ to ‘tinyxml2::XMLText*’ [-fpermissive]
+ 2304 |     return /*PCI*/dynamic_cast<tinyxml2::XMLNode*>(text);
+      |                                                    ^~~~
+      |                                                    |
+      |                                                    tinyxml2::XMLNode*
+diff: tinyxml2.S: No such file or directory

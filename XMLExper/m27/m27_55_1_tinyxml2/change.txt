@@ -1,0 +1,13 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..1fca40d 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -2594,7 +2594,7 @@ XMLPrinter::XMLPrinter( FILE* file, bool compact, int depth ) :
+     _stack(),
+     _firstElement( true ),
+     _fp( file ),
+-    _depth( depth ),
++    /*CID*/
+     _textDepth( -1 ),
+     _processEntities( true ),
+     _compactMode( compact ),

@@ -1,0 +1,15 @@
+diff --git a/tinyxml2.h b/tinyxml2.h
+index bab582c..34087fd 100644
+--- a/tinyxml2.h
++++ b/tinyxml2.h
+@@ -497,9 +497,7 @@ public:
+         return true;
+     }
+     /// Visit an element.
+-    virtual bool VisitExit( const XMLElement& /*element*/ )			{
+-        return true;
+-    }
++    /*OMD*/
+ 
+     /// Visit a declaration.
+     virtual bool Visit( const XMLDeclaration& /*declaration*/ )		{

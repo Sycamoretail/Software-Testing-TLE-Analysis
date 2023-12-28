@@ -1,0 +1,5 @@
+tinyxml2.cpp: In member function ‘char* tinyxml2::XMLDocument::Identify(char*, tinyxml2::XMLNode**, bool)’:
+tinyxml2.cpp:745:115: error: lvalue required as left operand of assignment
+  745 |         /*PCI*/dynamic_cast<tinyxml2::XMLElement*>(returnNode) = CreateUnlinkedNode<XMLDeclaration>( _commentPool );
+      |                                                                                                                   ^
+diff: tinyxml2.S: No such file or directory

@@ -1,0 +1,15 @@
+In file included from tinyxml2.cpp:24:
+tinyxml2.h:2300:18: error: ‘virtual bool tinyxml2::XMLPrinter::VisitExit(const tinyxml2::XMLElement&)’ marked ‘override’, but does not override
+ 2300 |     virtual bool VisitExit( const XMLElement& element ) override;
+      |                  ^~~~~~~~~
+tinyxml2.cpp: In member function ‘virtual bool tinyxml2::XMLElement::Accept(tinyxml2::XMLVisitor*) const’:
+tinyxml2.cpp:2166:32: error: cannot convert ‘const tinyxml2::XMLElement’ to ‘const tinyxml2::XMLDocument&’
+ 2166 |     return visitor->VisitExit( *this );
+      |                                ^~~~~
+      |                                |
+      |                                const tinyxml2::XMLElement
+In file included from tinyxml2.cpp:24:
+tinyxml2.h:491:29: note:   initializing argument 1 of ‘virtual bool tinyxml2::XMLVisitor::VisitExit(const tinyxml2::XMLDocument&)’
+  491 |     virtual bool VisitExit( const XMLDocument& /*doc*/ )   {
+      |                             ^~~~~~~~~~~~~~~~~~
+diff: tinyxml2.S: No such file or directory

@@ -1,0 +1,30 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..19b05d8 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -1609,11 +1609,7 @@ void XMLAttribute::SetAttribute( float v )
+ 
+ 
+ // --------- XMLElement ---------- //
+-XMLElement::XMLElement( XMLDocument* doc ) : XMLNode( doc ),
+-    _closingType( OPEN ),
+-    _rootAttribute( 0 )
+-{
+-}
++/*OMD*/
+ 
+ 
+ XMLElement::~XMLElement()
+diff --git a/tinyxml2.h b/tinyxml2.h
+index bab582c..b87b392 100644
+--- a/tinyxml2.h
++++ b/tinyxml2.h
+@@ -1689,7 +1689,7 @@ protected:
+     char* ParseDeep( char* p, StrPair* parentEndTag, int* curLineNumPtr ) override;
+ 
+ private:
+-    XMLElement( XMLDocument* doc );
++    /*OMD*/;
+     virtual ~XMLElement();
+     XMLElement( const XMLElement& );	// not supported
+     void operator=( const XMLElement& );	// not supported

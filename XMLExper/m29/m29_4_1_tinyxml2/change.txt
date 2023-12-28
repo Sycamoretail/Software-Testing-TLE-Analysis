@@ -1,0 +1,32 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..3c3accd 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -821,13 +821,7 @@ XMLNode::XMLNode( XMLDocument* doc ) :
+ }
+ 
+ 
+-XMLNode::~XMLNode()
+-{
+-    DeleteChildren();
+-    if ( _parent ) {
+-        _parent->Unlink( this );
+-    }
+-}
++/*CDD*/
+ 
+ // ChildElementCount was originally suggested by msteiger on the sourceforge page for TinyXML and modified by KB1SPH for TinyXML-2.
+ 
+diff --git a/tinyxml2.h b/tinyxml2.h
+index bab582c..dfe8f99 100644
+--- a/tinyxml2.h
++++ b/tinyxml2.h
+@@ -953,7 +953,7 @@ public:
+ 
+ protected:
+     explicit XMLNode( XMLDocument* );
+-    virtual ~XMLNode();
++    /*CDD*/;
+ 
+     virtual char* ParseDeep( char* p, StrPair* parentEndTag, int* curLineNumPtr);
+ 

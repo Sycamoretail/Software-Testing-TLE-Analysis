@@ -1,0 +1,13 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..cba7073 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -1210,7 +1210,7 @@ char* XMLNode::ParseDeep( char* p, StrPair* parentEndTag, int* curLineNumPtr )
+ 
+     MemPool* pool = node->_memPool;
+     node->~XMLNode();
+-    pool->Free( node );
++    pool->Free( /*PCI*/dynamic_cast<tinyxml2::XMLElement*>(node) );
+ }
+ 
+ void XMLNode::InsertChildPreamble( XMLNode* insertThis ) const

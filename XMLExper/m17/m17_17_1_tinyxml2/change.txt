@@ -1,0 +1,13 @@
+diff --git a/tinyxml2.h b/tinyxml2.h
+index bab582c..041fec2 100644
+--- a/tinyxml2.h
++++ b/tinyxml2.h
+@@ -1020,7 +1020,7 @@ public:
+     virtual bool ShallowEqual( const XMLNode* compare ) const override;
+ 
+ protected:
+-    explicit XMLText( XMLDocument* doc )	: XMLNode( doc ), _isCData( false )	{}
++    /*OMD*/
+     virtual ~XMLText()												{}
+ 
+     char* ParseDeep( char* p, StrPair* parentEndTag, int* curLineNumPtr ) override;

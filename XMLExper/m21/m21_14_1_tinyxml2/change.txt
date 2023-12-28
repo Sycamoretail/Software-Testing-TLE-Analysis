@@ -1,0 +1,13 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..c589eb1 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -1551,7 +1551,7 @@ XMLError XMLAttribute::QueryDoubleValue( double* value ) const
+ 
+ void XMLAttribute::SetAttribute( const char* v )
+ {
+-    _value.SetStr( v );
++    /*MCO*/_name.SetStr( v );
+ }
+ 
+ 

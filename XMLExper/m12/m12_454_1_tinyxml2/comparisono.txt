@@ -1,0 +1,10 @@
+tinyxml2.cpp: In constructor ‘tinyxml2::XMLElement::XMLElement(tinyxml2::XMLDocument*)’:
+tinyxml2.cpp:1612:62: error: invalid conversion from ‘tinyxml2::XMLNode*’ to ‘tinyxml2::XMLDocument*’ [-fpermissive]
+ 1612 | XMLElement::XMLElement( XMLDocument* doc ) : XMLNode( /*PCI*/dynamic_cast<tinyxml2::XMLNode*>(doc) ),
+      |                                                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                              |
+      |                                                              tinyxml2::XMLNode*
+tinyxml2.cpp:811:32: note:   initializing argument 1 of ‘tinyxml2::XMLNode::XMLNode(tinyxml2::XMLDocument*)’
+  811 | XMLNode::XMLNode( XMLDocument* doc ) :
+      |                   ~~~~~~~~~~~~~^~~
+diff: tinyxml2.o: No such file or directory

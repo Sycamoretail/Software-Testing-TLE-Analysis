@@ -1,0 +1,13 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..f90f154 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -2196,7 +2196,7 @@ const char* XMLDocument::_errorNames[XML_ERROR_COUNT] = {
+ XMLDocument::XMLDocument( bool processEntities, Whitespace whitespaceMode ) :
+     XMLNode( 0 ),
+     _writeBOM( false ),
+-    _processEntities( processEntities ),
++    /*CID*/
+     _errorID(XML_SUCCESS),
+     _whitespaceMode( whitespaceMode ),
+     _errorStr(),

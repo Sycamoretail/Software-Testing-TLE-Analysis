@@ -1,0 +1,13 @@
+diff --git a/tinyxml2.h b/tinyxml2.h
+index bab582c..038537a 100644
+--- a/tinyxml2.h
++++ b/tinyxml2.h
+@@ -2142,7 +2142,7 @@ class TINYXML2_LIB XMLConstHandle
+ public:
+     explicit XMLConstHandle( const XMLNode* node ) : _node( node ) {
+     }
+-    explicit XMLConstHandle( const XMLNode& node ) : _node( &node ) {
++    explicit XMLConstHandle( const XMLNode& node ) : _node( &/*PCI*/dynamic_cast<tinyxml2::XMLComment&>(node) ) {
+     }
+     XMLConstHandle( const XMLConstHandle& ref ) : _node( ref._node ) {
+     }

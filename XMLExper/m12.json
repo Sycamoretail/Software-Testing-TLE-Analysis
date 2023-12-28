@@ -1,0 +1,55 @@
+{
+    "info":"handcrafted prompts by splitting and introducing the info of mutants seperately",
+    "103":[{
+        "function":"bool XMLDocument::Accept( XMLVisitor* visitor ) const",
+        "origin":"bool XMLDocument::Accept( XMLVisitor* visitor ) const\nTIXMLASSERT( visitor );if ( visitor->VisitEnter( *this ) ) {\nfor ( const XMLNode* node=FirstChild(); node; node=node->NextSibling() ) {\n -if ( !node->Accept( visitor ) ) {\nbreak;}}",
+        "replaced":"bool XMLDocument::Accept( XMLVisitor* visitor ) const\nTIXMLASSERT( visitor );if ( visitor->VisitEnter( *this ) ) {\nfor ( const XMLNode* node=FirstChild(); node; node=node->NextSibling() ) {\n +if (!node->Accept(dynamic_cast<tinyxml2::XMLPrinter*>(visitor) ) ) {\nbreak;}}",
+        "related":" "
+    }],
+    "110":[{
+        "function":"XMLNode* XMLNode::DeepClone(XMLDocument* target) const",
+        "origin":"XMLNode* XMLNode::DeepClone(XMLDocument* target) const{XMLNode* clone = this->ShallowClone(target);\n-if (!clone) return 0;\n  for (const XMLNode* child = this->FirstChild(); child; child = child->NextSibling()) {XMLNode* childClone = child->DeepClone(target);",
+        "replaced":"XMLNode* XMLNode::DeepClone(XMLDocument* target) const{XMLNode* clone = this->ShallowClone(target);\n+if (!dynamic_cast<tinyxml2::XMLDocument*>(clone)) return 0;\n  for (const XMLNode* child = this->FirstChild(); child; child = child->NextSibling()) {XMLNode* childClone = child->DeepClone(target);",
+        "related":""
+    }],
+    "513":[{
+        "function":"void XMLDocument::DeepCopy(XMLDocument* target) const",
+        "origin":" void XMLDocument::DeepCopy(XMLDocument* target) const{ TIXMLASSERT(target);\n-    if (target == this) {\nreturn; // technically success - a no-op.}",
+        "replaced":"void XMLDocument::DeepCopy(XMLDocument* target) const{ TIXMLASSERT(target);\n+    if (dynamic_cast<tinyxml2::XMLNode*>(target) == this) {\nreturn; // technically success - a no-op.}",
+        "related":""
+    }],
+    "527":[{
+        "function":"void XMLDocument::DeepCopy(XMLDocument* target) const",
+        "origin":"target->Clear();for(const XMLNode* node = this->FirstChild(); node; node = node->NextSibling()) {\n-target->InsertEndChild(node->DeepClone(target));",
+        "replaced":"target->Clear();for(const XMLNode* node = this->FirstChild(); node; node = node->NextSibling()) {\n+dynamic_cast<tinyxml2::XMLNode*>(target)->InsertEndChild(node->DeepClone(target));",
+        "related":""
+    }],
+    "536":[{
+        "function":"XMLElement* XMLDocument::NewElement( const char* name )",
+        "origin":"XMLComment* XMLDocument::NewComment( const char* str ){XMLComment* comment = CreateUnlinkedNode<XMLComment>( _commentPool );\n-    comment->SetValue( str );\n  return comment;}",
+        "replaced":"XMLComment* XMLDocument::NewComment( const char* str ){XMLComment* comment = CreateUnlinkedNode<XMLComment>( _commentPool );\n+   dynamic_cast<tinyxml2::XMLNode*>(comment)->SetValue( str );\n  return comment;}",
+        "related":""
+    }],
+    "538":[{
+        "function":"XMLText* XMLDocument::NewText( const char* str )",
+        "origin":"XMLText* XMLDocument::NewText( const char* str )\n {\n     XMLText* text = CreateUnlinkedNode<XMLText>( _textPool );\n-    text->SetValue( str );\n     return text;\n }",
+        "replaced":"XMLText* XMLDocument::NewText( const char* str )\n {\n     XMLText* text = CreateUnlinkedNode<XMLText>( _textPool );\n+    /*PCI*/dynamic_cast<tinyxml2::XMLNode*>(text)->SetValue( str );\n     return text;\n }",
+        "related":""
+        
+    }],
+    "540":[{
+        "function":"XMLDeclaration* XMLDocument::NewDeclaration( const char* str )",
+        "origin":" XMLDeclaration* XMLDocument::NewDeclaration( const char* str )\n {\n     XMLDeclaration* dec = CreateUnlinkedNode<XMLDeclaration>( _commentPool );\n-    dec->SetValue( str ? str : 'xml version=\"1.0\" encoding=\"UTF-8\"' );\n\n     return dec;\n }\n  ",
+        "replaced":"XMLDeclaration* XMLDocument::NewDeclaration( const char* str )\n {\n     XMLDeclaration* dec = CreateUnlinkedNode<XMLDeclaration>( _commentPool );\n+    /*PCI*/dynamic_cast<tinyxml2::XMLNode*>(dec)->SetValue( str ? str : 'xml version=\"1.0\" encoding=\"UTF-8\"' );\n     return dec;\n }\n ",
+
+        "related":""
+        
+    }],
+    "542":[{
+        "function":"XMLUnknown* XMLDocument::NewUnknown( const char* str )",
+        "origin":"XMLUnknown* XMLDocument::NewUnknown( const char* str ){\n     XMLUnknown* unk = CreateUnlinkedNode<XMLUnknown>( _commentPool );\n-    unk->SetValue( str );\n     return unk;\n }",
+        "replaced":"XMLUnknown* XMLDocument::NewUnknown( const char* str ){\n     XMLUnknown* unk = CreateUnlinkedNode<XMLUnknown>( _commentPool );\n+    /*PCI*/dynamic_cast<tinyxml2::XMLNode*>(unk)->SetValue( str );\n     return unk;\n }",
+        "related":""
+    }]
+ 
+}

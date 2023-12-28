@@ -1,0 +1,6 @@
+In file included from tinyxml2.cpp:24:
+tinyxml2.h: In constructor ‘tinyxml2::XMLConstHandle::XMLConstHandle(const tinyxml2::XMLNode*)’:
+tinyxml2.h:2143:112: error: cannot dynamic_cast ‘node’ (of type ‘const class tinyxml2::XMLNode*’) to type ‘class tinyxml2::XMLDeclaration*’ (conversion casts away constness)
+ 2143 |     explicit XMLConstHandle( const XMLNode* node ) : _node( /*PCI*/dynamic_cast<tinyxml2::XMLDeclaration*>(node) ) {
+      |                                                                                                                ^
+diff: tinyxml2.S: No such file or directory

@@ -1,0 +1,31 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..6c5fe76 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -1744,12 +1744,7 @@ void XMLElement::SetText( unsigned v )
+ }
+ 
+ 
+-void XMLElement::SetText(int64_t v)
+-{
+-	char buf[BUF_SIZE];
+-	XMLUtil::ToStr(v, buf, BUF_SIZE);
+-	SetText(buf);
+-}
++/*OMD*/
+ 
+ void XMLElement::SetText(uint64_t v) {
+     char buf[BUF_SIZE];
+diff --git a/tinyxml2.h b/tinyxml2.h
+index bab582c..bec205d 100644
+--- a/tinyxml2.h
++++ b/tinyxml2.h
+@@ -1593,7 +1593,7 @@ public:
+     /// Convenience method for setting text inside an element. See SetText() for important limitations.
+     void SetText( unsigned value );
+ 	/// Convenience method for setting text inside an element. See SetText() for important limitations.
+-	void SetText(int64_t value);
++	/*OMD*/;
+     /// Convenience method for setting text inside an element. See SetText() for important limitations.
+     void SetText(uint64_t value);
+ 	/// Convenience method for setting text inside an element. See SetText() for important limitations.

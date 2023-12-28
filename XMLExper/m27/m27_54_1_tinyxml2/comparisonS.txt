@@ -1,0 +1,4 @@
+12433a12434,12436
+> 	movq	-48(%rbp), %rdx
+> 	movq	%rdx, 120(%rax)
+> 	movq	-40(%rbp), %rax

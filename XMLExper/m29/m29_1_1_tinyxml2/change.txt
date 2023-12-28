@@ -1,0 +1,29 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..a71c0f9 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -154,10 +154,7 @@ static const Entity entities[NUM_ENTITIES] = {
+ };
+ 
+ 
+-StrPair::~StrPair()
+-{
+-    Reset();
+-}
++/*CDD*/
+ 
+ 
+ void StrPair::TransferTo( StrPair* other )
+diff --git a/tinyxml2.h b/tinyxml2.h
+index bab582c..5a22045 100644
+--- a/tinyxml2.h
++++ b/tinyxml2.h
+@@ -150,7 +150,7 @@ public:
+     };
+ 
+     StrPair() : _flags( 0 ), _start( 0 ), _end( 0 ) {}
+-    ~StrPair();
++    /*CDD*/;
+ 
+     void Set( char* start, char* end, int flags ) {
+         TIXMLASSERT( start );

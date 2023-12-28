@@ -1,0 +1,13 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..9719b0d 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -1370,7 +1370,7 @@ char* XMLDeclaration::ParseDeep( char* p, StrPair*, int* curLineNumPtr )
+ 
+ XMLNode* XMLDeclaration::ShallowClone( XMLDocument* doc ) const
+ {
+-    if ( !doc ) {
++    if ( !/*PCI*/dynamic_cast<tinyxml2::XMLNode*>(doc) ) {
+         doc = _document;
+     }
+     XMLDeclaration* dec = doc->NewDeclaration( Value() );	// fixme: this will always allocate memory. Intern?

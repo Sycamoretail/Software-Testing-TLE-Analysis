@@ -1,0 +1,13 @@
+diff --git a/tinyxml2.h b/tinyxml2.h
+index bab582c..96b0898 100644
+--- a/tinyxml2.h
++++ b/tinyxml2.h
+@@ -2060,7 +2060,7 @@ class TINYXML2_LIB XMLHandle
+ {
+ public:
+     /// Create a handle from any node (at any depth of the tree.) This can be a null pointer.
+-    explicit XMLHandle( XMLNode* node ) : _node( node ) {
++    explicit XMLHandle( XMLNode* node ) : _node( /*PCI*/dynamic_cast<tinyxml2::XMLDocument*>(node) ) {
+     }
+     /// Create a handle from a node.
+     explicit XMLHandle( XMLNode& node ) : _node( &node ) {

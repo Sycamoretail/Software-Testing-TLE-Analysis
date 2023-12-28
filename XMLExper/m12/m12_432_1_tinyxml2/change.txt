@@ -1,0 +1,13 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..d042ca2 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -1273,7 +1273,7 @@ char* XMLText::ParseDeep( char* p, StrPair*, int* curLineNumPtr )
+ XMLNode* XMLText::ShallowClone( XMLDocument* doc ) const
+ {
+     if ( !doc ) {
+-        doc = _document;
++        /*PCI*/dynamic_cast<tinyxml2::XMLNode*>(doc) = _document;
+     }
+     XMLText* text = doc->NewText( Value() );	// fixme: this will always allocate memory. Intern?
+     text->SetCData( this->CData() );

@@ -1,0 +1,13 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..d82c25b 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -1048,7 +1048,7 @@ const XMLElement* XMLNode::FirstChildElement( const char* name ) const
+ 
+ const XMLElement* XMLNode::LastChildElement( const char* name ) const
+ {
+-    for( const XMLNode* node = _lastChild; node; node = node->_prev ) {
++    for( const XMLNode* node = _lastChild; node; /*PCI*/dynamic_cast<tinyxml2::XMLElement*>(node) = node->_prev ) {
+         const XMLElement* element = node->ToElementWithName( name );
+         if ( element ) {
+             return element;

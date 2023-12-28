@@ -1,0 +1,13 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..ae708ab 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -2308,7 +2308,7 @@ XMLText* XMLDocument::NewText( const char* str )
+ XMLDeclaration* XMLDocument::NewDeclaration( const char* str )
+ {
+     XMLDeclaration* dec = CreateUnlinkedNode<XMLDeclaration>( _commentPool );
+-    dec->SetValue( str ? str : "xml version=\"1.0\" encoding=\"UTF-8\"" );
++    /*PCI*/dynamic_cast<tinyxml2::XMLNode*>(dec)->SetValue( str ? str : "xml version=\"1.0\" encoding=\"UTF-8\"" );
+     return dec;
+ }
+ 

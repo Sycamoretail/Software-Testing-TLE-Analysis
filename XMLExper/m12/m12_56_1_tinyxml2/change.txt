@@ -1,0 +1,13 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..edd53bf 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -753,7 +753,7 @@ char* XMLDocument::Identify( char* p, XMLNode** node, bool first )
+     }
+     else if ( XMLUtil::StringEqual( p, cdataHeader, cdataHeaderLen ) ) {
+         XMLText* text = CreateUnlinkedNode<XMLText>( _textPool );
+-        returnNode = text;
++        /*PCI*/dynamic_cast<tinyxml2::XMLComment*>(returnNode) = text;
+         returnNode->_parseLineNum = _parseCurLineNum;
+         p += cdataHeaderLen;
+         text->SetCData( true );

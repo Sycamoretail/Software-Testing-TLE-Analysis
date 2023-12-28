@@ -1,0 +1,5 @@
+tinyxml2.cpp: In member function ‘virtual char* tinyxml2::XMLNode::ParseDeep(char*, tinyxml2::StrPair*, int*)’:
+tinyxml2.cpp:1132:58: error: cannot dynamic_cast ‘decl’ (of type ‘const class tinyxml2::XMLDeclaration* const’) to type ‘class tinyxml2::XMLNode*’ (conversion casts away constness)
+ 1132 |         if ( /*PCI*/dynamic_cast<tinyxml2::XMLNode*>(decl) ) {
+      |                                                          ^
+diff: tinyxml2.S: No such file or directory

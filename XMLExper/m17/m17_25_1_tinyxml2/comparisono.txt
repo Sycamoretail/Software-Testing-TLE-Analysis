@@ -1,0 +1,24 @@
+In file included from tinyxml2.cpp:24:
+tinyxml2.h: In member function ‘void tinyxml2::XMLElement::SetAttribute(const char*, uint64_t)’:
+tinyxml2.h:1495:30: error: call of overloaded ‘SetAttribute(uint64_t&)’ is ambiguous
+ 1495 |         a->SetAttribute(value);
+      |                              ^
+tinyxml2.h:1232:10: note: candidate: ‘void tinyxml2::XMLAttribute::SetAttribute(int)’
+ 1232 |     void SetAttribute( int value );
+      |          ^~~~~~~~~~~~
+tinyxml2.h:1234:10: note: candidate: ‘void tinyxml2::XMLAttribute::SetAttribute(unsigned int)’
+ 1234 |     void SetAttribute( unsigned value );
+      |          ^~~~~~~~~~~~
+tinyxml2.h:1236:7: note: candidate: ‘void tinyxml2::XMLAttribute::SetAttribute(int64_t)’
+ 1236 |  void SetAttribute(int64_t value);
+      |       ^~~~~~~~~~~~
+tinyxml2.h:1240:10: note: candidate: ‘void tinyxml2::XMLAttribute::SetAttribute(bool)’
+ 1240 |     void SetAttribute( bool value );
+      |          ^~~~~~~~~~~~
+tinyxml2.h:1242:10: note: candidate: ‘void tinyxml2::XMLAttribute::SetAttribute(double)’
+ 1242 |     void SetAttribute( double value );
+      |          ^~~~~~~~~~~~
+tinyxml2.h:1244:10: note: candidate: ‘void tinyxml2::XMLAttribute::SetAttribute(float)’
+ 1244 |     void SetAttribute( float value );
+      |          ^~~~~~~~~~~~
+diff: tinyxml2.o: No such file or directory

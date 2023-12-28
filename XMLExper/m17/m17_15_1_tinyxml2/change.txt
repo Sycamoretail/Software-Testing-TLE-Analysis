@@ -1,0 +1,30 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..752e69d 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -607,11 +607,7 @@ void XMLUtil::ToStr( int64_t v, char* buffer, int bufferSize )
+ 	TIXML_SNPRINTF(buffer, bufferSize, "%lld", static_cast<long long>(v));
+ }
+ 
+-void XMLUtil::ToStr( uint64_t v, char* buffer, int bufferSize )
+-{
+-    // horrible syntax trick to make the compiler happy about %llu
+-    TIXML_SNPRINTF(buffer, bufferSize, "%llu", (long long)v);
+-}
++/*OMD*/
+ 
+ bool XMLUtil::ToInt(const char* str, int* value)
+ {
+diff --git a/tinyxml2.h b/tinyxml2.h
+index bab582c..eeafbaa 100644
+--- a/tinyxml2.h
++++ b/tinyxml2.h
+@@ -623,7 +623,7 @@ public:
+     static void ToStr( float v, char* buffer, int bufferSize );
+     static void ToStr( double v, char* buffer, int bufferSize );
+ 	static void ToStr(int64_t v, char* buffer, int bufferSize);
+-    static void ToStr(uint64_t v, char* buffer, int bufferSize);
++    /*OMD*/;
+ 
+     // converts strings to primitive types
+     static bool	ToInt( const char* str, int* value );

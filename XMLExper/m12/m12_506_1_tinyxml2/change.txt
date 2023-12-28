@@ -1,0 +1,13 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..7c15b03 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -2158,7 +2158,7 @@ bool XMLElement::Accept( XMLVisitor* visitor ) const
+     TIXMLASSERT( visitor );
+     if ( visitor->VisitEnter( *this, _rootAttribute ) ) {
+         for ( const XMLNode* node=FirstChild(); node; node=node->NextSibling() ) {
+-            if ( !node->Accept( visitor ) ) {
++            if ( !node->Accept( /*PCI*/dynamic_cast<tinyxml2::XMLPrinter*>(visitor) ) ) {
+                 break;
+             }
+         }

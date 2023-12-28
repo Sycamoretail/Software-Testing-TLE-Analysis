@@ -1,0 +1,10 @@
+tinyxml2.cpp: In member function ‘tinyxml2::XMLError tinyxml2::XMLDocument::LoadFile(const char*)’:
+tinyxml2.cpp:2371:15: error: cannot convert ‘FILE*’ {aka ‘_IO_FILE*’} to ‘const char*’
+ 2371 |     LoadFile( fp );
+      |               ^~
+      |               |
+      |               FILE* {aka _IO_FILE*}
+tinyxml2.cpp:2357:45: note:   initializing argument 1 of ‘tinyxml2::XMLError tinyxml2::XMLDocument::LoadFile(const char*)’
+ 2357 | XMLError XMLDocument::LoadFile( const char* filename )
+      |                                 ~~~~~~~~~~~~^~~~~~~~
+diff: tinyxml2.S: No such file or directory

@@ -1,0 +1,13 @@
+diff --git a/tinyxml2.h b/tinyxml2.h
+index bab582c..c730d52 100644
+--- a/tinyxml2.h
++++ b/tinyxml2.h
+@@ -149,7 +149,7 @@ public:
+         COMMENT							= NEEDS_NEWLINE_NORMALIZATION
+     };
+ 
+-    StrPair() : _flags( 0 ), _start( 0 ), _end( 0 ) {}
++    StrPair() : /*CID*/ _start( 0 ), _end( 0 ) {}
+     ~StrPair();
+ 
+     void Set( char* start, char* end, int flags ) {

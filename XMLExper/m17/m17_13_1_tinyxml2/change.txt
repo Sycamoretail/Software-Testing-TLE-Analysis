@@ -1,0 +1,29 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..7dbfced 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -595,10 +595,7 @@ void XMLUtil::ToStr( float v, char* buffer, int bufferSize )
+ }
+ 
+ 
+-void XMLUtil::ToStr( double v, char* buffer, int bufferSize )
+-{
+-    TIXML_SNPRINTF( buffer, bufferSize, "%.17g", v );
+-}
++/*OMD*/
+ 
+ 
+ void XMLUtil::ToStr( int64_t v, char* buffer, int bufferSize )
+diff --git a/tinyxml2.h b/tinyxml2.h
+index bab582c..32d6fc9 100644
+--- a/tinyxml2.h
++++ b/tinyxml2.h
+@@ -621,7 +621,7 @@ public:
+     static void ToStr( unsigned v, char* buffer, int bufferSize );
+     static void ToStr( bool v, char* buffer, int bufferSize );
+     static void ToStr( float v, char* buffer, int bufferSize );
+-    static void ToStr( double v, char* buffer, int bufferSize );
++    /*OMD*/;
+ 	static void ToStr(int64_t v, char* buffer, int bufferSize);
+     static void ToStr(uint64_t v, char* buffer, int bufferSize);
+ 

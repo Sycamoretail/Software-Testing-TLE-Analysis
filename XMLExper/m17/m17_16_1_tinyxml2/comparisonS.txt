@@ -1,0 +1,61 @@
+In file included from tinyxml2.cpp:24:
+tinyxml2.h: In constructor ‘tinyxml2::XMLText::XMLText(tinyxml2::XMLDocument*)’:
+tinyxml2.h:1023:53: error: cannot convert ‘tinyxml2::XMLDocument*’ to ‘const tinyxml2::XMLNode&’
+ 1023 |     explicit XMLText( XMLDocument* doc ) : XMLNode( doc ), _isCData( false ) {}
+      |                                                     ^~~
+      |                                                     |
+      |                                                     tinyxml2::XMLDocument*
+tinyxml2.h:980:14: note:   initializing argument 1 of ‘tinyxml2::XMLNode::XMLNode(const tinyxml2::XMLNode&)’
+  980 |     XMLNode( const XMLNode& ); // not supported
+      |              ^~~~~~~~~~~~~~
+tinyxml2.cpp: In constructor ‘tinyxml2::XMLComment::XMLComment(tinyxml2::XMLDocument*)’:
+tinyxml2.cpp:1291:55: error: cannot convert ‘tinyxml2::XMLDocument*’ to ‘const tinyxml2::XMLNode&’
+ 1291 | XMLComment::XMLComment( XMLDocument* doc ) : XMLNode( doc )
+      |                                                       ^~~
+      |                                                       |
+      |                                                       tinyxml2::XMLDocument*
+In file included from tinyxml2.cpp:24:
+tinyxml2.h:980:14: note:   initializing argument 1 of ‘tinyxml2::XMLNode::XMLNode(const tinyxml2::XMLNode&)’
+  980 |     XMLNode( const XMLNode& ); // not supported
+      |              ^~~~~~~~~~~~~~
+tinyxml2.cpp: In constructor ‘tinyxml2::XMLDeclaration::XMLDeclaration(tinyxml2::XMLDocument*)’:
+tinyxml2.cpp:1339:63: error: cannot convert ‘tinyxml2::XMLDocument*’ to ‘const tinyxml2::XMLNode&’
+ 1339 | XMLDeclaration::XMLDeclaration( XMLDocument* doc ) : XMLNode( doc )
+      |                                                               ^~~
+      |                                                               |
+      |                                                               tinyxml2::XMLDocument*
+In file included from tinyxml2.cpp:24:
+tinyxml2.h:980:14: note:   initializing argument 1 of ‘tinyxml2::XMLNode::XMLNode(const tinyxml2::XMLNode&)’
+  980 |     XMLNode( const XMLNode& ); // not supported
+      |              ^~~~~~~~~~~~~~
+tinyxml2.cpp: In constructor ‘tinyxml2::XMLUnknown::XMLUnknown(tinyxml2::XMLDocument*)’:
+tinyxml2.cpp:1388:55: error: cannot convert ‘tinyxml2::XMLDocument*’ to ‘const tinyxml2::XMLNode&’
+ 1388 | XMLUnknown::XMLUnknown( XMLDocument* doc ) : XMLNode( doc )
+      |                                                       ^~~
+      |                                                       |
+      |                                                       tinyxml2::XMLDocument*
+In file included from tinyxml2.cpp:24:
+tinyxml2.h:980:14: note:   initializing argument 1 of ‘tinyxml2::XMLNode::XMLNode(const tinyxml2::XMLNode&)’
+  980 |     XMLNode( const XMLNode& ); // not supported
+      |              ^~~~~~~~~~~~~~
+tinyxml2.cpp: In constructor ‘tinyxml2::XMLElement::XMLElement(tinyxml2::XMLDocument*)’:
+tinyxml2.cpp:1602:55: error: cannot convert ‘tinyxml2::XMLDocument*’ to ‘const tinyxml2::XMLNode&’
+ 1602 | XMLElement::XMLElement( XMLDocument* doc ) : XMLNode( doc ),
+      |                                                       ^~~
+      |                                                       |
+      |                                                       tinyxml2::XMLDocument*
+In file included from tinyxml2.cpp:24:
+tinyxml2.h:980:14: note:   initializing argument 1 of ‘tinyxml2::XMLNode::XMLNode(const tinyxml2::XMLNode&)’
+  980 |     XMLNode( const XMLNode& ); // not supported
+      |              ^~~~~~~~~~~~~~
+tinyxml2.cpp: In constructor ‘tinyxml2::XMLDocument::XMLDocument(bool, tinyxml2::Whitespace)’:
+tinyxml2.cpp:2187:14: error: cannot convert ‘int’ to ‘const tinyxml2::XMLNode&’
+ 2187 |     XMLNode( 0 ),
+      |              ^
+      |              |
+      |              int
+In file included from tinyxml2.cpp:24:
+tinyxml2.h:980:14: note:   initializing argument 1 of ‘tinyxml2::XMLNode::XMLNode(const tinyxml2::XMLNode&)’
+  980 |     XMLNode( const XMLNode& ); // not supported
+      |              ^~~~~~~~~~~~~~
+diff: tinyxml2.S: No such file or directory

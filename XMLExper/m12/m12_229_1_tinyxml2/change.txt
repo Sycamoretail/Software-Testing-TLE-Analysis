@@ -1,0 +1,13 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..38f5320 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -992,7 +992,7 @@ XMLNode* XMLNode::InsertFirstChild( XMLNode* addThis )
+         addThis->_next = 0;
+     }
+     addThis->_parent = this;
+-    return addThis;
++    return /*PCI*/dynamic_cast<tinyxml2::XMLDeclaration*>(addThis);
+ }
+ 
+ 

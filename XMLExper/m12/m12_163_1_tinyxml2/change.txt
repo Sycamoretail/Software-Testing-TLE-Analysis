@@ -1,0 +1,13 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..76c16f6 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -927,7 +927,7 @@ void XMLNode::DeleteChild( XMLNode* node )
+     TIXMLASSERT( node );
+     TIXMLASSERT( node->_document == _document );
+     TIXMLASSERT( node->_parent == this );
+-    Unlink( node );
++    Unlink( /*PCI*/dynamic_cast<tinyxml2::XMLDeclaration*>(node) );
+ 	TIXMLASSERT(node->_prev == 0);
+ 	TIXMLASSERT(node->_next == 0);
+ 	TIXMLASSERT(node->_parent == 0);

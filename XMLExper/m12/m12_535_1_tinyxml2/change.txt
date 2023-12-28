@@ -1,0 +1,13 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..1b003b4 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -2285,7 +2285,7 @@ XMLElement* XMLDocument::NewElement( const char* name )
+ {
+     XMLElement* ele = CreateUnlinkedNode<XMLElement>( _elementPool );
+     ele->SetName( name );
+-    return ele;
++    return /*PCI*/dynamic_cast<tinyxml2::XMLNode*>(ele);
+ }
+ 
+ 

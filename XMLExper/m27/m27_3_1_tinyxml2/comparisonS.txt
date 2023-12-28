@@ -1,0 +1,3 @@
+41a42,43
+> 	movq	-8(%rbp), %rax
+> 	movq	$0, 16(%rax)

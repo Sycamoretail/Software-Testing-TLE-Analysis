@@ -1,0 +1,5 @@
+tinyxml2.cpp: In member function ‘tinyxml2::XMLNode* tinyxml2::XMLNode::DeepClone(tinyxml2::XMLDocument*) const’:
+tinyxml2.cpp:883:109: error: cannot dynamic_cast ‘child’ (of type ‘const class tinyxml2::XMLNode*’) to type ‘class tinyxml2::XMLDeclaration*’ (conversion casts away constness)
+  883 |  for (const XMLNode* child = this->FirstChild(); child; /*PCI*/dynamic_cast<tinyxml2::XMLDeclaration*>(child) = child->NextSibling()) {
+      |                                                                                                             ^
+diff: tinyxml2.S: No such file or directory

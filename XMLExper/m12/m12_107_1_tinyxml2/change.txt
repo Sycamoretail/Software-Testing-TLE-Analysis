@@ -1,0 +1,13 @@
+diff --git a/tinyxml2.cpp b/tinyxml2.cpp
+index c5c4870..767c21d 100644
+--- a/tinyxml2.cpp
++++ b/tinyxml2.cpp
+@@ -849,7 +849,7 @@ int XMLNode::ChildElementCount() const {
+ 
+ 	const XMLElement *e = FirstChildElement();
+ 
+-	while (e) {
++	while (/*PCI*/dynamic_cast<tinyxml2::XMLNode*>(e)) {
+ 		e = e->NextSiblingElement();
+ 		count++;
+ 	}
